@@ -1,0 +1,1056 @@
+[
+  {
+    "slug": "valvulas-industriales",
+    "nombre": "Válvulas industriales",
+    "padre": null,
+    "hijos": [
+      "valvula-solenoide",
+      "valvula-esferica",
+      "valvula-mariposa",
+      "actuador-rotante",
+      "valvula-de-asiento-inclinado",
+      "valvula-de-retencion",
+      "valvula-esclusa",
+      "valvula-globo",
+      "valvula-de-control",
+      "valvula-aguja",
+      "valvula-reductora-de-presion",
+      "valvula-de-alivio",
+      "valvula-de-equilibrado",
+      "accesorios-para-valvulas"
+    ],
+    "productos": [
+      "catalogos/GENEBRE-Valvula-Neumatica-de-Corredera-5062.pdf",
+      "catalogos/GENEBRE-Valvula-Motorizada-4790-4791.pdf"
+    ],
+    "imagen": "img/iconos/ValInd.jpg",
+    "titulo_seo": "Válvulas industriales | LM Industrial",
+    "descripcion_seo": "Valvulas Industriales: Valvulas a Solenoide, Valvulas Esfericas, Valvulas Mariposa, Valvulas Esclusa, Valvulas de Retencion, Valvulas de Asiento Inclinado, Valvulas de Control, Valvulas Globo, Valvulas Aguja, Valvulas de Alivio, Valvulas Reductoras de Presion, Actuadores Rotantes.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-solenoide",
+    "nombre": "Válvulas a solenoide",
+    "padre": "valvulas-industriales",
+    "hijos": [
+      "valvula-solenoide-laton",
+      "valvula-solenoide-inox",
+      "valvula-solenoide-vapor"
+    ],
+    "productos": [
+      "catalogos/Valvula-Solenoide/THERMOVAL-Valvula-Filtro-De-Manga.pdf"
+    ],
+    "imagen": "img/iconos/ValSol.jpg",
+    "titulo_seo": "Válvulas a solenoide | LM Industrial",
+    "descripcion_seo": "Válvulas a Solenoide Genebre-Ode, Intor y Thermoval.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-solenoide-laton",
+    "nombre": "Válvulas a solenoide de latón",
+    "padre": "valvula-solenoide",
+    "hijos": [
+      "valvula-solenoide-laton-NC-AD",
+      "valvula-solenoide-laton-NC-AI",
+      "valvula-solenoide-laton-NA-AD",
+      "valvula-solenoide-laton-NA-AI"
+    ],
+    "productos": [
+      "catalogos/Valvula-Solenoide/GENEBRE-Valvula-Solenoide-4324.pdf"
+    ],
+    "imagen": "img/iconos/VSLat.jpg",
+    "titulo_seo": "Válvulas a solenoide de latón | LM Industrial",
+    "descripcion_seo": "Válvulas a Solenoide de Latón Genebre-Ode, Intor y Thermoval.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-solenoide-laton-NC-AD",
+    "nombre": "Válvulas a solenoide de latón NC de acción directa",
+    "padre": "valvula-solenoide-laton",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-Solenoide/GENEBRE-Valvula-Solenoide-4010.pdf",
+      "catalogos/Valvula-Solenoide/GENEBRE-Valvula-Solenoide-4030.pdf",
+      "catalogos/Valvula-Solenoide/INTOR-Valvula-Solenoide-EPU.pdf",
+      "catalogos/Valvula-Solenoide/THERMOVAL-Valvula-Solenoide-Acc-Dir.pdf"
+    ],
+    "imagen": "img/iconos/VSLNCAD.jpg",
+    "titulo_seo": "Válvulas a solenoide de latón NC de acción directa | LM Industrial",
+    "descripcion_seo": "Válvulas a Solenoide de Latón NC Acción Directa Genebre-Ode, Intor y Thermoval.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-solenoide-laton-NC-AI",
+    "nombre": "Válvulas a solenoide de latón NC de acción indirecta",
+    "padre": "valvula-solenoide-laton",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-Solenoide/GENEBRE-Valvula-Solenoide-4020.pdf",
+      "catalogos/Valvula-Solenoide/INTOR-Valvula-Solenoide-2V.pdf"
+    ],
+    "imagen": "img/iconos/VSLNCAI.jpg",
+    "titulo_seo": "Válvulas a solenoide de latón NC de acción indirecta | LM Industrial",
+    "descripcion_seo": "Válvulas a Solenoide de Latón NC Acción Indirecta Genebre-Ode e Intor.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-solenoide-laton-NA-AD",
+    "nombre": "Válvulas a solenoide de latón NA de acción directa",
+    "padre": "valvula-solenoide-laton",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-Solenoide/GENEBRE-Valvula-Solenoide-4040.pdf",
+      "catalogos/Valvula-Solenoide/GENEBRE-Valvula-Solenoide-4041.pdf",
+      "catalogos/Valvula-Solenoide/INTOR-Valvula-Solenoide-2WNA.pdf"
+    ],
+    "imagen": "img/iconos/VSLNAAD.jpg",
+    "titulo_seo": "Válvulas a solenoide de latón NA de acción directa | LM Industrial",
+    "descripcion_seo": "Válvulas a Solenoide de Latón NA Acción Directa Genebre-Ode, Intor y Thermoval.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-solenoide-laton-NA-AI",
+    "nombre": "Válvulas a solenoide de latón NA de acción indirecta",
+    "padre": "valvula-solenoide-laton",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-Solenoide/GENEBRE-Valvula-Solenoide-4021.pdf",
+      "catalogos/Valvula-Solenoide/GENEBRE-Valvula-Solenoide-4055PW.pdf"
+    ],
+    "imagen": "img/iconos/VSLNAAI.jpg",
+    "titulo_seo": "Válvulas a solenoide de latón NA de acción indirecta | LM Industrial",
+    "descripcion_seo": "Válvulas a Solenoide de Latón NA Acción Indirecta Genebre-Ode e Intor.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-solenoide-inox",
+    "nombre": "Válvulas a solenoide de acero inoxidable",
+    "padre": "valvula-solenoide",
+    "hijos": [
+      "valvula-solenoide-inox-NC-AD",
+      "valvula-solenoide-inox-NA-AD"
+    ],
+    "productos": [
+      "catalogos/Valvula-Solenoide/GENEBRE-Valvula-Solenoide-4632.pdf",
+      "catalogos/Valvula-Solenoide/GENEBRE-Valvula-Solenoide-4642.pdf",
+      "catalogos/Valvula-Solenoide/GENEBRE-Valvula-Solenoide-46303.pdf"
+    ],
+    "imagen": "img/iconos/VSInox.jpg",
+    "titulo_seo": "Válvulas a solenoide de acero inoxidable | LM Industrial",
+    "descripcion_seo": "Válvulas a Solenoide Inoxidables Genebre-Ode, Intor y Thermoval.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-solenoide-inox-NC-AD",
+    "nombre": "Válvulas a solenoide inox NC de acción directa",
+    "padre": "valvula-solenoide-inox",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-Solenoide/GENEBRE-Valvula-Solenoide-4630.pdf",
+      "catalogos/Valvula-Solenoide/GENEBRE-Valvula-Solenoide-4631-21IH.pdf",
+      "catalogos/Valvula-Solenoide/INTOR-Valvula-Solenoide-2S.pdf"
+    ],
+    "imagen": "img/iconos/VSINCAD.jpg",
+    "titulo_seo": "Válvulas a solenoide inox NC de acción directa | LM Industrial",
+    "descripcion_seo": "Válvulas a Solenoide Inoxidable NC Acción Directa Genebre-Ode, Intor y Thermoval.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-solenoide-inox-NA-AD",
+    "nombre": "Válvulas a solenoide inox NA de acción directa",
+    "padre": "valvula-solenoide-inox",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-Solenoide/GENEBRE-Valvula-Solenoide-4640.pdf",
+      "catalogos/Valvula-Solenoide/INTOR-Valvula-Solenoide-2SNA.pdf"
+    ],
+    "imagen": "img/iconos/VSINCAD.jpg",
+    "titulo_seo": "Válvulas a solenoide inox NA de acción directa | LM Industrial",
+    "descripcion_seo": "Válvulas a Solenoide Inoxidable NA Acción Directa Genebre-Ode, Intor y Thermoval.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-solenoide-vapor",
+    "nombre": "Válvulas a solenoide para vapor",
+    "padre": "valvula-solenoide",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-Solenoide/THERMOVAL-Valvula-Solenoide-Vapor.pdf",
+      "catalogos/Valvula-Solenoide/GENEBRE-Valvula-Solenoide-4425.pdf",
+      "catalogos/Valvula-Solenoide/INTOR-Valvula-Solenoide-PU225.pdf"
+    ],
+    "imagen": "img/iconos/VSVap.jpg",
+    "titulo_seo": "Válvulas a solenoide para vapor | LM Industrial",
+    "descripcion_seo": "Válvulas a Solenoide para Vapor Genebre-Ode y Thermoval.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-esferica",
+    "nombre": "Válvulas esféricas",
+    "padre": "valvulas-industriales",
+    "hijos": [
+      "valvula-esferica-comandos"
+    ],
+    "productos": [
+      "catalogos/Valvula-Esferica/GENEBRE-Valvula-Esferica-2025.pdf",
+      "catalogos/Valvula-Esferica/GENEBRE-Valvula-Esferica-2034.pdf",
+      "catalogos/Valvula-Esferica/GENEBRE-Valvula-Esferica-2027.pdf",
+      "catalogos/Valvula-Esferica/GENEBRE-Valvula-Esferica-2034S.pdf",
+      "catalogos/Valvula-Esferica/GENEBRE-Valvula-Esferica-2528A.pdf",
+      "catalogos/Valvula-Esferica/GENEBRE-Valvula-Esferica-2526A.pdf",
+      "catalogos/Valvula-Esferica/GENEBRE-Valvula-Esferica-2040-2041.pdf",
+      "catalogos/Valvula-Esferica/GENEBRE-Valvula-Esferica-2014.pdf",
+      "catalogos/Valvula-Esferica/GENEBRE-Valvula-Esferica-3700PSI-Vapor-2007N.pdf",
+      "catalogos/Valvula-Esferica/GENEBRE-Valvula-Esferica-2008.pdf",
+      "catalogos/Valvula-Esferica/INTOR-Valvula-Esferica.pdf",
+      "catalogos/Valvula-Esferica/GENEBRE-Valvula-Esferica-3028.pdf",
+      "catalogos/Valvula-Esferica/GENEBRE-Valvula-Esferica-3023.pdf",
+      "catalogos/Valvula-Esferica/GENEBRE-Valvula-Esferica-3096H.pdf"
+    ],
+    "imagen": "img/iconos/ValEsf.jpg",
+    "titulo_seo": "Válvulas esféricas inox, acero y latón | LM Industrial",
+    "descripcion_seo": "Válvulas esféricas Genebre e Intor en inox, acero al carbono y latón: roscadas, bridadas, socket weld y de 3 vías. Fichas técnicas y consultas por WhatsApp.",
+    "intro": "Válvulas de esfera para cierre rápido de un cuarto de vuelta, en acero inoxidable, acero al carbono y latón. Hay versiones roscadas, bridadas y socket weld, de 2 y 3 piezas y de 3 vías, varias con montaje directo de actuador ISO 5211. Marcas Genebre e Intor, con envíos a todo el país.",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-esferica-comandos",
+    "nombre": "Comandos manuales y accesorios para válvulas esféricas",
+    "padre": "valvula-esferica",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-Esferica/Comandos-Manuales/GENEBRE-Reductor-Manual-a-Volante-VE-5984.pdf",
+      "catalogos/Valvula-Esferica/Comandos-Manuales/GENEBRE-Palanca-con-Retorno-a-Resorte-5985.pdf",
+      "catalogos/Valvula-Esferica/Comandos-Manuales/GENEBRE-Extensor-para-Valvula-Man-5330-5332.pdf",
+      "catalogos/Valvula-Esferica/Comandos-Manuales/GENEBRE-Extensor-para-Valvula-Aut-5334.pdf"
+    ],
+    "imagen": "img/iconos/AcVE.jpg",
+    "titulo_seo": "Comandos y accesorios para válvulas esféricas | LM Industrial",
+    "descripcion_seo": "Reductores manuales a volante, palancas con retorno a resorte y extensores para válvulas esféricas Genebre. Fichas técnicas y consultas por WhatsApp.",
+    "intro": "Accesorios para accionar y adaptar válvulas esféricas: reductores manuales a volante, palancas con retorno a resorte y extensores para válvulas manuales y automatizadas. Marca Genebre, con envíos a todo el país.",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-mariposa",
+    "nombre": "Válvulas mariposa",
+    "padre": "valvulas-industriales",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-Mariposa/GENEBRE-Valvula-Mariposa-2109.pdf",
+      "catalogos/Valvula-Mariposa/GENEBRE-Valvula-Mariposa-2108A.pdf",
+      "catalogos/Valvula-Mariposa/GENEBRE-Valvula-Mariposa-2101.pdf",
+      "catalogos/Valvula-Mariposa/GENEBRE-Valvula-Mariposa-2104.pdf",
+      "catalogos/Valvula-Mariposa/GENEBRE-Reductor-Manual-a-Volante-VM-5975.pdf"
+    ],
+    "imagen": "img/iconos/ValMar.jpg",
+    "titulo_seo": "Válvulas mariposa | LM Industrial",
+    "descripcion_seo": "Válvulas Mariposa Wafer y Lug. Marca Genebre.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "actuador-rotante",
+    "nombre": "Actuadores rotantes",
+    "padre": "valvulas-industriales",
+    "hijos": [
+      "actuador-rotante-accesorios"
+    ],
+    "productos": [
+      "catalogos/Actuador-Rotante/GENEBRE-Actuador-Neumatico-GNP-5800.pdf",
+      "catalogos/Actuador-Rotante/INTOR-Actuador-Rotante.pdf",
+      "catalogos/Actuador-Rotante/GENEBRE-Actuador-Electrico-GE-5803.pdf",
+      "catalogos/Actuador-Rotante/GENEBRE-Actuador-Electrico-Trifasico.pdf"
+    ],
+    "imagen": "img/iconos/ActRot.jpg",
+    "titulo_seo": "Actuadores rotantes | LM Industrial",
+    "descripcion_seo": "Actuadores rotantes neumaticos y electricos Genebre e Intor.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "actuador-rotante-accesorios",
+    "nombre": "Accesorios para actuador rotante",
+    "padre": "actuador-rotante",
+    "hijos": [],
+    "productos": [
+      "catalogos/Actuador-Rotante/Accesorios/GENEBRE-Caja-de-Limites-5987-02.pdf",
+      "catalogos/Actuador-Rotante/Accesorios/GENEBRE-Electrovalvula-Namur-4519.pdf",
+      "catalogos/Actuador-Rotante/Accesorios/GENEBRE-Electrovalvula-Namur-ATEX-4521.pdf",
+      "catalogos/Actuador-Rotante/Accesorios/GENEBRE-Electrovalvula-Namur-4523.pdf",
+      "catalogos/Actuador-Rotante/Accesorios/GENEBRE-Posicionador-Neumatico-5950.pdf",
+      "catalogos/Actuador-Rotante/Accesorios/GENEBRE-Posicionador-Electroneumatico-5951.pdf",
+      "catalogos/Actuador-Rotante/Accesorios/GENEBRE-Reductor-Manual-de-Emergencia-5971.pdf",
+      "catalogos/Actuador-Rotante/Accesorios/GENEBRE-Controlador-de-Velocidad-5953.pdf"
+    ],
+    "imagen": "img/iconos/AccAR.jpg",
+    "titulo_seo": "Accesorios para actuador rotante | LM Industrial",
+    "descripcion_seo": "Actuadores rotantes neumaticos y electricos Genebre e Intor.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-de-asiento-inclinado",
+    "nombre": "Válvulas de asiento inclinado",
+    "padre": "valvulas-industriales",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-de-Asiento-Inclinado/GENEBRE-Valvula-Asiento-Inclinado-5060.pdf",
+      "catalogos/Valvula-de-Asiento-Inclinado/GENEBRE-Caja-Final-de-Carrera-5988.pdf",
+      "catalogos/Valvula-de-Asiento-Inclinado/INTOR-Valvula-Asiento-Inclinado-VAIN.pdf"
+    ],
+    "imagen": "img/iconos/ValAng.jpg",
+    "titulo_seo": "Válvulas de asiento inclinado | LM Industrial",
+    "descripcion_seo": "Válvulas de Asiento Inclinado. Marca Genebre.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-de-retencion",
+    "nombre": "Válvulas de retención",
+    "padre": "valvulas-industriales",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-de-Retencion/GENEBRE-Valvula-de-Retencion-2401.pdf",
+      "catalogos/Valvula-de-Retencion/GENEBRE-Valvula-de-Retencion-2402.pdf",
+      "catalogos/Valvula-de-Retencion/GENEBRE-Valvula-de-Retencion-2406.pdf",
+      "catalogos/Valvula-de-Retencion/GENEBRE-Valvula-de-Retencion-2415.pdf",
+      "catalogos/Valvula-de-Retencion/GENEBRE-Valvula-de-Retencion-2416.pdf",
+      "catalogos/Valvula-de-Retencion/GENEBRE-Valvula-de-Retencion-2430.pdf",
+      "catalogos/Valvula-de-Retencion/GENEBRE-Valvula-de-Retencion-2440.pdf",
+      "catalogos/Valvula-de-Retencion/GENEBRE-Valvula-de-Retencion-2234N.pdf",
+      "catalogos/Valvula-de-Retencion/GENEBRE-Valvula-de-Retencion-2234S.pdf",
+      "catalogos/Valvula-de-Retencion/GENEBRE-Valvula-de-Retencion-2450.pdf",
+      "catalogos/Valvula-de-Retencion/GENEBRE-Valvula-de-Retencion-2453.pdf",
+      "catalogos/Valvula-de-Retencion/GENEBRE-Valvula-de-Retencion-3121.pdf",
+      "catalogos/Valvula-de-Retencion/GENEBRE-Valvula-de-Retencion-3180.pdf",
+      "catalogos/Valvula-de-Retencion/GENEBRE-Valvula-de-Retencion-ITAP-100.pdf",
+      "catalogos/Valvula-de-Retencion/GENEBRE-Valvula-de-Retencion-ITAP-104.pdf",
+      "catalogos/Valvula-de-Retencion/GENEBRE-Valvula-de-Retencion-ITAP-130.pdf"
+    ],
+    "imagen": "img/iconos/ValRet.jpg",
+    "titulo_seo": "Válvulas de retención | LM Industrial",
+    "descripcion_seo": "Válvulas de Retención Roscadas, Socket Weld SW, Wafer. Marca Genebre e Itap.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-esclusa",
+    "nombre": "Válvulas esclusa",
+    "padre": "valvulas-industriales",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-Esclusa/GENEBRE-Valvula-Esclusa-2229A.pdf",
+      "catalogos/Valvula-Esclusa/GENEBRE-Valvula-Esclusa-2220.pdf",
+      "catalogos/Valvula-Esclusa/GENEBRE-Valvula-Esclusa-2232A.pdf",
+      "catalogos/Valvula-Esclusa/GENEBRE-Valvula-Esclusa-2232N.pdf",
+      "catalogos/Valvula-Esclusa/GENEBRE-Valvula-Esclusa-2232S.pdf",
+      "catalogos/Valvula-Esclusa/GENEBRE-Valvula-Esclusa-2102.pdf"
+    ],
+    "imagen": "img/iconos/ValEsc.jpg",
+    "titulo_seo": "Válvulas esclusa | LM Industrial",
+    "descripcion_seo": "Válvulas Esclusa Bridadas S-150, Roscadas, SW. Marca Genebre.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-globo",
+    "nombre": "Válvulas globo",
+    "padre": "valvulas-industriales",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-Globo/GENEBRE-Valvula-Globo-2230.pdf",
+      "catalogos/Valvula-Globo/GENEBRE-Valvula-Globo-2231.pdf",
+      "catalogos/Valvula-Globo/GENEBRE-Valvula-Globo-2233A.pdf",
+      "catalogos/Valvula-Globo/GENEBRE-Valvula-Globo-2233N.pdf",
+      "catalogos/Valvula-Globo/GENEBRE-Valvula-Globo-2233S.pdf"
+    ],
+    "imagen": "img/iconos/Glo2231.jpg",
+    "titulo_seo": "Válvulas globo | LM Industrial",
+    "descripcion_seo": "Válvulas Globo Bridadas S-150, Roscadas, SW. Marca Genebre.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-de-control",
+    "nombre": "Válvulas de control",
+    "padre": "valvulas-industriales",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-de-Control/GENEBRE-Valvula-de-Control-Modulante-5065A.pdf",
+      "catalogos/Valvula-de-Control/GENEBRE-Posicionador-Electroneumatico-5952.pdf"
+    ],
+    "imagen": "img/iconos/ValCtr.jpg",
+    "titulo_seo": "Válvulas de control | LM Industrial",
+    "descripcion_seo": "Válvulas de Control Modulantes. Marca Genebre.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-aguja",
+    "nombre": "Válvulas aguja",
+    "padre": "valvulas-industriales",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-Aguja/GENEBRE-Valvula-Aguja-2221.pdf",
+      "catalogos/Valvula-Aguja/GENEBRE-Valvula-Aguja-2223.pdf",
+      "catalogos/Valvula-Aguja/GENEBRE-Valvula-Aguja-2225N.pdf",
+      "catalogos/Valvula-Aguja/GENEBRE-Valvula-Aguja-2226N.pdf"
+    ],
+    "imagen": "img/iconos/VA2223.jpg",
+    "titulo_seo": "Válvulas aguja | LM Industrial",
+    "descripcion_seo": "Válvulas Aguja Roscadas, 3000psi, 6000psi. Marca Genebre.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-reductora-de-presion",
+    "nombre": "Válvulas reductoras de presión",
+    "padre": "valvulas-industriales",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-Reductora-de-Presion/GENEBRE-Valvula-Reductora_de_Presion-3318.pdf",
+      "catalogos/Valvula-Reductora-de-Presion/GENEBRE-Valvula-Reductora_de_Presion-3342.pdf",
+      "catalogos/Valvula-Reductora-de-Presion/GENEBRE-Valvula-Reductora_de_Presion-2272.pdf",
+      "catalogos/Valvula-Reductora-de-Presion/GENEBRE-Valvula-Reductora_de_Presion-2281.pdf",
+      "catalogos/Valvula-Reductora-de-Presion/GENEBRE-Valvula-Reductora_de_Presion-2274.pdf",
+      "catalogos/Valvula-Reductora-de-Presion/GENEBRE-Valvula-Reductora_de_Presion-2275.pdf"
+    ],
+    "imagen": "img/iconos/VRP.jpg",
+    "titulo_seo": "Válvulas reductoras de presión | LM Industrial",
+    "descripcion_seo": "Válvulas Reductoras de Presión, Bridadas S-150, Roscadas, Pilotadas. Marca Genebre.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-de-alivio",
+    "nombre": "Válvulas de alivio",
+    "padre": "valvulas-industriales",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-de-Alivio/GENEBRE-Valvula-de-Alivio-de-Presion-2252.pdf",
+      "catalogos/Valvula-de-Alivio/GENEBRE-Valvula-de-Alivio-de-Presion-2253.pdf",
+      "catalogos/Valvula-de-Alivio/GENEBRE-Valvula-de-Alivio-de-Presion-2256.pdf",
+      "catalogos/Valvula-de-Alivio/GENEBRE-Valvula-de-Alivio-de-Presion-2257.pdf",
+      "catalogos/Valvula-de-Alivio/GENEBRE-Valvula-de-Alivio-de-Presion-2258.pdf",
+      "catalogos/Valvula-de-Alivio/GENEBRE-Valvula-de-Alivio-de-Presion-3190.pdf"
+    ],
+    "imagen": "img/iconos/VAliv.jpg",
+    "titulo_seo": "Válvulas de alivio | LM Industrial",
+    "descripcion_seo": "Válvulas de Alivio de Bronce e Inox, Roscadas y Bridadas. Marca Genebre.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-de-equilibrado",
+    "nombre": "Válvulas de equilibrado",
+    "padre": "valvulas-industriales",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-de-Equilibrado/DANFOSS-Valvula-de_Equilibrado-MSV.pdf",
+      "catalogos/Valvula-de-Equilibrado/GENEBRE-Valvula-de_Equilibrado-3074.pdf",
+      "catalogos/Valvula-de-Equilibrado/GENEBRE-Valvula-de_Equilibrado-3073.pdf",
+      "catalogos/Valvula-de-Equilibrado/GENEBRE-Valvula-de_Equilibrado-2228.pdf"
+    ],
+    "imagen": "img/iconos/VEqMSV.jpg",
+    "titulo_seo": "Válvulas de equilibrado | LM Industrial",
+    "descripcion_seo": "Válvulas de Equilibrado Danfoss y Genebre.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "accesorios-para-valvulas",
+    "nombre": "Accesorios para válvulas",
+    "padre": "valvulas-industriales",
+    "hijos": [],
+    "productos": [
+      "catalogos/Filtro-Y/GENEBRE-Filtro-Y-3302.pdf",
+      "catalogos/Filtro-Y/GENEBRE-Filtro-Y-2460.pdf",
+      "catalogos/Filtro-Y/GENEBRE-Filtro-Y-2459A.pdf",
+      "catalogos/Filtro-Y/GENEBRE-Filtro-Y-2461A.pdf",
+      "catalogos/Filtro-Y/GENEBRE-Filtro-Y-2458G.pdf",
+      "catalogos/Junta-de-Expansion/GENEBRE-Junta-de-Expansion-2830.pdf",
+      "catalogos/Junta-de-Expansion/GENEBRE-Junta-de-Expansion-2831A.pdf",
+      "catalogos/Junta-de-Expansion/GENEBRE-Junta-de-Expansion-2835AE.pdf"
+    ],
+    "imagen": "img/iconos/AccVal.jpg",
+    "titulo_seo": "Accesorios para válvulas | LM Industrial",
+    "descripcion_seo": "Filtros tipo Y, Roscados y Bridados, Inox y Acero Fundido. Juntas de Expansión, Roscadas y Bridadas. Marca Genebre.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "vapor",
+    "nombre": "Vapor",
+    "padre": null,
+    "hijos": [
+      "valvula-esferica-vapor",
+      "valvula-solenoide-vapor",
+      "valvula-mariposa-vapor",
+      "actuador-rotante",
+      "valvula-de-asiento-inclinado",
+      "valvula-de-retencion-vapor",
+      "valvula-esclusa-vapor",
+      "valvula-globo-vapor",
+      "valvula-de-control",
+      "purgador-para-vapor",
+      "valvula-aguja",
+      "valvula-reductora-de-presion-vapor",
+      "valvula-de-alivio"
+    ],
+    "productos": [
+      "catalogos/Filtro-Y/GENEBRE-Filtro-Y-2460.pdf",
+      "catalogos/Filtro-Y/GENEBRE-Filtro-Y-2461A.pdf",
+      "catalogos/Junta-de-Expansion/GENEBRE-Junta-de-Expansion-2835AE.pdf",
+      "catalogos/GENEBRE-Mirilla-de-Turbulencia-2240.pdf"
+    ],
+    "imagen": "img/iconos/Vapor.jpg",
+    "titulo_seo": "Vapor | LM Industrial",
+    "descripcion_seo": "Vapor: Valvulas a Solenoide, Valvulas Esfericas, Valvulas Mariposa, Valvulas Esclusa, Valvulas de Retencion, Valvulas de Asiento Inclinado, Valvulas de Control, Valvulas Globo, Valvulas Aguja, Valvulas de Alivio, Valvulas Reductoras de Presion, Actuadores Rotantes.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-esferica-vapor",
+    "nombre": "Válvulas esféricas para vapor",
+    "padre": "vapor",
+    "hijos": [
+      "valvula-esferica-comandos"
+    ],
+    "productos": [
+      "catalogos/Valvula-Esferica/GENEBRE-Valvula-Esferica-2025C(vapor).pdf",
+      "catalogos/Valvula-Esferica/GENEBRE-Valvula-Esferica-2034C(vapor).pdf",
+      "catalogos/Valvula-Esferica/GENEBRE-Valvula-Esferica-2528AC(vapor).pdf",
+      "catalogos/Valvula-Esferica/GENEBRE-Valvula-Esferica-2526A.pdf",
+      "catalogos/Valvula-Esferica/GENEBRE-Valvula-Esferica-3700PSI-Vapor-2007N.pdf"
+    ],
+    "imagen": "img/iconos/VEVap.jpg",
+    "titulo_seo": "Válvulas esféricas para vapor | LM Industrial",
+    "descripcion_seo": "Válvulas Esféricas para Vapor Roscadas, Bridadas, Socket Weld, ISO 5211. Marca Genebre, Intor.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-mariposa-vapor",
+    "nombre": "Válvulas mariposa para vapor",
+    "padre": "vapor",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-Mariposa/GENEBRE-Valvula-Mariposa-2101.pdf",
+      "catalogos/Valvula-Mariposa/GENEBRE-Valvula-Mariposa-2104.pdf"
+    ],
+    "imagen": "img/iconos/VMVap.jpg",
+    "titulo_seo": "Válvulas mariposa para vapor | LM Industrial",
+    "descripcion_seo": "Válvulas Mariposa Wafer y Lug. Marca Genebre.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-de-retencion-vapor",
+    "nombre": "Válvulas de retención para vapor",
+    "padre": "vapor",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-de-Retencion/GENEBRE-Valvula-de-Retencion-2415.pdf",
+      "catalogos/Valvula-de-Retencion/GENEBRE-Valvula-de-Retencion-2416.pdf",
+      "catalogos/Valvula-de-Retencion/GENEBRE-Valvula-de-Retencion-2234N.pdf",
+      "catalogos/Valvula-de-Retencion/GENEBRE-Valvula-de-Retencion-2234S.pdf"
+    ],
+    "imagen": "img/iconos/VRVap.jpg",
+    "titulo_seo": "Válvulas de retención para vapor | LM Industrial",
+    "descripcion_seo": "Válvulas de Retención Roscadas, Socket Weld SW, Wafer. Marca Genebre e Itap.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-esclusa-vapor",
+    "nombre": "Válvulas esclusa para vapor",
+    "padre": "vapor",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-Esclusa/GENEBRE-Valvula-Esclusa-2229A.pdf",
+      "catalogos/Valvula-Esclusa/GENEBRE-Valvula-Esclusa-2232A.pdf",
+      "catalogos/Valvula-Esclusa/GENEBRE-Valvula-Esclusa-2232N.pdf",
+      "catalogos/Valvula-Esclusa/GENEBRE-Valvula-Esclusa-2232S.pdf"
+    ],
+    "imagen": "img/iconos/Esc2232A.jpg",
+    "titulo_seo": "Válvulas esclusa para vapor | LM Industrial",
+    "descripcion_seo": "Válvulas Esclusa Bridadas S-150, Roscadas, SW. Marca Genebre.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-globo-vapor",
+    "nombre": "Válvulas globo para vapor",
+    "padre": "vapor",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-Globo/GENEBRE-Valvula-Globo-2231.pdf",
+      "catalogos/Valvula-Globo/GENEBRE-Valvula-Globo-2233A.pdf",
+      "catalogos/Valvula-Globo/GENEBRE-Valvula-Globo-2233N.pdf",
+      "catalogos/Valvula-Globo/GENEBRE-Valvula-Globo-2233S.pdf"
+    ],
+    "imagen": "img/iconos/Glo2231.jpg",
+    "titulo_seo": "Válvulas globo para vapor | LM Industrial",
+    "descripcion_seo": "Válvulas Globo Bridadas S-150, Roscadas, SW. Marca Genebre.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "purgador-para-vapor",
+    "nombre": "Purgadores para vapor",
+    "padre": "vapor",
+    "hijos": [],
+    "productos": [
+      "catalogos/Purgador-para-Vapor/GENEBRE-Trampa-Termodinamica-2282.pdf",
+      "catalogos/Purgador-para-Vapor/GENEBRE-Trampa-Termodinamica-2284.pdf",
+      "catalogos/Purgador-para-Vapor/GENEBRE-Purgador-de-Boya-2285.pdf",
+      "catalogos/Purgador-para-Vapor/GENEBRE-Purgador-de-Boya-2287.pdf",
+      "catalogos/Purgador-para-Vapor/GENEBRE-Purgador-Termostatico-de-Aire-2292.pdf",
+      "catalogos/Purgador-para-Vapor/GENEBRE-Purgador-Termostatico-de-Aire-2293.pdf"
+    ],
+    "imagen": "img/iconos/PurVap.jpg",
+    "titulo_seo": "Purgadores para vapor | LM Industrial",
+    "descripcion_seo": "Purgador de Boya Cerrada, Purgador Termostatico, Trampa Termodinamica, Bridada, Roscada. Marca Genebre.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-reductora-de-presion-vapor",
+    "nombre": "Válvulas reductoras de presión para vapor",
+    "padre": "vapor",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-Reductora-de-Presion/GENEBRE-Valvula-Reductora_de_Presion-2281.pdf",
+      "catalogos/Valvula-Reductora-de-Presion/GENEBRE-Valvula-Reductora_de_Presion-2274.pdf",
+      "catalogos/Valvula-Reductora-de-Presion/GENEBRE-Valvula-Reductora_de_Presion-2275.pdf"
+    ],
+    "imagen": "img/iconos/VRP.jpg",
+    "titulo_seo": "Válvulas reductoras de presión para vapor | LM Industrial",
+    "descripcion_seo": "Válvulas Reductoras de Presión para Vapor, Bridadas S-150, Roscadas, Pilotadas. Marca Genebre.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "control-de-quemadores",
+    "nombre": "Control de quemadores",
+    "padre": null,
+    "hijos": [
+      "valvula-solenoide-gas",
+      "control-llama",
+      "detector-llama",
+      "presostato-trans",
+      "termostato",
+      "actuador-damper"
+    ],
+    "productos": [
+      "catalogos/BRAHMA-Transformador-TC.pdf"
+    ],
+    "imagen": "img/iconos/CtrQuem.jpg",
+    "titulo_seo": "Control de quemadores | LM Industrial",
+    "descripcion_seo": "Control de Quemadores: Valvulas a Solenoide para Gas, Controles de Llama, Detectores de Llama, Transformadores, Presostatos para Gas y Aire y Vapor, Actuadores Electricos Damper, Filtros para Gas.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-solenoide-gas",
+    "nombre": "Válvulas a solenoide para gas",
+    "padre": "control-de-quemadores",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-Solenoide-Gas/THERMOVAL-Valvula-Solenoide-Gas.pdf",
+      "catalogos/Valvula-Solenoide-Gas/MADAS-Valvula-Solenoide-Gas-EVPC-EVP.pdf",
+      "catalogos/Valvula-Solenoide-Gas/BRAHMA-Valvula-Solenoide-EGN.pdf",
+      "catalogos/Valvula-Solenoide-Gas/MADAS-Valvula-Solenoide-Gas-EVPCS-EVPS.pdf",
+      "catalogos/Valvula-Solenoide-Gas/BRAHMA-Valvula-Solenoide-EGN-LP.pdf",
+      "catalogos/Valvula-Solenoide-Gas/MADAS-Valvula-Solenoide-Gas-Rearme-Manual.pdf",
+      "catalogos/Valvula-Solenoide-Gas/BRAHMA-Valvula-Solenoide-E7.pdf",
+      "catalogos/Valvula-Solenoide-Gas/BRAHMA-Valvula-Solenoide-E8.pdf"
+    ],
+    "imagen": "img/iconos/ValGas.jpg",
+    "titulo_seo": "Válvulas a solenoide para gas | LM Industrial",
+    "descripcion_seo": "Válvulas a solenoide para Gas Thermoval, Brahma, Eurocontrol, Madas.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "control-llama",
+    "nombre": "Controles de llama",
+    "padre": "control-de-quemadores",
+    "hijos": [],
+    "productos": [
+      "catalogos/Control-de-Llama/HONEYWELL-SATRONIC-Control-De-Llama-DKG972.pdf",
+      "catalogos/Control-de-Llama/HONEYWELL-SATRONIC-Control-De-Llama-DMG972.pdf",
+      "catalogos/Control-de-Llama/HONEYWELL-SATRONIC-Control-De-Llama-DLG976.pdf",
+      "catalogos/Control-de-Llama/HONEYWELL-SATRONIC-Control-De-Llama-MMG810-MMI810.pdf",
+      "catalogos/Control-de-Llama/HONEYWELL-SATRONIC-Control-De-Llama-TMG740.pdf",
+      "catalogos/Control-de-Llama/HONEYWELL-Control-De-Llama-TF830-TF832.pdf",
+      "catalogos/Control-de-Llama/HONEYWELL-Control-De-Llama-RA890G.pdf",
+      "catalogos/Control-de-Llama/HONEYWELL-Control-De-Llama-EC-RM.pdf",
+      "catalogos/Control-de-Llama/HONEYWELL-Control-De-Llama-EC-RM7823.pdf",
+      "catalogos/Control-de-Llama/BRAHMA-Control-De-Llama-VM42.pdf",
+      "catalogos/Control-de-Llama/BRAHMA-Control-De-Llama-VM44G.pdf",
+      "catalogos/Control-de-Llama/BRAHMA-Control-De-Llama-VM45G.pdf",
+      "catalogos/Control-de-Llama/BRAHMA-Control-De-Llama-MF2.pdf",
+      "catalogos/Control-de-Llama/BRAHMA-Control-De-Llama-SR3V.pdf",
+      "catalogos/Control-de-Llama/BRAHMA-Control-De-Llama-G22-GF2.pdf",
+      "catalogos/Control-de-Llama/BRAHMA-Control-De-Llama-MPI.pdf",
+      "catalogos/Control-de-Llama/BRAHMA-Control-De-Llama-RE3.pdf",
+      "catalogos/Control-de-Llama/BRAHMA-Control-De-Llama-AT5TR.pdf",
+      "catalogos/Control-de-Llama/BRAHMA-Control-De-Llama-DR2.pdf",
+      "catalogos/Control-de-Llama/BRAHMA-Control-De-Llama-TGRD61.pdf",
+      "catalogos/Control-de-Llama/SIEMENS-Control-De-Llama-LFL1.pdf",
+      "catalogos/Control-de-Llama/SIEMENS-Control-De-Llama-LOA24.pdf"
+    ],
+    "imagen": "img/iconos/CtrLla.jpg",
+    "titulo_seo": "Controles de llama | LM Industrial",
+    "descripcion_seo": "Controles de Llama Honeywell, Satronic, Resideo, Brahma, Siemens, Landis & Gyr.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "detector-llama",
+    "nombre": "Detectores de llama",
+    "padre": "control-de-quemadores",
+    "hijos": [],
+    "productos": [
+      "catalogos/Detector-de-Llama/SIEMENS-Detector-De-Llama-UV-QRA2.pdf",
+      "catalogos/Detector-de-Llama/SIEMENS-Detector-De-Llama-QRB1.B.pdf",
+      "catalogos/Detector-de-Llama/HONEYWELL-Detector-De-Llama-UV-C7027-7035-7044-7927.pdf",
+      "catalogos/Detector-de-Llama/HONEYWELL-Detector-De-Llama-UV-C7061A.pdf",
+      "catalogos/Detector-de-Llama/SATRONIC-Detector-De-Llama-UVZ780.pdf",
+      "catalogos/Detector-de-Llama/SATRONIC-Detector-De-Llama-MZ770.pdf",
+      "catalogos/Detector-de-Llama/SATRONIC-Detector-De-Llama-IRD1020.pdf",
+      "catalogos/Detector-de-Llama/BRAHMA-Detector-De-Llama-UV1.pdf",
+      "catalogos/Detector-de-Llama/BRAHMA-Detector-De-Llama-UV-FD.pdf",
+      "catalogos/Detector-de-Llama/BRAHMA-Detector-De-Llama-FC.pdf",
+      "catalogos/Detector-de-Llama/BRAHMA-Detector-De-Llama-FT11.pdf",
+      "catalogos/Detector-de-Llama/BRAHMA-Electrodo.pdf"
+    ],
+    "imagen": "img/iconos/DetLla.jpg",
+    "titulo_seo": "Detectores de llama | LM Industrial",
+    "descripcion_seo": "Detectores de Llama Honeywell, Satronic, Resideo, Brahma, Siemens, Landis & Gyr.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "presostato-trans",
+    "nombre": "Presostatos y transmisores de presión",
+    "padre": "control-de-quemadores",
+    "hijos": [],
+    "productos": [
+      "catalogos/Presostato-y-Transmisor/DANFOSS-Presostato-KP-KPI.pdf",
+      "catalogos/Presostato-y-Transmisor/DANFOSS-Presostato-RT.pdf",
+      "catalogos/Presostato-y-Transmisor/FANTINI-COSMI-Presostato-B.pdf",
+      "catalogos/Presostato-y-Transmisor/INTOR-Presostato-Digital-30-40.pdf",
+      "catalogos/Presostato-y-Transmisor/DUNGS-Presostato-Para-Gas.pdf",
+      "catalogos/Presostato-y-Transmisor/HONEYWELL-Presostato-Para-Gas.pdf",
+      "catalogos/Presostato-y-Transmisor/HONEYWELL-Presostato-Diferencial-DPS.pdf",
+      "catalogos/Presostato-y-Transmisor/DANFOSS-Presostato-Dif-MP.pdf",
+      "catalogos/Presostato-y-Transmisor/HONEYWELL-Presostato-L404.pdf",
+      "catalogos/Presostato-y-Transmisor/HONEYWELL-Presostato-Modulante-L91.pdf",
+      "catalogos/Presostato-y-Transmisor/INTOR-Presostato-QPM.pdf",
+      "catalogos/Presostato-y-Transmisor/DANFOSS-Transmisor-De-Presion-MBS.pdf",
+      "catalogos/Presostato-y-Transmisor/HONEYWELL-Transmisor-Presion-Dif.pdf"
+    ],
+    "imagen": "img/iconos/Pres.jpg",
+    "titulo_seo": "Presostatos y transmisores de presión | LM Industrial",
+    "descripcion_seo": "Presostatos y Transmisores de Presión",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "termostato",
+    "nombre": "Termostatos y controladores de temperatura",
+    "padre": "control-de-quemadores",
+    "hijos": [],
+    "productos": [
+      "catalogos/Termostato/DANFOSS-Termostato-KP.pdf",
+      "catalogos/Termostato/DANFOSS-Termostato-RT.pdf",
+      "catalogos/Termostato/Controlador-de-Temperatura-STC-1000.pdf",
+      "catalogos/Termostato/Controlador-de-Temperatura-STC-3028.pdf",
+      "catalogos/Termostato/NOVUS-Controlador-de-Temperatura-N321-N322-N323.pdf",
+      "catalogos/Termostato/NOVUS-Controlador-de-Temperatura-N480D.pdf",
+      "catalogos/Termostato/NOVUS-Controlador-de-Temperatura-N960.pdf",
+      "catalogos/Termostato/NOVUS-Controlador-de-Temperatura-N1020.pdf",
+      "catalogos/Termostato/NOVUS-Controlador-de-Temperatura-N1040.pdf",
+      "catalogos/Termostato/NOVUS-Controlador-Universal-N1200.pdf",
+      "catalogos/Termostato/NOVUS-Controlador-Universal-N1500.pdf",
+      "catalogos/Termostato/NOVUS-Controlador-Universal-N1540.pdf",
+      "catalogos/Termostato/NOVUS-Controlador-Universal-N2000.pdf",
+      "catalogos/Termostato/NOVUS-Controlador-Universal-N3000.pdf"
+    ],
+    "imagen": "img/iconos/Term.jpg",
+    "titulo_seo": "Termostatos y controladores de temperatura | LM Industrial",
+    "descripcion_seo": "Termostatos Danfoss y Controlador Digital de Temperatura STC.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "actuador-damper",
+    "nombre": "Actuadores eléctricos para dampers",
+    "padre": "control-de-quemadores",
+    "hijos": [],
+    "productos": [
+      "catalogos/Actuador-Electrico-Damper/ALRE-Actuador-Electrico-Damper-S8081.pdf",
+      "catalogos/Actuador-Electrico-Damper/ALRE-Actuador-Electrico-Damper-S6061.pdf",
+      "catalogos/Actuador-Electrico-Damper/ALRE-Actuador-Electrico-Damper-SRD02.pdf",
+      "catalogos/Actuador-Electrico-Damper/ALRE-Actuador-Electrico-Damper-SRD03.pdf"
+    ],
+    "imagen": "img/iconos/DamS8081.jpg",
+    "titulo_seo": "Actuadores eléctricos para dampers | LM Industrial",
+    "descripcion_seo": "Actuadores Eléctricos Dampers, On/Off y Modulantes, Alre (tipo Belimo), Honeywell, Industrie Technik.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "automatizacion-neumatica",
+    "nombre": "Automatización neumática",
+    "padre": null,
+    "hijos": [
+      "valvula-neumatica",
+      "actuador-neumatico",
+      "conector-neumatico",
+      "actuador-rotante",
+      "valvula-de-asiento-inclinado",
+      "vibrador-neumatico",
+      "vacio",
+      "sensor-proximidad",
+      "presostato-trans"
+    ],
+    "productos": [
+      "catalogos/INTOR-Regulador-Neumatico.pdf",
+      "catalogos/GENEBRE-Valvula-Neumatica-de-Corredera-5062.pdf",
+      "catalogos/INTOR-Regulador-Presion-Proporcional-NITV.pdf"
+    ],
+    "imagen": "img/iconos/AutNeu.jpg",
+    "titulo_seo": "Automatización neumática | LM Industrial",
+    "descripcion_seo": "Automatizacion Neumatica: Valvulas Neumaticas, Actuadores/Cilindros Neumaticos, Tratamiento de Aire, Conectores, Actuadores Rotantes, Valvulas de Asiento Inclinado, Vibradores Neumaticos, Vacio, Reguladores Proporcionales, Sensores, Presostatos, Valvulas Axiales.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "valvula-neumatica",
+    "nombre": "Válvulas neumáticas",
+    "padre": "automatizacion-neumatica",
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvula-Neumatica/INTOR-Electrovalvula-Neumatica.pdf",
+      "catalogos/Valvula-Neumatica/INTOR-Valvula-Neumatica.pdf",
+      "catalogos/Valvula-Neumatica/INTOR-Valvula-Neumatica-Manual.pdf",
+      "catalogos/Valvula-Neumatica/INTOR-Manifold.pdf"
+    ],
+    "imagen": "img/iconos/ValNeu.jpg",
+    "titulo_seo": "Válvulas neumáticas | LM Industrial",
+    "descripcion_seo": "Electroválvulas neumáticas, Válvulas de mando neumático, Válvulas de mando manual, Válvulas de mando mecánico",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "actuador-neumatico",
+    "nombre": "Actuadores neumáticos",
+    "padre": "automatizacion-neumatica",
+    "hijos": [],
+    "productos": [
+      "catalogos/Actuador-Neumatico/INTOR-Cilindro-Neumatico-CF.pdf",
+      "catalogos/Actuador-Neumatico/INTOR-Cilindro-Neumatico-CT.pdf",
+      "catalogos/Actuador-Neumatico/INTOR-Cilindro-Neumatico-MCI.pdf",
+      "catalogos/Actuador-Neumatico/INTOR-Cilindro-Neumatico-I-MAL.pdf",
+      "catalogos/Actuador-Neumatico/INTOR-Cilindro-Neumatico-TN.pdf",
+      "catalogos/Actuador-Neumatico/INTOR-Cilindro-Neumatico-MC.pdf",
+      "catalogos/Actuador-Neumatico/INTOR-Cilindro-Neumatico-CS.pdf",
+      "catalogos/Actuador-Neumatico/INTOR-Mesa-Giratoria-MGQB.pdf",
+      "catalogos/Actuador-Neumatico/INTOR-Pinza-Angular.pdf",
+      "catalogos/Actuador-Neumatico/INTOR-Montajes-Cilindros.pdf"
+    ],
+    "imagen": "img/iconos/ActNeu.jpg",
+    "titulo_seo": "Actuadores neumáticos | LM Industrial",
+    "descripcion_seo": "Cilindros Neumaticos, Mesas Giratorias, Pinzas Angulares.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "conector-neumatico",
+    "nombre": "Conectores y accesorios neumáticos",
+    "padre": "automatizacion-neumatica",
+    "hijos": [],
+    "productos": [
+      "catalogos/Conector-Neumatico/INTOR-Conector-Rapido.pdf",
+      "catalogos/Conector-Neumatico/INTOR-Conector-Regulador.pdf",
+      "catalogos/Conector-Neumatico/INTOR-Accesorios.pdf",
+      "catalogos/Conector-Neumatico/INTOR-Mangueras.pdf",
+      "catalogos/Conector-Neumatico/INTOR-Conector-Universal.pdf",
+      "catalogos/Conector-Neumatico/INTOR-Conector-Laton.pdf",
+      "catalogos/Conector-Neumatico/INTOR-Conector-Acople-Rapido.pdf",
+      "catalogos/Conector-Neumatico/INTOR-Conector-Serie-Rapida.pdf",
+      "catalogos/Conector-Neumatico/INTOR-Conector-Flared.pdf"
+    ],
+    "imagen": "img/iconos/ConNeu.jpg",
+    "titulo_seo": "Conectores y accesorios neumáticos | LM Industrial",
+    "descripcion_seo": "Conectores Rápidos, Conectores Universales, Conectores Flared, Conectores de Latón, Conectores de Inoxidable.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "vibrador-neumatico",
+    "nombre": "Vibradores neumáticos",
+    "padre": "automatizacion-neumatica",
+    "hijos": [],
+    "productos": [
+      "catalogos/Vibrador-Neumatico/INTOR-Vibrador-Neumatico-FP-NTP.pdf",
+      "catalogos/Vibrador-Neumatico/INTOR-Vibrador-Neumatico-K.pdf",
+      "catalogos/Vibrador-Neumatico/INTOR-Vibrador-Neumatico-GT.pdf"
+    ],
+    "imagen": "img/iconos/VibNeu.jpg",
+    "titulo_seo": "Vibradores neumáticos | LM Industrial",
+    "descripcion_seo": "Vibradores neumáticos lineales series FP y NTP, Vibradores neumáticos de bola serie K, Vibradores neumáticos de turbina serie GT",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "vacio",
+    "nombre": "Componentes para vacío",
+    "padre": "automatizacion-neumatica",
+    "hijos": [],
+    "productos": [
+      "catalogos/Vacio/INTOR-Eyector-de-Vacio-V-ZH.pdf",
+      "catalogos/Vacio/INTOR-Eyector-de-Vacio-V-ZU.pdf",
+      "catalogos/Vacio/INTOR-Filtro-para-Vacio-ZFC.pdf",
+      "catalogos/Vacio/INTOR-Ventosa-sin-adaptador-ZPT.pdf",
+      "catalogos/Vacio/INTOR-Ventosa-con-adaptador-ZPT.pdf"
+    ],
+    "imagen": "img/iconos/Vac.jpg",
+    "titulo_seo": "Componentes para vacío | LM Industrial",
+    "descripcion_seo": "Vacío: Eyectores de vacío V-ZH, Eyectores de vacío de línea V-ZU, Filtro para vacío ZFC, Ventosas ZPT.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "sensor-proximidad",
+    "nombre": "Sensores de proximidad",
+    "padre": "automatizacion-neumatica",
+    "hijos": [],
+    "productos": [
+      "catalogos/Sensor-de-Proximidad/INTOR-Sensor-Magnetico-HX.pdf",
+      "catalogos/Sensor-de-Proximidad/INTOR-Sensor-Inductivo-TR.pdf",
+      "catalogos/Sensor-de-Proximidad/INTOR-Sensor-Capacitivo-CR.pdf",
+      "catalogos/Sensor-de-Proximidad/INTOR-Sensor-Fotoelectrico-ER.pdf"
+    ],
+    "imagen": "img/iconos/Sensor.jpg",
+    "titulo_seo": "Sensores de proximidad | LM Industrial",
+    "descripcion_seo": "Sensores de Proximidad Magnéticos, Inductivos, Capacitivos y Fotoeléctricos. Marca Intor.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "instrumentos-de-medicion",
+    "nombre": "Instrumentos de medición",
+    "padre": null,
+    "hijos": [
+      "presion",
+      "nivel",
+      "caudal",
+      "temperatura"
+    ],
+    "productos": [],
+    "imagen": "img/iconos/InsMed.jpg",
+    "titulo_seo": "Instrumentos de medición | LM Industrial",
+    "descripcion_seo": "Instrumentos de Medicion: Manometros, Transmisores de Presion, Sensores de Nivel, Termometros, Caudalimetros.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "presion",
+    "nombre": "Medición de presión",
+    "padre": "instrumentos-de-medicion",
+    "hijos": [],
+    "productos": [
+      "catalogos/Presion/GENEBRE-Manometro-3822.pdf",
+      "catalogos/Presion/GENEBRE-Manometro-3824.pdf",
+      "catalogos/Presion/Manometro-INSTRUBIT.pdf",
+      "catalogos/Presion/Transmisor-de-Presion-TRAFAG.pdf",
+      "catalogos/Presion/Transmisor-de-Presion-INSTRUBIT.pdf",
+      "catalogos/Presion/Transmisor-de-Presion-AL2000-ALRE.pdf"
+    ],
+    "imagen": "img/iconos/Presion.jpg",
+    "titulo_seo": "Medición de presión | LM Industrial",
+    "descripcion_seo": "Medición de Presión: Manómetros, Transmisores de Presión. Marcas: Genebre, Instrubit, Trafag, Alre.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "nivel",
+    "nombre": "Medición de nivel",
+    "padre": "instrumentos-de-medicion",
+    "hijos": [],
+    "productos": [
+      "catalogos/Nivel/Sensor-de-Nivel-por-Radar-INSTRUBIT.pdf",
+      "catalogos/Nivel/Sensor-de-Nivel-Vibrante-INSTRUBIT.pdf",
+      "catalogos/Nivel/Sensor-de-Nivel-TRAFAG.pdf"
+    ],
+    "imagen": "img/iconos/SenRadIns.jpg",
+    "titulo_seo": "Medición de nivel | LM Industrial",
+    "descripcion_seo": "Medición de Nivel: Sensores de Nivel por Radar, de Alta Frecuencia y Vibrantes. Marcas: Instrubit, Trafag.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "caudal",
+    "nombre": "Medición de caudal",
+    "padre": "instrumentos-de-medicion",
+    "hijos": [],
+    "productos": [
+      "catalogos/Caudal/Caudalimetro-Electromagnetico-INSTRUBIT.pdf",
+      "catalogos/Caudal/Caudalimetro-Masico-INSTRUBIT.pdf",
+      "catalogos/Caudal/Medidor-de-Gas-RMG.pdf"
+    ],
+    "imagen": "img/iconos/CauEleIns.jpg",
+    "titulo_seo": "Medición de caudal | LM Industrial",
+    "descripcion_seo": "Medición de Caudal: Caudalímetros Electromagnéticos, másicos y de gas. Marcas: Instrubit, RMG.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "temperatura",
+    "nombre": "Medición de temperatura",
+    "padre": "instrumentos-de-medicion",
+    "hijos": [],
+    "productos": [
+      "catalogos/Temperatura/Termometro-Bimetalico-INSTRUBIT.pdf"
+    ],
+    "imagen": "img/iconos/TerIns.jpg",
+    "titulo_seo": "Medición de temperatura | LM Industrial",
+    "descripcion_seo": "Medición de Temperatura: Termómetros Bimetálicos. Marcas: Instrubit.",
+    "intro": "",
+    "faqs": []
+  },
+  {
+    "slug": "anti-incendio",
+    "nombre": "Anti incendio",
+    "padre": null,
+    "hijos": [],
+    "productos": [
+      "catalogos/Anti-Incendio/GENEBRE-Valvula-Mariposa-Ranurada-2120.pdf",
+      "catalogos/Anti-Incendio/GENEBRE-Valvula-Mariposa-Wafer-ULFM-2113.pdf",
+      "catalogos/Anti-Incendio/GENEBRE-Valvula-Mariposa-Ranurada-ULFM-2114.pdf",
+      "catalogos/Anti-Incendio/GENEBRE-Valvula-Esclusa-Bridada-ULFM-2094.pdf",
+      "catalogos/Anti-Incendio/GENEBRE-Valvula-Esclusa-Ranurada-ULFM-2100.pdf",
+      "catalogos/Anti-Incendio/GENEBRE-Valvula-de-Retencion-Bridada-ULFM-2403.pdf"
+    ],
+    "imagen": "img/iconos/Incen.jpg",
+    "titulo_seo": "Anti incendio | LM Industrial",
+    "descripcion_seo": "Anti Incendio: Valvulas Mariposa Ranuradas y Wafer ULFM, Valvulas Esclusa Ranuradas y Bridadas ULFM, Valvulas de Retencion Bridadas ULFM.",
+    "intro": "",
+    "faqs": []
+  }
+]

@@ -1,0 +1,27 @@
+---
+titulo: "Contacto | LM Industrial"
+descripcion: "Consultas por WhatsApp al 11 3180-9499 o por mail a info@lmindustrial.com.ar. Envíos a todo el país."
+permalink: "contacto.html"
+---
+{% extends "base.njk" %}
+{% block contenido %}
+{% set migas = [{ nombre: "Inicio", url: "/" }, { nombre: "Contacto", url: "/contacto.html" }] %}
+{% include "parciales/migas.njk" %}
+<section class="contenedor seccion">
+  <h1>Contacto</h1>
+  <p class="intro">Atendemos consultas por WhatsApp, teléfono y mail. {{ sitio.envios }}.</p>
+  <ul class="contacto">
+    <li>
+      <span class="contacto__titulo">WhatsApp / Teléfono</span>
+      <span class="contacto__numero">{{ sitio.telefono_visible }}</span>
+      <span class="acciones contacto__acciones">
+        <a class="boton boton--primario" href="{{ sitio.whatsapp | urlWhatsapp('Hola, quiero hacer una consulta.') }}" target="_blank" rel="noopener">{% include "parciales/icono-whatsapp.njk" %} Escribir por WhatsApp</a>
+        <a class="boton boton--secundario" href="tel:{{ sitio.telefono_tel }}">Llamar</a>
+      </span>
+    </li>
+    <li><span class="contacto__titulo">Mail</span><a href="mailto:{{ sitio.email }}">{{ sitio.email }}</a></li>
+  </ul>
+  <h2>Cómo comprar</h2>
+  {% include "parciales/pasos.njk" %}
+</section>
+{% endblock %}

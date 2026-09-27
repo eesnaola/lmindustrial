@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ titulo }}</title>
+  <meta name="description" content="{{ descripcion }}">
+  <link rel="canonical" href="{{ sitio.url }}{{ canonica or page.url }}">
+  {% if sitio.entorno == "prueba" or noindexar %}<meta name="robots" content="noindex, nofollow">{% endif %}
+  <link rel="preload" href="/assets/fuentes/plex-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/estilos.css">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#135a56">
+  {% if sitio.entorno == "produccion" %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ sitio.ga4 }}"></script>
+  <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag("js", new Date()); gtag("config", "{{ sitio.ga4 }}");</script>
+  {% endif %}
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  {% include "parciales/encabezado.njk" %}
+  <main id="contenido"{% if indexar %} data-pagefind-body{% endif %}>
+    {% block contenido %}{% endblock %}
+  </main>
+  {% include "parciales/pie.njk" %}
+</body>
+</html>

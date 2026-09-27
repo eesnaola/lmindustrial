@@ -1,0 +1,43 @@
+---
+titulo: "LM Industrial | Válvulas e insumos industriales con envíos a todo el país"
+descripcion: "Válvulas industriales, vapor, control de quemadores, automatización neumática, instrumentos de medición y anti incendio. Consultas por WhatsApp y envíos a todo el país."
+canonica: "/"
+---
+{% extends "base.njk" %}
+{% block contenido %}
+<section class="portada">
+  <div class="contenedor portada__interior">
+    <h1>Válvulas e insumos industriales</h1>
+    <p class="portada__bajada">Válvulas, vapor, control de quemadores, automatización neumática e instrumentos de medición. {{ sitio.envios }}.</p>
+    <form class="buscador buscador--grande" action="/buscar.html" method="get" role="search">
+      <label class="visualmente-oculto" for="q-portada">Buscar producto, marca o modelo</label>
+      <input id="q-portada" name="q" type="search" placeholder="Buscá por producto, marca o modelo (ej: Genebre 2025)">
+      <button type="submit">Buscar</button>
+    </form>
+  </div>
+</section>
+<section class="contenedor seccion">
+  <h2>Productos</h2>
+  {% set ancho = 600 %}
+  <div class="grilla grilla--portada">{% asyncEach c in catalogo.raices() %}{% include "parciales/tarjeta-categoria.njk" %}{% endeach %}</div>
+</section>
+<section class="franja-marcas">
+  <div class="contenedor">
+    <h2>Marcas que comercializamos</h2>
+    <div class="carrusel-marcas">
+      <div class="carrusel-marcas__pista">
+        <ul class="marcas">{% asyncEach m in sitio.marcas %}<li style="--ancho: {{ m.ancho }}px">{% foto m.logo, m.nombre, 400 %}</li>{% endeach %}</ul>
+        <ul class="marcas" aria-hidden="true">{% asyncEach m in sitio.marcas %}<li style="--ancho: {{ m.ancho }}px">{% foto m.logo, "", 400 %}</li>{% endeach %}</ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="contenedor seccion">
+  <h2>Cómo comprar</h2>
+  {% include "parciales/pasos.njk" %}
+  <p class="acciones">
+    <a class="boton boton--primario" href="{{ sitio.whatsapp | urlWhatsapp('Hola, quiero hacer una consulta.') }}" target="_blank" rel="noopener">{% include "parciales/icono-whatsapp.njk" %} Escribinos por WhatsApp</a>
+    <a class="boton boton--secundario" href="mailto:{{ sitio.email }}">{{ sitio.email }}</a>
+  </p>
+</section>
+{% endblock %}

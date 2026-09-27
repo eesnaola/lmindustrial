@@ -1,0 +1,21 @@
+<footer class="pie">
+  <div class="contenedor pie__grilla">
+    <div>
+      <p class="pie__marca">LM Industrial</p>
+      <p>{{ sitio.descripcion }}</p>
+    </div>
+    <div>
+      <p class="pie__titulo">Contacto</p>
+      <ul class="pie__lista">
+        <li>WhatsApp / Teléfono: {{ sitio.telefono_visible }}<br><a href="{{ sitio.whatsapp | urlWhatsapp('Hola, quiero hacer una consulta.') }}" target="_blank" rel="noopener">Escribir por WhatsApp</a> · <a href="tel:{{ sitio.telefono_tel }}">Llamar</a></li>
+        <li><a href="mailto:{{ sitio.email }}">{{ sitio.email }}</a></li>
+        <li>{{ sitio.envios }}</li>
+        <li><a href="/contacto.html">Cómo comprar</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="pie__titulo">Productos</p>
+      <ul class="pie__lista">{% for raiz in catalogo.raices() %}<li><a href="/{{ raiz.slug }}.html">{{ raiz.nombre }}</a></li>{% endfor %}</ul>
+    </div>
+  </div>
+</footer>

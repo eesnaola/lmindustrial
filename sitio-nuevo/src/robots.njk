@@ -1,0 +1,10 @@
+---
+permalink: "robots.txt"
+eleventyExcludeFromCollections: true
+---
+{% if sitio.entorno == "produccion" %}User-agent: *
+Allow: /
+Sitemap: {{ sitio.url }}/sitemap.xml
+{% else %}User-agent: *
+Disallow: /
+{% endif %}

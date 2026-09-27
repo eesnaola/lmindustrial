@@ -1,0 +1,14 @@
+<header class="encabezado">
+  <div class="contenedor encabezado__barra">
+    <a class="encabezado__logo" href="/" aria-label="LM Industrial, ir al inicio">{% include "parciales/logo.njk" %}</a>
+    <form class="buscador" action="/buscar.html" method="get" role="search">
+      <label class="visualmente-oculto" for="q">Buscar producto, marca o modelo</label>
+      <input id="q" name="q" type="search" placeholder="Buscar producto, marca o modelo" autocomplete="off">
+      <button type="submit"><span class="visualmente-oculto">Buscar</span>{% include "parciales/icono-lupa.njk" %}</button>
+    </form>
+    <a class="boton boton--primario encabezado__whatsapp" href="{{ sitio.whatsapp | urlWhatsapp('Hola, quiero hacer una consulta.') }}" target="_blank" rel="noopener">
+      {% include "parciales/icono-whatsapp.njk" %}<span class="encabezado__whatsapp-texto">WhatsApp {{ sitio.telefono_visible }}</span>
+    </a>
+  </div>
+  {% include "parciales/navegacion.njk" %}
+</header>

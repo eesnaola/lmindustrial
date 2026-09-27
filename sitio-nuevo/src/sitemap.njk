@@ -1,0 +1,18 @@
+---
+permalink: "sitemap.xml"
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>{{ sitio.url }}/</loc></url>
+<url><loc>{{ sitio.url }}/contacto.html</loc></url>
+{%- for c in categorias %}
+<url><loc>{{ sitio.url }}/{{ c.slug }}.html</loc></url>
+{%- endfor %}
+{%- for p in catalogo.fichas %}
+<url><loc>{{ sitio.url }}/productos/{{ p.id }}.html</loc></url>
+{%- endfor %}
+{%- for p in productos %}
+<url><loc>{{ sitio.url }}/{{ p.pdf | codificarRuta }}</loc></url>
+{%- endfor %}
+</urlset>

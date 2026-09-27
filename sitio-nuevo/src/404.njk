@@ -1,0 +1,19 @@
+---
+titulo: "Página no encontrada | LM Industrial"
+descripcion: "La página que buscás no existe o cambió de lugar."
+permalink: "404.html"
+noindexar: true
+---
+{% extends "base.njk" %}
+{% block contenido %}
+<section class="contenedor seccion">
+  <h1>No encontramos esa página</h1>
+  <p class="intro">Puede que el enlace haya cambiado. Probá con el buscador o elegí una categoría.</p>
+  <form class="buscador buscador--grande" action="/buscar.html" method="get" role="search">
+    <label class="visualmente-oculto" for="q-404">Buscar producto, marca o modelo</label>
+    <input id="q-404" name="q" type="search" placeholder="Buscar producto, marca o modelo">
+    <button type="submit">Buscar</button>
+  </form>
+  <ul class="lista-categorias">{% for c in catalogo.raices() %}<li><a href="/{{ c.slug }}.html">{{ c.nombre }}</a></li>{% endfor %}</ul>
+</section>
+{% endblock %}

@@ -1,0 +1,5 @@
+{% if migas and migas.length > 1 %}
+<nav class="contenedor migas" aria-label="Ruta">
+  <ol>{% for m in migas %}<li>{% if loop.last %}<span aria-current="page">{{ m.nombre }}</span>{% else %}<a href="{{ m.url }}">{{ m.nombre }}</a>{% endif %}</li>{% endfor %}</ol>
+</nav>
+{% endif %}

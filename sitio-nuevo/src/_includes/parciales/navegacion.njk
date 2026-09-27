@@ -1,0 +1,20 @@
+<nav class="navegacion" aria-label="Categorías de productos">
+  <details class="navegacion__movil">
+    <summary>Categorías</summary>
+    <ul>
+      {% for raiz in catalogo.raices() %}
+      <li><a href="/{{ raiz.slug }}.html">{{ raiz.nombre }}</a>
+        {% if raiz.hijos.length %}<ul>{% for h in catalogo.hijos(raiz.slug) %}<li><a href="/{{ h.slug }}.html">{{ h.nombre }}</a></li>{% endfor %}</ul>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </details>
+  <ul class="contenedor navegacion__escritorio">
+    {% for raiz in catalogo.raices() %}
+    <li class="navegacion__item">
+      <a href="/{{ raiz.slug }}.html">{{ raiz.nombre }}</a>
+      {% if raiz.hijos.length %}<ul class="navegacion__sub">{% for h in catalogo.hijos(raiz.slug) %}<li><a href="/{{ h.slug }}.html">{{ h.nombre }}</a></li>{% endfor %}</ul>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

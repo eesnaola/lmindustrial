@@ -1,0 +1,20 @@
+---
+titulo: "Buscar | LM Industrial"
+descripcion: "Buscá productos por nombre, marca o modelo."
+permalink: "buscar.html"
+noindexar: true
+---
+{% extends "base.njk" %}
+{% block head %}<link rel="stylesheet" href="/pagefind/pagefind-ui.css">{% endblock %}
+{% block contenido %}
+<section class="contenedor seccion">
+  <h1>Buscar</h1>
+  <div id="buscar"></div>
+</section>
+<script src="/pagefind/pagefind-ui.js"></script>
+<script>
+  const ui = new PagefindUI({ element: "#buscar", showImages: true, showSubResults: false });
+  const q = new URLSearchParams(location.search).get("q");
+  if (q) ui.triggerSearch(q);
+</script>
+{% endblock %}

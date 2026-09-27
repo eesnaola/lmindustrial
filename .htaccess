@@ -1,0 +1,11 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTP_HOST} ^lmindustrial.com.ar [NC]
+RewriteRule (.*) http://www.lmindustrial.com.ar/$1 [R=301,L,QSA]
+</IfModule>
+
+<IfModule mod_headers.c>
+Header set Cache-Control "max-age=3600"
+</IfModule>

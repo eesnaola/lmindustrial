@@ -1,0 +1,41 @@
+---
+pagination:
+  data: catalogo.fichas
+  size: 1
+  alias: p
+permalink: "productos/{{ p.id }}.html"
+---
+{% extends "base.njk" %}
+{% block contenido %}
+{% set migas = catalogo.migasProducto(p) %}
+{% include "parciales/migas.njk" %}
+<article class="contenedor seccion producto">
+  <div class="producto__foto">{% foto p.imagen, p.nombre, 250, true %}</div>
+  <div class="producto__info">
+    <p class="producto__marca" data-pagefind-weight="7">{{ p.marca }} · {{ p.modelo }}</p>
+    <h1>{{ p.nombre }}</h1>
+    <p class="producto__descripcion">{{ p.descripcion }}</p>
+    <div class="producto__acciones">
+      <a class="boton boton--primario" href="{{ sitio.whatsapp | urlWhatsapp(p | mensajeProducto) }}" target="_blank" rel="noopener">{% include "parciales/icono-whatsapp.njk" %} Consultar por WhatsApp</a>
+      <a class="boton boton--secundario" href="/{{ p.pdf }}" target="_blank" rel="noopener">Descargar ficha PDF</a>
+    </div>
+  </div>
+  <section class="producto__specs">
+    <h2>Especificaciones</h2>
+    <table class="tabla-specs"><tbody>{% for s in p.specs %}<tr><th scope="row">{{ s.clave }}</th><td>{{ s.valor }}</td></tr>{% endfor %}</tbody></table>
+  </section>
+  {% if p.caracteristicas.length %}
+  <section class="producto__caracteristicas">
+    <h2>Características</h2>
+    <ul>{% for c in p.caracteristicas %}<li>{{ c }}</li>{% endfor %}</ul>
+  </section>
+  {% endif %}
+</article>
+{% set relacionados = catalogo.relacionados(p) %}
+{% if relacionados.length %}
+<section class="contenedor seccion" data-pagefind-ignore>
+  <h2>Productos relacionados</h2>
+  <div class="grilla grilla--productos">{% asyncEach p in relacionados %}{% include "parciales/tarjeta-producto.njk" %}{% endeach %}</div>
+</section>
+{% endif %}
+{% endblock %}

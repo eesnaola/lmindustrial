@@ -1,0 +1,50 @@
+---
+pagination:
+  data: categorias
+  size: 1
+  alias: cat
+permalink: "{{ cat.slug }}.html"
+---
+{% extends "base.njk" %}
+{% block contenido %}
+{% set migas = catalogo.migas(cat.slug) %}
+{% include "parciales/migas.njk" %}
+<section class="contenedor seccion">
+  <h1>{{ cat.nombre }}</h1>
+  {% if cat.intro %}<p class="intro">{{ cat.intro }}</p>{% endif %}
+
+  {% set hijos = catalogo.hijos(cat.slug) %}
+  {% set lista = catalogo.productos(cat.slug) %}
+  {% set claseTitulo = "titulo-seccion" if (hijos.length and lista.length) else "visualmente-oculto" %}
+  {% if hijos.length %}
+  <h2 class="{{ claseTitulo }}">Categorías</h2>
+  <div class="grilla grilla--categorias">{% asyncEach c in hijos %}{% include "parciales/tarjeta-categoria.njk" %}{% endeach %}</div>
+  {% endif %}
+
+  {% set facetas = catalogo.facetas(cat.slug) %}
+  {% if lista.length %}
+  <h2 class="{{ claseTitulo }}">Productos</h2>
+    {% if facetas.length %}
+    <div class="filtros" data-filtros hidden>
+      {% for f in facetas %}
+      <div class="filtros__grupo" role="group" aria-label="Filtrar por {{ f.titulo | lower }}" data-faceta="{{ f.clave }}">
+        <span class="filtros__titulo">{{ f.titulo }}:</span>
+        <button type="button" class="chip" aria-pressed="true" data-valor="">Todas</button>
+        {% for v in f.valores %}<button type="button" class="chip" aria-pressed="false" data-valor="{{ v }}">{{ v }}</button>{% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  <div class="grilla grilla--productos" data-grilla>{% asyncEach p in lista %}{% include "parciales/tarjeta-producto.njk" %}{% endeach %}</div>
+  <p class="filtros__vacio" data-vacio hidden>No hay productos con esos filtros.</p>
+  {% endif %}
+
+  {% if cat.faqs.length %}
+  <section class="faq">
+    <h2>Preguntas frecuentes</h2>
+    {% for f in cat.faqs %}<details><summary>{{ f.pregunta }}</summary><p>{{ f.respuesta }}</p></details>{% endfor %}
+  </section>
+  {% endif %}
+</section>
+{% if facetas.length %}<script src="/assets/js/filtros.js" defer></script>{% endif %}
+{% endblock %}

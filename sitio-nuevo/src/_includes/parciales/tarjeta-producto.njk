@@ -1,0 +1,11 @@
+<article class="tarjeta"{% if p.filtros %} data-material="{{ p.filtros.material }}" data-conexion="{{ p.filtros.conexion }}"{% endif %}>
+  <a class="tarjeta__foto" href="{{ p | urlProducto }}" tabindex="-1" aria-hidden="true">{% foto p.imagen, p.nombre %}</a>
+  <div class="tarjeta__cuerpo">
+    {% if p.marca %}<p class="tarjeta__marca">{{ p.marca }}{% if p.modelo %} · {{ p.modelo }}{% endif %}</p>{% endif %}
+    <h3 class="tarjeta__nombre"><a href="{{ p | urlProducto }}">{{ p.nombre }}</a></h3>
+    {% if p.ficha %}
+    <dl class="tarjeta__specs">{% for s in p | destacados %}<div><dt>{{ s.clave }}</dt><dd>{{ s.valor }}</dd></div>{% endfor %}</dl>
+    {% endif %}
+    <a class="boton boton--secundario tarjeta__boton" href="{{ p | urlProducto }}">{% if p.ficha %}Ficha{% else %}Ficha PDF{% endif %}</a>
+  </div>
+</article>
