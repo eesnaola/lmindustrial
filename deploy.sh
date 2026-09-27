@@ -1,4 +1,6 @@
 #!/bin/bash
+# ATENCIÓN: publica el SITIO VIEJO (archivos de esta carpeta) sobre producción, pisando el sitio nuevo.
+# Usar solo para volver atrás. El sitio actual se publica con sitio-nuevo/deploy.sh o con el CI de GitHub.
 # Sube el sitio a S3 y limpia la caché de CloudFront.
 # Uso: ./deploy.sh   (desde esta carpeta, con la AWS CLI configurada)
 set -e

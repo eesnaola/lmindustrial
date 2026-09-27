@@ -1,0 +1,69 @@
+# Publica el sitio nuevo en producción (www.lmindustrial.com.ar) con cada push a main.
+# Si alguna prueba falla, no publica nada y el sitio queda como estaba.
+name: Publicar en producción
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  id-token: write   # para pedirle a AWS credenciales temporales (OIDC), sin claves guardadas
+  contents: read
+
+concurrency:
+  group: produccion
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: sitio-nuevo
+    env:
+      CHROME_PATH: /usr/bin/google-chrome
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 26
+          cache: npm
+          cache-dependency-path: sitio-nuevo/package-lock.json
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Pruebas de lógica y datos
+        run: npm test
+
+      - name: Generar el sitio de producción
+        run: npm run build
+        env:
+          SITIO: produccion
+
+      - name: Pruebas del sitio generado
+        run: npm run test:sitio
+        env:
+          SITIO: produccion
+
+      - name: Pruebas en navegador (buscador, filtros, celular)
+        run: npm run test:navegador
+
+      - name: Credenciales de AWS
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: arn:aws:iam::318986392550:role/lmindustrial-github-deploy
+          aws-region: us-east-1
+
+      - name: Publicar
+        run: ./deploy.sh produccion --confirmar
+
+      - name: Comprobar que el sitio responde
+        run: |
+          sleep 20
+          codigo=$(curl -s -o /dev/null -w "%{http_code}" https://www.lmindustrial.com.ar/)
+          echo "https://www.lmindustrial.com.ar/ → $codigo"
+          test "$codigo" = "200"

@@ -10,3 +10,4 @@ Generado con Eleventy. Los datos están en `src/_data/categorias.json` y `src/_d
 - Todo lo de AWS usa el perfil `lmindustrial` (cuenta 318986392550).
 - `infra/`: scripts de la infraestructura del sitio de prueba (se corren una sola vez) y la función de redirecciones de CloudFront.
 - Reglas para armar fichas nuevas: `../docs/fichas/INSTRUCCIONES.md`; decisiones pendientes del cliente: `../docs/fichas/notas-fase2.md`.
+- **CI:** cada push a `main` corre todas las pruebas y, si pasan, publica en producción (`.github/workflows/publicar.yml`). GitHub entra a AWS con el rol `lmindustrial-github-deploy` (OIDC, solo rama `main`), sin claves guardadas. Guía para no técnicos: `../COMO-EDITAR.md`.

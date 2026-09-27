@@ -2,7 +2,8 @@
 # Publica el sitio nuevo. Uso: ./deploy.sh prueba | ./deploy.sh produccion --confirmar
 set -euo pipefail
 cd "$(dirname "$0")"
-export AWS_PROFILE=lmindustrial   # cuenta 318986392550 (LM Industrial)
+# En la Mac usa el perfil lmindustrial (cuenta 318986392550); en GitHub Actions, el rol que configura el workflow.
+[ -n "${GITHUB_ACTIONS:-}" ] || export AWS_PROFILE=lmindustrial
 
 case "${1:-}" in
   prueba)
@@ -19,8 +20,9 @@ SITIO="$1" npm run build
 npm test
 SITIO="$1" npm run test:sitio
 
-aws s3 sync _site/ "s3://$BUCKET/" --delete --exclude "catalogos/*" --exclude "img/opt/*" --cache-control "max-age=3600"
+aws s3 sync _site/ "s3://$BUCKET/" --delete --exclude "catalogos/*" --exclude "img/opt/*" --cache-control "max-age=300"
 aws s3 sync _site/img/opt/ "s3://$BUCKET/img/opt/" --delete --cache-control "max-age=86400"
-aws s3 sync ../catalogos/ "s3://$BUCKET/catalogos/" --exclude "*Thumbs.db" --cache-control "max-age=86400"
+# --size-only: en GitHub Actions todos los archivos parecen recién creados; sin esto se volverían a subir los 104 MB de PDFs.
+aws s3 sync ../catalogos/ "s3://$BUCKET/catalogos/" --size-only --exclude "*Thumbs.db" --cache-control "max-age=86400"
 aws cloudfront create-invalidation --distribution-id "$DIST_ID" --paths "/*" --query Invalidation.Id --output text
 echo "Publicado en $1."

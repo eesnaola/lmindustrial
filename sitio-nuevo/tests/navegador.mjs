@@ -3,10 +3,11 @@ import puppeteer from "puppeteer-core";
 import { readFileSync } from "node:fs";
 import { iniciarServidor } from "./servidor.js";
 
-const CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
+// En la Mac usa el Chrome instalado; en GitHub Actions, el de Linux (CHROME_PATH).
+const CHROME = process.env.CHROME_PATH ?? "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 const fichas = JSON.parse(readFileSync(new URL("../src/_data/productos.json", import.meta.url), "utf8")).filter((p) => p.ficha);
 const { url, cerrar } = await iniciarServidor();
-const navegador = await puppeteer.launch({ executablePath: CHROME, headless: true });
+const navegador = await puppeteer.launch({ executablePath: CHROME, headless: true, args: process.env.CI ? ["--no-sandbox"] : [] });
 const pag = await navegador.newPage();
 let fallas = 0;
 

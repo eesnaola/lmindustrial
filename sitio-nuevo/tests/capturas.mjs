@@ -2,7 +2,8 @@ import puppeteer from "puppeteer-core";
 import { mkdirSync, readFileSync } from "node:fs";
 import { iniciarServidor } from "./servidor.js";
 
-const CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
+// En la Mac usa el Chrome instalado; en GitHub Actions, el de Linux (CHROME_PATH).
+const CHROME = process.env.CHROME_PATH ?? "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 const primeraFicha = JSON.parse(readFileSync(new URL("../src/_data/productos.json", import.meta.url), "utf8")).find((p) => p.ficha);
 const paginas = {
   inicio: "/", categoria: "/valvula-esferica.html", rama: "/valvulas-industriales.html",
@@ -12,7 +13,7 @@ const pantallas = { escritorio: { width: 1366, height: 900 }, celular: { width: 
 
 mkdirSync(new URL("../capturas/", import.meta.url), { recursive: true });
 const { url, cerrar } = await iniciarServidor();
-const navegador = await puppeteer.launch({ executablePath: CHROME, headless: true });
+const navegador = await puppeteer.launch({ executablePath: CHROME, headless: true, args: process.env.CI ? ["--no-sandbox"] : [] });
 const pag = await navegador.newPage();
 for (const [nombrePantalla, viewport] of Object.entries(pantallas)) {
   await pag.setViewport(viewport);

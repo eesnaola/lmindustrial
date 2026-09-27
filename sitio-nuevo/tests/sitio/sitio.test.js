@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import sitio from "../../src/_data/sitio.js";
 
 const AQUI = path.dirname(fileURLToPath(import.meta.url));
 const SITE = path.resolve(AQUI, "../../_site");
@@ -108,7 +109,7 @@ test("cada ficha tiene su página en /productos/", () => {
 test("el WhatsApp de cada ficha nombra el producto (acentos y comillas intactos)", () => {
   for (const p of fichas) {
     const html = leer(`productos/${p.id}.html`);
-    const textos = [...html.matchAll(/href="https:\/\/wa\.me\/5491131809499\?text=([^"]+)"/g)].map(([, t]) => decodeURIComponent(t));
+    const textos = [...html.matchAll(new RegExp(`href="https://wa\\.me/${sitio.whatsapp}\\?text=([^"]+)"`, "g"))].map(([, t]) => decodeURIComponent(t));
     assert.ok(textos.includes(`Hola, quiero consultar por ${p.marca} ${p.modelo} – ${p.nombre}`), `${p.id}: ${textos.join(" | ")}`);
   }
 });
@@ -167,9 +168,9 @@ test("el número aparece una sola vez en contacto y en el pie, con WhatsApp y ll
   const lista = html.match(/<ul class="contacto">([\s\S]*?)<\/ul>/)?.[1] ?? "";
   const pie = html.match(/<footer class="pie">([\s\S]*?)<\/footer>/)?.[1] ?? "";
   for (const [nombre, bloque] of [["contacto", lista], ["pie", pie]]) {
-    assert.equal((bloque.match(/11 3180-9499/g) ?? []).length, 1, `${nombre}: el número se repite`);
-    assert.match(bloque, /href="https:\/\/wa\.me\/5491131809499/, `${nombre}: falta WhatsApp`);
-    assert.match(bloque, /href="tel:\+5491131809499"/, `${nombre}: falta llamada`);
+    assert.equal(bloque.split(sitio.telefono_visible).length - 1, 1, `${nombre}: el número se repite`);
+    assert.ok(bloque.includes(`href="https://wa.me/${sitio.whatsapp}`), `${nombre}: falta WhatsApp`);
+    assert.ok(bloque.includes(`href="tel:${sitio.telefono_tel}"`), `${nombre}: falta llamada`);
   }
 });
 
