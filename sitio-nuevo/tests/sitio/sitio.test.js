@@ -149,7 +149,7 @@ test("la franja de marcas es un carrusel de logos, y cada marca tiene productos 
   assert.equal(listas[0][1], "", "la primera lista es la accesible");
   assert.match(listas[1][1], /aria-hidden="true"/, "la copia se oculta a lectores de pantalla");
   const nombres = [...listas[0][2].matchAll(/<img [^>]*alt="([^"]+)"/g)].map(([, alt]) => alt);
-  assert.equal(nombres.length, 10, `logos: ${nombres.join(", ")}`);
+  assert.equal(nombres.length, 11, `logos: ${nombres.join(", ")}`);
   assert.equal((listas[1][2].match(/<img /g) ?? []).length, 10);
   assert.doesNotMatch(listas[1][2], /alt="[^"]+"/, "la copia no repite los nombres");
   for (const nombre of nombres) {
