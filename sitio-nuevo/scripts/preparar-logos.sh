@@ -14,3 +14,4 @@ recortar danfoss_logo.jpg danfoss
 recortar alre.jpg alre
 recortar thermoval_logo.jpg thermoval
 recortar fantini_cosmi.jpg fantini_cosmi
+magick -density 119 -background white "$O/famiq.svg" -flatten -fuzz 8% -trim +repage "$D/famiq.png"   # SVG de famiq.com.ar, rasterizado a ~200 px de alto
