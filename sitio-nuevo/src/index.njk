@@ -26,8 +26,8 @@ canonica: "/"
     <h2>Marcas que comercializamos</h2>
     <div class="carrusel-marcas">
       <div class="carrusel-marcas__pista">
-        <ul class="marcas">{% asyncEach m in sitio.marcas %}<li style="--ancho: {{ m.ancho }}px">{% foto m.logo, m.nombre, 400 %}</li>{% endeach %}</ul>
-        <ul class="marcas" aria-hidden="true">{% asyncEach m in sitio.marcas %}<li style="--ancho: {{ m.ancho }}px">{% foto m.logo, "", 400 %}</li>{% endeach %}</ul>
+        <ul class="marcas">{% asyncEach m in sitio.marcas %}<li style="--ancho: {{ m.ancho }}px">{% foto m.logo, m.nombre, 400, false, false %}</li>{% endeach %}</ul>
+        <ul class="marcas" aria-hidden="true">{% asyncEach m in sitio.marcas %}<li style="--ancho: {{ m.ancho }}px">{% foto m.logo, "", 400, false, false %}</li>{% endeach %}</ul>
       </div>
     </div>
   </div>

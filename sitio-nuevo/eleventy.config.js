@@ -16,7 +16,7 @@ export default function (eleventyConfig) {
     });
   }
 
-  eleventyConfig.addAsyncShortcode("foto", async (src, alt, ancho = 250, prioritaria = false) => {
+  eleventyConfig.addAsyncShortcode("foto", async (src, alt, ancho = 250, prioritaria = false, diferida = !prioritaria) => {
     const meta = await Image(path.join(RAIZ, src), {
       widths: [ancho],
       formats: ["webp", "jpeg"],
@@ -26,7 +26,8 @@ export default function (eleventyConfig) {
       filenameFormat: (id, origen, ancho, formato) => `${path.parse(origen).name}-${ancho}.${formato}`,
     });
     // La foto prioritaria es la principal de la página: se la indica al buscador como imagen del resultado.
-    const carga = prioritaria ? { fetchpriority: "high", "data-pagefind-meta": "image[src], image_alt[alt]" } : { loading: "lazy" };
+    // Las no diferidas se cargan al abrir la página (los logos del carrusel: si no, entran en pantalla en blanco).
+    const carga = prioritaria ? { fetchpriority: "high", "data-pagefind-meta": "image[src], image_alt[alt]" } : diferida ? { loading: "lazy" } : {};
     return Image.generateHTML(meta, { alt, decoding: "async", ...carga });
   });
 

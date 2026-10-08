@@ -152,6 +152,7 @@ test("la franja de marcas es un carrusel de logos, y cada marca tiene productos 
   assert.equal(nombres.length, 11, `logos: ${nombres.join(", ")}`);
   assert.equal((listas[1][2].match(/<img /g) ?? []).length, 11);
   assert.doesNotMatch(listas[1][2], /alt="[^"]+"/, "la copia no repite los nombres");
+  assert.doesNotMatch(carrusel, /loading="lazy"/, "con carga diferida los logos entran en blanco mientras el carrusel se mueve");
   const sinProductos = ["Famiq"]; // se muestra por pedido aunque todavía no tenga productos en el catálogo
   for (const nombre of nombres.filter((n) => !sinProductos.includes(n))) {
     const clave = nombre.split(" ")[0].toUpperCase();
