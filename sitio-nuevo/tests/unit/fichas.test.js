@@ -24,6 +24,8 @@ test("detecta id que no coincide con marca, modelo y nombre", () => {
 
 test("si la marca cambió, el id conserva la marca anterior para no cambiar la URL", () => {
   assert.deepEqual(validarFicha({ ...buena, marca: "Otra", marca_anterior: "Genebre" }), []);
+  assert.deepEqual(validarFicha({ ...buena, marca_anterior: "Otra" }), [], "o la marca actual, si ya se publicó con ella");
+  assert.deepEqual(validarFicha({ ...buena, marca: "Otra", marca_anterior: "Tercera" }), ["id debería ser tercera-2025-valvula-esferica-inox-3-piezas-roscada"]);
 });
 
 test("detecta campos faltantes, descripción fuera de rango y destacados inexistentes", () => {

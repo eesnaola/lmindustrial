@@ -18,8 +18,8 @@ export default {
   // Logos recortados por scripts/preparar-logos.sh; el ancho se calcula para igualar la superficie visual.
   marcas: [
     ["Genebre", "genebre"], ["Intor", "intor"], ["Brahma", "brahma"], ["Honeywell", "honeywell"], ["Resideo", "resideo"],
-    ["Novus", "novus"], ["Satronic", "satronic"], ["Danfoss", "danfoss"], ["ALRE", "alre"], ["Thermoval", "thermoval"], ["Fantini Cosmi", "fantini_cosmi"],
-    ["Famiq", "famiq"],
+    ["Novus", "novus"], ["Satronic", "satronic"], ["Siemens", "siemens"], ["Landis & Gyr", "landis_gyr"], ["Danfoss", "danfoss"],
+    ["ALRE", "alre"], ["Thermoval", "thermoval"], ["Fantini Cosmi", "fantini_cosmi"], ["Famiq", "famiq"],
   ].map(([nombre, archivo]) => {
     const logo = `sitio-nuevo/fuentes-img/marcas/${archivo}.png`;
     const png = readFileSync(new URL(`../../fuentes-img/marcas/${archivo}.png`, import.meta.url));

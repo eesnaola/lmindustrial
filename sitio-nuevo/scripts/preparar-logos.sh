@@ -10,6 +10,8 @@ recortar brahma.jpg brahma
 recortar honeywell_logo.jpg honeywell
 magick "$O/resideo.png" -background white -flatten -trim +repage -resize 520x "$D/resideo.png"   # PNG con transparencia: se aplana sobre blanco
 recortar novus.jpg novus
+magick "$O/siemens.png" -background white -flatten -crop 400x74+0+0 +repage -fuzz 8% -trim +repage "$D/siemens.png"   # sin la línea "Combustion Controls Division"
+magick "$O/landis_gyr.jpg" -fuzz 12% -trim +repage -resize 600x "$D/landis_gyr.png"
 recortar satronic.jpg satronic
 recortar danfoss_logo.jpg danfoss
 recortar alre.jpg alre

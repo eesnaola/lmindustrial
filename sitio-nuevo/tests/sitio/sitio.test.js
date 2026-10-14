@@ -150,14 +150,14 @@ test("la franja de marcas es un carrusel de logos, y cada marca tiene productos 
   assert.equal(listas[0][1], "", "la primera lista es la accesible");
   assert.match(listas[1][1], /aria-hidden="true"/, "la copia se oculta a lectores de pantalla");
   const nombres = [...listas[0][2].matchAll(/<img [^>]*alt="([^"]+)"/g)].map(([, alt]) => alt);
-  assert.equal(nombres.length, 12, `logos: ${nombres.join(", ")}`);
-  assert.equal((listas[1][2].match(/<img /g) ?? []).length, 12);
+  assert.equal(nombres.length, 14, `logos: ${nombres.join(", ")}`);
+  assert.equal((listas[1][2].match(/<img /g) ?? []).length, 14);
   assert.doesNotMatch(listas[1][2], /alt="[^"]+"/, "la copia no repite los nombres");
   assert.doesNotMatch(carrusel, /loading="lazy"/, "con carga diferida los logos entran en blanco mientras el carrusel se mueve");
   const sinProductos = ["Famiq"]; // se muestra por pedido aunque todavía no tenga productos en el catálogo
   for (const nombre of nombres.filter((n) => !sinProductos.includes(n))) {
     const clave = nombre.split(" ")[0].toUpperCase();
-    assert.ok(productos.some((p) => `${p.marca} ${p.pdf}`.toUpperCase().includes(clave)), `${nombre} no tiene productos`);
+    assert.ok(productos.some((p) => `${p.marca} ${p.marca_anterior ?? ""} ${p.pdf}`.toUpperCase().includes(clave)), `${nombre} no tiene productos`);
   }
 });
 

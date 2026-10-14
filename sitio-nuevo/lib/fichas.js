@@ -10,9 +10,10 @@ export function validarFicha(p) {
     if (typeof p[campo] !== "string" || !p[campo].trim()) problemas.push(`falta ${campo}`);
   }
   if (!problemas.length) {
-    // Con marca_anterior el id (y la URL) conserva la marca con la que se publicó, para no romper enlaces.
-    const id = slugificar(`${p.marca_anterior ?? p.marca} ${p.modelo} ${p.nombre}`);
-    if (p.id !== id) problemas.push(`id debería ser ${id}`);
+    // Con marca_anterior el id (y la URL) conserva la marca con la que se publicó, que puede ser la nueva o la
+    // anterior según cuándo se cargó la ficha; así un cambio de marca nunca rompe enlaces.
+    const ids = [p.marca, p.marca_anterior].filter(Boolean).map((m) => slugificar(`${m} ${p.modelo} ${p.nombre}`));
+    if (!ids.includes(p.id)) problemas.push(`id debería ser ${ids.at(-1)}`);
   }
   const largo = (p.descripcion ?? "").length;
   if (largo < 60 || largo > 400) problemas.push(`descripción de ${largo} caracteres (60 a 400)`);
