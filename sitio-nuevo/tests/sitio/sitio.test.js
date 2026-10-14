@@ -76,10 +76,10 @@ test("buscar y 404 nunca se indexan", () => {
   for (const rel of ["buscar.html", "404.html"]) assert.match(leer(rel), /<meta name="robots" content="noindex/, rel);
 });
 
-test("el inicio muestra las 6 categorías principales con foto", () => {
+test("el inicio muestra las 7 categorías principales con foto", () => {
   const grilla = leer("index.html").match(/<div class="grilla grilla--portada">([\s\S]*?)<\/div>\s*<\/section>/)?.[1] ?? "";
-  assert.equal((grilla.match(/class="tarjeta-categoria"/g) ?? []).length, 6);
-  assert.equal((grilla.match(/<picture>/g) ?? []).length, 6);
+  assert.equal((grilla.match(/class="tarjeta-categoria"/g) ?? []).length, 7);
+  assert.equal((grilla.match(/<picture>/g) ?? []).length, 7);
 });
 
 test("cada categoría muestra todas sus tarjetas, cada una con foto", () => {
@@ -154,8 +154,7 @@ test("la franja de marcas es un carrusel de logos, y cada marca tiene productos 
   assert.equal((listas[1][2].match(/<img /g) ?? []).length, 14);
   assert.doesNotMatch(listas[1][2], /alt="[^"]+"/, "la copia no repite los nombres");
   assert.doesNotMatch(carrusel, /loading="lazy"/, "con carga diferida los logos entran en blanco mientras el carrusel se mueve");
-  const sinProductos = ["Famiq"]; // se muestra por pedido aunque todavía no tenga productos en el catálogo
-  for (const nombre of nombres.filter((n) => !sinProductos.includes(n))) {
+  for (const nombre of nombres) {
     const clave = nombre.split(" ")[0].toUpperCase();
     assert.ok(productos.some((p) => `${p.marca} ${p.marca_anterior ?? ""} ${p.pdf}`.toUpperCase().includes(clave)), `${nombre} no tiene productos`);
   }

@@ -16285,5 +16285,264 @@
       "ok": true,
       "no_encontrados": []
     }
+  },
+  {
+    "pdf": "catalogos/Valvulas-Sanitarias/FAMIQ-Valvula-Diafragma-Clamp.pdf",
+    "imagen": "img/iconos/ValvDiafFamiq.jpg",
+    "categoria_principal": "valvulas-sanitarias",
+    "categorias": [
+      "valvulas-sanitarias"
+    ],
+    "ficha": true,
+    "id": "famiq-modelos-a-b-y-c-valvula-a-diafragma-clamp",
+    "marca": "Famiq",
+    "modelo": "Modelos A, B y C",
+    "nombre": "Válvula a diafragma clamp",
+    "descripcion": "Válvula de diafragma de accionamiento manual por volante para procesos higiénicos, con cuerpo de acero inoxidable fundido CF3M y conexiones clamp sanitario. El diafragma de PTFE separa el producto del mecanismo y la terminación interior es Ra < 0,4 µm.",
+    "specs": [
+      {
+        "clave": "Material del cuerpo",
+        "valor": "Acero inoxidable fundido ASTM A351 CF3M (equiv. 316L)"
+      },
+      {
+        "clave": "Extremos",
+        "valor": "Clamp sanitario Ø 25,0 y 50,5 mm"
+      },
+      {
+        "clave": "Normas",
+        "valor": "Inspección GB/T 13927; terminación DIN 11866 H3; diafragma FDA 21 CFR 177.1550"
+      },
+      {
+        "clave": "Presión máxima de trabajo",
+        "valor": "PN 10 (10 bar)"
+      },
+      {
+        "clave": "Temperatura de trabajo",
+        "valor": "−10 °C a +100 °C; esterilización SIP 150 °C máx."
+      },
+      {
+        "clave": "Medidas disponibles",
+        "valor": "1/4\" a 1 1/2\""
+      },
+      {
+        "clave": "Diafragma",
+        "valor": "PTFE modificado (TFM1700)"
+      },
+      {
+        "clave": "Accionamiento",
+        "valor": "Manual por volante"
+      }
+    ],
+    "destacados": [
+      "Material del cuerpo",
+      "Presión máxima de trabajo",
+      "Temperatura de trabajo"
+    ],
+    "caracteristicas": [
+      "Configuraciones: dos vías, fondo de tanque y punto de uso",
+      "Sin contacto entre el vástago y el producto",
+      "Diafragma reemplazable sin desmontar el cuerpo de la línea",
+      "Interior sin zonas muertas, apto CIP/SIP",
+      "Certificado de material EN 10204 3.1"
+    ],
+    "filtros": {
+      "material": "Inox",
+      "conexion": "Clamp"
+    },
+    "fuente": "texto",
+    "verificacion": {
+      "ok": true,
+      "no_encontrados": []
+    }
+  },
+  {
+    "pdf": "catalogos/Valvulas-Sanitarias/FAMIQ-Valvula-Mariposa-Clamp.pdf",
+    "imagen": "img/iconos/ValvMarFamiq.jpg",
+    "categoria_principal": "valvulas-sanitarias",
+    "categorias": [
+      "valvulas-sanitarias"
+    ],
+    "ficha": true,
+    "id": "famiq-valvula-mariposa-clamp",
+    "marca": "Famiq",
+    "nombre": "Válvula mariposa clamp",
+    "descripcion": "Válvula mariposa sanitaria de acero inoxidable AISI 304L o 316L con conexiones clamp ISO 2852, de fácil montaje en espacios reducidos. Se entrega con maneta de dos posiciones y junta de EPDM; admite maneta multiposición, actuador neumático y otras juntas.",
+    "specs": [
+      {
+        "clave": "Material del cuerpo",
+        "valor": "Acero inoxidable AISI 304L o 316L"
+      },
+      {
+        "clave": "Extremos",
+        "valor": "Clamp/clamp ISO 2852"
+      },
+      {
+        "clave": "Presión máxima de trabajo",
+        "valor": "10 bar"
+      },
+      {
+        "clave": "Medidas disponibles",
+        "valor": "1\" a 4\""
+      },
+      {
+        "clave": "Juntas",
+        "valor": "EPDM; opcionales: acrilo N, silicona y Vitón"
+      },
+      {
+        "clave": "Accionamiento",
+        "valor": "Maneta de 2 posiciones; opcionales: maneta multiposición o actuador neumático"
+      }
+    ],
+    "destacados": [
+      "Material del cuerpo",
+      "Presión máxima de trabajo",
+      "Medidas disponibles"
+    ],
+    "caracteristicas": [
+      "Montaje en espacios reducidos",
+      "Opción de 3 vías con accionamiento simultáneo",
+      "Juntas intercambiables con el modelo EURO",
+      "Repuestos disponibles"
+    ],
+    "filtros": {
+      "material": "Inox",
+      "conexion": "Clamp"
+    },
+    "fuente": "texto",
+    "verificacion": {
+      "ok": true,
+      "no_encontrados": []
+    }
+  },
+  {
+    "pdf": "catalogos/Valvulas-Sanitarias/FAMIQ-Valvula-Esferica-Soldar.pdf",
+    "imagen": "img/iconos/ValvEsfFamiq.jpg",
+    "categoria_principal": "valvulas-sanitarias",
+    "categorias": [
+      "valvulas-sanitarias"
+    ],
+    "ficha": true,
+    "id": "famiq-valvula-esferica-para-soldar",
+    "marca": "Famiq",
+    "nombre": "Válvula esférica para soldar",
+    "descripcion": "Válvula esférica sanitaria tipo K con extremos para soldar SMS, con cuerpo y esfera de acero inoxidable AISI 304 o 316. Asientos de PTFE, tóricas de NBR y manija reversible.",
+    "specs": [
+      {
+        "clave": "Material del cuerpo",
+        "valor": "Acero inoxidable AISI 304 o 316"
+      },
+      {
+        "clave": "Extremos",
+        "valor": "Para soldar SMS"
+      },
+      {
+        "clave": "Medidas disponibles",
+        "valor": "DN 25 a DN 100"
+      },
+      {
+        "clave": "Asientos",
+        "valor": "PTFE"
+      },
+      {
+        "clave": "Juntas",
+        "valor": "Tóricas de NBR"
+      },
+      {
+        "clave": "Accionamiento",
+        "valor": "Manija reversible de acero inoxidable AISI 304"
+      }
+    ],
+    "destacados": [
+      "Material del cuerpo",
+      "Extremos",
+      "Medidas disponibles"
+    ],
+    "caracteristicas": [
+      "Esfera de acero inoxidable",
+      "Manija reversible"
+    ],
+    "filtros": {
+      "material": "Inox",
+      "conexion": "Soldar"
+    },
+    "fuente": "texto",
+    "verificacion": {
+      "ok": true,
+      "no_encontrados": []
+    }
+  },
+  {
+    "pdf": "catalogos/Valvulas-Sanitarias/FAMIQ-Valvula-Retencion-Soldar.pdf",
+    "imagen": "img/iconos/ValvRetFamiq.jpg",
+    "categoria_principal": "valvulas-sanitarias",
+    "categorias": [
+      "valvulas-sanitarias"
+    ],
+    "ficha": true,
+    "id": "famiq-valvula-de-retencion-para-soldar",
+    "marca": "Famiq",
+    "nombre": "Válvula de retención para soldar",
+    "descripcion": "Válvula de retención sanitaria para instalaciones de acero inoxidable, formada por dos cuerpos bridados con extremos para soldar. Se coloca a la salida de bombas de impulsión para impedir el retroceso del producto y se puede montar en cualquier posición.",
+    "specs": [
+      {
+        "clave": "Material del cuerpo",
+        "valor": "Acero inoxidable AISI 316L"
+      },
+      {
+        "clave": "Extremos",
+        "valor": "Para soldar SMS, BS y DIN 11851"
+      },
+      {
+        "clave": "Presión máxima de trabajo",
+        "valor": "10 bar (1000 kPa)"
+      },
+      {
+        "clave": "Temperatura de trabajo",
+        "valor": "−10 °C a +140 °C con juntas de EPDM"
+      },
+      {
+        "clave": "Medidas disponibles",
+        "valor": "1\" a 4\""
+      },
+      {
+        "clave": "Juntas",
+        "valor": "EPDM"
+      },
+      {
+        "clave": "Acabado",
+        "valor": "Ra 0,8 µm interior y exterior"
+      }
+    ],
+    "destacados": [
+      "Material del cuerpo",
+      "Presión máxima de trabajo",
+      "Temperatura de trabajo"
+    ],
+    "caracteristicas": [
+      "Dos cuerpos bridados sanitarios unidos con tornillos allen",
+      "Fácil desmontaje",
+      "Evita el golpe de ariete",
+      "Montaje en cualquier posición",
+      "Cierre por resorte"
+    ],
+    "filtros": {
+      "material": "Inox",
+      "conexion": "Soldar"
+    },
+    "fuente": "imagen",
+    "revision_manual": "ok",
+    "verificacion": {
+      "ok": false,
+      "no_encontrados": [
+        "11851",
+        "316",
+        "10",
+        "1000",
+        "140",
+        "1",
+        "4",
+        "0.8"
+      ]
+    }
   }
 ]

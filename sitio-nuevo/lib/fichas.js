@@ -6,13 +6,15 @@ const VOCABULARIO = { material: MATERIALES, conexion: CONEXIONES };
 
 export function validarFicha(p) {
   const problemas = [];
-  for (const campo of ["marca", "modelo", "nombre", "descripcion"]) {
+  for (const campo of ["marca", "nombre", "descripcion"]) {
     if (typeof p[campo] !== "string" || !p[campo].trim()) problemas.push(`falta ${campo}`);
   }
+  // El modelo es opcional: si el catálogo no trae uno, la ficha muestra solo la marca.
+  if (p.modelo !== undefined && (typeof p.modelo !== "string" || !p.modelo.trim())) problemas.push("modelo vacío: omitir el campo");
   if (!problemas.length) {
     // Con marca_anterior el id (y la URL) conserva la marca con la que se publicó, que puede ser la nueva o la
     // anterior según cuándo se cargó la ficha; así un cambio de marca nunca rompe enlaces.
-    const ids = [p.marca, p.marca_anterior].filter(Boolean).map((m) => slugificar(`${m} ${p.modelo} ${p.nombre}`));
+    const ids = [p.marca, p.marca_anterior].filter(Boolean).map((m) => slugificar([m, p.modelo, p.nombre].filter(Boolean).join(" ")));
     if (!ids.includes(p.id)) problemas.push(`id debería ser ${ids.at(-1)}`);
   }
   const largo = (p.descripcion ?? "").length;

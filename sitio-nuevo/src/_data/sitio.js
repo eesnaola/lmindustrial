@@ -14,7 +14,7 @@ export default {
   email: "info@lmindustrial.com.ar",
   envios: "Envíos a todo el país",
   ga4: "G-VMTZYT8BEQ",
-  // Marcas con logo propio y productos en el catálogo, ordenadas por cantidad de productos (Famiq, al final, todavía no tiene productos).
+  // Marcas con logo propio y productos en el catálogo, ordenadas por cantidad de productos.
   // Logos recortados por scripts/preparar-logos.sh; el ancho se calcula para igualar la superficie visual.
   marcas: [
     ["Genebre", "genebre"], ["Intor", "intor"], ["Brahma", "brahma"], ["Honeywell", "honeywell"], ["Resideo", "resideo"],

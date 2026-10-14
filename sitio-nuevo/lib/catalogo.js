@@ -13,8 +13,13 @@ export function marcaVisible(p) {
   return p.marca_anterior ? `${p.marca} (ex ${p.marca_anterior})` : p.marca;
 }
 
+// Marca y modelo juntos; el modelo es opcional.
+export function marcaYModelo(p) {
+  return [marcaVisible(p), p.modelo].filter(Boolean).join(" ");
+}
+
 export function mensajeProducto(p) {
-  return `Hola, quiero consultar por ${marcaVisible(p)} ${p.modelo} – ${p.nombre}`;
+  return `Hola, quiero consultar por ${marcaYModelo(p)} – ${p.nombre}`;
 }
 
 export function destacados(p) {

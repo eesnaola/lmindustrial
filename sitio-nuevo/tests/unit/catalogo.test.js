@@ -63,6 +63,10 @@ test("si la marca cambió se muestran la nueva y la anterior", () => {
   assert.equal(mensajeProducto(p), "Hola, quiero consultar por Resideo (ex Honeywell) DKG 972 – Control de llama");
 });
 
+test("sin modelo, el mensaje nombra solo la marca", () => {
+  assert.equal(mensajeProducto({ marca: "Famiq", nombre: "Válvula mariposa clamp" }), "Hola, quiero consultar por Famiq – Válvula mariposa clamp");
+});
+
 test("una categoría inexistente da un error claro", () => {
   assert.throws(() => cat.migas("no-existe"), /Categoría inexistente: no-existe/);
 });

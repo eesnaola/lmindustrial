@@ -1052,5 +1052,22 @@
     "descripcion_seo": "Anti Incendio: Valvulas Mariposa Ranuradas y Wafer ULFM, Valvulas Esclusa Ranuradas y Bridadas ULFM, Valvulas de Retencion Bridadas ULFM.",
     "intro": "",
     "faqs": []
+  },
+  {
+    "slug": "valvulas-sanitarias",
+    "nombre": "Válvulas sanitarias",
+    "padre": null,
+    "hijos": [],
+    "productos": [
+      "catalogos/Valvulas-Sanitarias/FAMIQ-Valvula-Diafragma-Clamp.pdf",
+      "catalogos/Valvulas-Sanitarias/FAMIQ-Valvula-Mariposa-Clamp.pdf",
+      "catalogos/Valvulas-Sanitarias/FAMIQ-Valvula-Esferica-Soldar.pdf",
+      "catalogos/Valvulas-Sanitarias/FAMIQ-Valvula-Retencion-Soldar.pdf"
+    ],
+    "imagen": "img/iconos/ValSan.jpg",
+    "titulo_seo": "Válvulas sanitarias | LM Industrial",
+    "descripcion_seo": "Válvulas sanitarias de acero inoxidable: a diafragma clamp, mariposa clamp, esférica para soldar y de retención para soldar.",
+    "intro": "",
+    "faqs": []
   }
 ]

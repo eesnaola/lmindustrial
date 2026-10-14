@@ -22,6 +22,12 @@ test("detecta id que no coincide con marca, modelo y nombre", () => {
   assert.deepEqual(validarFicha({ ...buena, id: "otra-cosa" }), ["id debería ser genebre-2025-valvula-esferica-inox-3-piezas-roscada"]);
 });
 
+test("el modelo es opcional: sin modelo el id se arma con marca y nombre", () => {
+  const { modelo, ...sinModelo } = buena;
+  assert.deepEqual(validarFicha({ ...sinModelo, id: "genebre-valvula-esferica-inox-3-piezas-roscada" }), []);
+  assert.deepEqual(validarFicha({ ...buena, modelo: " " }), ["modelo vacío: omitir el campo"]);
+});
+
 test("si la marca cambió, el id conserva la marca anterior para no cambiar la URL", () => {
   assert.deepEqual(validarFicha({ ...buena, marca: "Otra", marca_anterior: "Genebre" }), []);
   assert.deepEqual(validarFicha({ ...buena, marca_anterior: "Otra" }), [], "o la marca actual, si ya se publicó con ella");
