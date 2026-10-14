@@ -167,7 +167,7 @@ p { margin: 0 0 1em; }
 /* Inicio */
 .portada { position: relative; isolation: isolate; overflow: hidden; background: #172322; color: #fff; }
 .portada__fondo { position: absolute; inset: 0; z-index: -1; }
-.portada__fondo picture, .portada__fondo img { width: 100%; height: 100%; max-width: none; object-fit: cover; object-position: 60% 60%; }
+.portada__fondo picture, .portada__fondo img { width: 100%; height: 100%; max-width: none; object-fit: cover; object-position: 50% 50%; transform: scaleX(-1); }
 /* Oscurece la foto (más a la izquierda, donde va el texto) para que el texto blanco se lea bien. */
 .portada__fondo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgb(12 28 27 / .88), rgb(12 28 27 / .62) 50%, rgb(12 28 27 / .18)); }
 @media (max-width: 760px) {
