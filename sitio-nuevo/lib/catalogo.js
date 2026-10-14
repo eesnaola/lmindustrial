@@ -8,8 +8,13 @@ export function urlWhatsapp(numero, texto) {
   return `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
 }
 
+// Si la marca cambió (ej. Honeywell → Resideo), se muestran las dos: los clientes todavía buscan por la vieja.
+export function marcaVisible(p) {
+  return p.marca_anterior ? `${p.marca} (ex ${p.marca_anterior})` : p.marca;
+}
+
 export function mensajeProducto(p) {
-  return `Hola, quiero consultar por ${p.marca} ${p.modelo} – ${p.nombre}`;
+  return `Hola, quiero consultar por ${marcaVisible(p)} ${p.modelo} – ${p.nombre}`;
 }
 
 export function destacados(p) {

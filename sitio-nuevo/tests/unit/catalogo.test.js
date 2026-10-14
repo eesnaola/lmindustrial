@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { crearCatalogo, urlProducto, urlWhatsapp, mensajeProducto, destacados } from "../../lib/catalogo.js";
+import { crearCatalogo, urlProducto, urlWhatsapp, mensajeProducto, marcaVisible, destacados } from "../../lib/catalogo.js";
 
 const categorias = [
   { slug: "raiz", nombre: "Raíz", padre: null, hijos: ["hija"], productos: [], imagen: "a.jpg" },
@@ -54,6 +54,13 @@ test("WhatsApp codifica acentos, comillas de pulgada, barras y guiones largos", 
     "https://wa.me/5491131809499?text=Hola%2C%20quiero%20consultar%20por%20Genebre%202025%20%E2%80%93%20V%C3%A1lvula%201%2F2%22%20inox",
   );
   assert.equal(mensajeProducto(productos[0]), "Hola, quiero consultar por Genebre 2025 – Producto c/a.pdf");
+});
+
+test("si la marca cambió se muestran la nueva y la anterior", () => {
+  const p = { marca: "Resideo", marca_anterior: "Honeywell", modelo: "DKG 972", nombre: "Control de llama" };
+  assert.equal(marcaVisible(p), "Resideo (ex Honeywell)");
+  assert.equal(marcaVisible({ marca: "Genebre" }), "Genebre");
+  assert.equal(mensajeProducto(p), "Hola, quiero consultar por Resideo (ex Honeywell) DKG 972 – Control de llama");
 });
 
 test("una categoría inexistente da un error claro", () => {

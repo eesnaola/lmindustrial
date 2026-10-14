@@ -8807,14 +8807,15 @@
   },
   {
     "pdf": "catalogos/Control-de-Llama/HONEYWELL-SATRONIC-Control-De-Llama-DKG972.pdf",
-    "imagen": "img/iconos/CLlHoDKG.jpg",
+    "imagen": "img/iconos/CLlReDKG.jpg",
     "categoria_principal": "control-llama",
     "categorias": [
       "control-llama"
     ],
     "ficha": true,
     "id": "honeywell-dkg-972-control-de-llama-para-quemadores-atmosfericos-de-gas-de-dos-etapas",
-    "marca": "Honeywell",
+    "marca": "Resideo",
+    "marca_anterior": "Honeywell",
     "modelo": "DKG 972",
     "nombre": "Control de llama para quemadores atmosféricos de gas de dos etapas",
     "descripcion": "Control para quemadores atmosféricos de gas de dos etapas, con secuenciador basado en microprocesador. El sistema de información por led indica la fase del programa y guarda la causa del bloqueo aun después de un corte de energía. Admite varilla de ionización, detector infrarrojo IRD 1020 o sensor UV UVD 971.",
@@ -8877,7 +8878,8 @@
     ],
     "ficha": true,
     "id": "honeywell-dmg-972-control-de-llama-para-quemadores-de-tiro-forzado-con-compuerta-de-aire-modulante",
-    "marca": "Honeywell",
+    "marca": "Resideo",
+    "marca_anterior": "Honeywell",
     "modelo": "DMG 972",
     "nombre": "Control de llama para quemadores de tiro forzado con compuerta de aire modulante",
     "descripcion": "Control para quemadores de tiro forzado de dos etapas y mixtos gas-aceite, con posibilidad de conectar una compuerta de aire para operar en dos etapas o en forma modulante con una sola válvula. Es compatible con los modelos MMI 812, 812.1, 962 y 962.1.",
@@ -8933,14 +8935,15 @@
   },
   {
     "pdf": "catalogos/Control-de-Llama/HONEYWELL-SATRONIC-Control-De-Llama-DLG976.pdf",
-    "imagen": "img/iconos/CLlHoDLG.jpg",
+    "imagen": "img/iconos/CLlReDLG.jpg",
     "categoria_principal": "control-llama",
     "categorias": [
       "control-llama"
     ],
     "ficha": true,
     "id": "honeywell-dlg-976-control-de-llama-para-quemadores-atmosfericos-de-gas-de-dos-etapas-de-50-y-60-hz",
-    "marca": "Honeywell",
+    "marca": "Resideo",
+    "marca_anterior": "Honeywell",
     "modelo": "DLG 976",
     "nombre": "Control de llama para quemadores atmosféricos de gas de dos etapas de 50 y 60 Hz",
     "descripcion": "Control para quemadores atmosféricos de gas y combustible de dos etapas, con alimentación en 220/240 V a 50 Hz o en 110/120 V a 60 Hz. También puede usarse en calentadores directos de aire según DIN 4794. Detecta llama con varilla de ionización, detector infrarrojo IRD 1020 o sensor UV UVD 971.",
@@ -9003,7 +9006,8 @@
     ],
     "ficha": true,
     "id": "honeywell-mmg-810-1-control-de-llama-electromecanico-de-leva-para-quemadores-de-tiro-forzado",
-    "marca": "Honeywell",
+    "marca": "Resideo",
+    "marca_anterior": "Honeywell",
     "modelo": "MMG 810.1",
     "nombre": "Control de llama electromecánico de leva para quemadores de tiro forzado",
     "descripcion": "Control de llama con motor síncrono y sistema de levas, para quemadores de tiro forzado y mixtos gas-aceite de dos etapas. El modelo 33 también se usa en generadores de aire caliente según DIN 4794. Admite varilla de ionización, sensor UV UVZ 780 o detector infrarrojo IRD 1020.",
@@ -9059,14 +9063,15 @@
   },
   {
     "pdf": "catalogos/Control-de-Llama/HONEYWELL-SATRONIC-Control-De-Llama-TMG740.pdf",
-    "imagen": "img/iconos/CLlHoTMG.jpg",
+    "imagen": "img/iconos/CLlReTMG.jpg",
     "categoria_principal": "control-llama",
     "categorias": [
       "control-llama"
     ],
     "ficha": true,
     "id": "honeywell-tmg-740-3-control-de-llama-para-quemadores-de-tiro-forzado-de-alto-rendimiento-y-doble-combustible",
-    "marca": "Honeywell",
+    "marca": "Resideo",
+    "marca_anterior": "Honeywell",
     "modelo": "TMG 740-3",
     "nombre": "Control de llama para quemadores de tiro forzado de alto rendimiento y doble combustible",
     "descripcion": "Control para quemadores de tiro forzado de media a alta potencia y doble combustible, de una o dos etapas, en operación intermitente. Es totalmente intercambiable con las versiones anteriores TMG 740-1 y 740-2. Admite varilla de ionización, sensor UV UVZ 780 o detector infrarrojo IRD 820 y 1020.",
@@ -9126,14 +9131,15 @@
   },
   {
     "pdf": "catalogos/Control-de-Llama/HONEYWELL-Control-De-Llama-TF830-TF832.pdf",
-    "imagen": "img/iconos/CLlHoTF.jpg",
+    "imagen": "img/iconos/CLlReTF.jpg",
     "categoria_principal": "control-llama",
     "categorias": [
       "control-llama"
     ],
     "ficha": true,
     "id": "honeywell-tf-830-y-tf-832-control-de-llama-para-quemadores-de-aceite-de-hasta-30-kg-h",
-    "marca": "Honeywell",
+    "marca": "Resideo",
+    "marca_anterior": "Honeywell",
     "modelo": "TF 830 y TF 832",
     "nombre": "Control de llama para quemadores de aceite de hasta 30 kg/h",
     "descripcion": "Control de seguridad para quemadores de aceite de una o dos etapas, de hasta 30 kg/h de capacidad, en operación intermitente. El TF 832 agrega una segunda válvula con retardo. Detecta llama con fotorresistencia MZ 770 S, detector infrarrojo IRD 1010 o sensor UV UVD 970.",

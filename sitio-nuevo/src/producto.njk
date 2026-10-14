@@ -12,7 +12,7 @@ permalink: "productos/{{ p.id }}.html"
 <article class="contenedor seccion producto">
   <div class="producto__foto">{% foto p.imagen, p.nombre, 250, true %}</div>
   <div class="producto__info">
-    <p class="producto__marca" data-pagefind-weight="7">{{ p.marca }} · {{ p.modelo }}</p>
+    <p class="producto__marca" data-pagefind-weight="7">{{ p | marcaVisible }} · {{ p.modelo }}</p>
     <h1>{{ p.nombre }}</h1>
     <p class="producto__descripcion">{{ p.descripcion }}</p>
     <div class="producto__acciones">

@@ -10,7 +10,8 @@ export function validarFicha(p) {
     if (typeof p[campo] !== "string" || !p[campo].trim()) problemas.push(`falta ${campo}`);
   }
   if (!problemas.length) {
-    const id = slugificar(`${p.marca} ${p.modelo} ${p.nombre}`);
+    // Con marca_anterior el id (y la URL) conserva la marca con la que se publicó, para no romper enlaces.
+    const id = slugificar(`${p.marca_anterior ?? p.marca} ${p.modelo} ${p.nombre}`);
     if (p.id !== id) problemas.push(`id debería ser ${id}`);
   }
   const largo = (p.descripcion ?? "").length;

@@ -2,7 +2,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import Image from "@11ty/eleventy-img";
 import { recortar } from "./lib/texto.js";
-import { urlProducto, urlWhatsapp, mensajeProducto, destacados } from "./lib/catalogo.js";
+import { urlProducto, urlWhatsapp, mensajeProducto, marcaVisible, destacados } from "./lib/catalogo.js";
 
 const AQUI = path.dirname(fileURLToPath(import.meta.url));
 const RAIZ = path.resolve(AQUI, "..");
@@ -36,6 +36,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("urlProducto", urlProducto);
   eleventyConfig.addFilter("urlWhatsapp", urlWhatsapp);
   eleventyConfig.addFilter("mensajeProducto", mensajeProducto);
+  eleventyConfig.addFilter("marcaVisible", marcaVisible);
   eleventyConfig.addFilter("destacados", destacados);
 
   return {

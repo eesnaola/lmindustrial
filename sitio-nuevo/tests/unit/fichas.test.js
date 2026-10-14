@@ -22,6 +22,10 @@ test("detecta id que no coincide con marca, modelo y nombre", () => {
   assert.deepEqual(validarFicha({ ...buena, id: "otra-cosa" }), ["id debería ser genebre-2025-valvula-esferica-inox-3-piezas-roscada"]);
 });
 
+test("si la marca cambió, el id conserva la marca anterior para no cambiar la URL", () => {
+  assert.deepEqual(validarFicha({ ...buena, marca: "Otra", marca_anterior: "Genebre" }), []);
+});
+
 test("detecta campos faltantes, descripción fuera de rango y destacados inexistentes", () => {
   const problemas = validarFicha({ ...buena, marca: "", descripcion: "Corta.", destacados: ["No existe"] });
   assert.ok(problemas.includes("falta marca"));

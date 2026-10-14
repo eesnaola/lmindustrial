@@ -17,8 +17,8 @@ export default {
   // Marcas con logo propio y productos en el catálogo, ordenadas por cantidad de productos (Famiq, al final, todavía no tiene productos).
   // Logos recortados por scripts/preparar-logos.sh; el ancho se calcula para igualar la superficie visual.
   marcas: [
-    ["Genebre", "genebre"], ["Intor", "intor"], ["Brahma", "brahma"], ["Honeywell", "honeywell"], ["Novus", "novus"],
-    ["Satronic", "satronic"], ["Danfoss", "danfoss"], ["ALRE", "alre"], ["Thermoval", "thermoval"], ["Fantini Cosmi", "fantini_cosmi"],
+    ["Genebre", "genebre"], ["Intor", "intor"], ["Brahma", "brahma"], ["Honeywell", "honeywell"], ["Resideo", "resideo"],
+    ["Novus", "novus"], ["Satronic", "satronic"], ["Danfoss", "danfoss"], ["ALRE", "alre"], ["Thermoval", "thermoval"], ["Fantini Cosmi", "fantini_cosmi"],
     ["Famiq", "famiq"],
   ].map(([nombre, archivo]) => {
     const logo = `sitio-nuevo/fuentes-img/marcas/${archivo}.png`;

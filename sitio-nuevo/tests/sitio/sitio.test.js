@@ -4,6 +4,7 @@ import { readFileSync, readdirSync, existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import sitio from "../../src/_data/sitio.js";
+import { mensajeProducto } from "../../lib/catalogo.js";
 
 const AQUI = path.dirname(fileURLToPath(import.meta.url));
 const SITE = path.resolve(AQUI, "../../_site");
@@ -110,7 +111,7 @@ test("el WhatsApp de cada ficha nombra el producto (acentos y comillas intactos)
   for (const p of fichas) {
     const html = leer(`productos/${p.id}.html`);
     const textos = [...html.matchAll(new RegExp(`href="https://wa\\.me/${sitio.whatsapp}\\?text=([^"]+)"`, "g"))].map(([, t]) => decodeURIComponent(t));
-    assert.ok(textos.includes(`Hola, quiero consultar por ${p.marca} ${p.modelo} – ${p.nombre}`), `${p.id}: ${textos.join(" | ")}`);
+    assert.ok(textos.includes(mensajeProducto(p)), `${p.id}: ${textos.join(" | ")}`);
   }
 });
 
@@ -149,14 +150,14 @@ test("la franja de marcas es un carrusel de logos, y cada marca tiene productos 
   assert.equal(listas[0][1], "", "la primera lista es la accesible");
   assert.match(listas[1][1], /aria-hidden="true"/, "la copia se oculta a lectores de pantalla");
   const nombres = [...listas[0][2].matchAll(/<img [^>]*alt="([^"]+)"/g)].map(([, alt]) => alt);
-  assert.equal(nombres.length, 11, `logos: ${nombres.join(", ")}`);
-  assert.equal((listas[1][2].match(/<img /g) ?? []).length, 11);
+  assert.equal(nombres.length, 12, `logos: ${nombres.join(", ")}`);
+  assert.equal((listas[1][2].match(/<img /g) ?? []).length, 12);
   assert.doesNotMatch(listas[1][2], /alt="[^"]+"/, "la copia no repite los nombres");
   assert.doesNotMatch(carrusel, /loading="lazy"/, "con carga diferida los logos entran en blanco mientras el carrusel se mueve");
   const sinProductos = ["Famiq"]; // se muestra por pedido aunque todavía no tenga productos en el catálogo
   for (const nombre of nombres.filter((n) => !sinProductos.includes(n))) {
     const clave = nombre.split(" ")[0].toUpperCase();
-    assert.ok(productos.some((p) => p.pdf.toUpperCase().includes(clave)), `${nombre} no tiene productos`);
+    assert.ok(productos.some((p) => `${p.marca} ${p.pdf}`.toUpperCase().includes(clave)), `${nombre} no tiene productos`);
   }
 });
 

@@ -8,6 +8,7 @@ recortar genebre.jpg genebre
 magick "$O/intor_logo.jpg" -crop 100x62+0+0 +repage -fuzz 8% -trim +repage "$D/intor.png"   # solo el óvalo, sin el lema
 recortar brahma.jpg brahma
 recortar honeywell_logo.jpg honeywell
+magick "$O/resideo.png" -background white -flatten -trim +repage -resize 520x "$D/resideo.png"   # PNG con transparencia: se aplana sobre blanco
 recortar novus.jpg novus
 recortar satronic.jpg satronic
 recortar danfoss_logo.jpg danfoss
