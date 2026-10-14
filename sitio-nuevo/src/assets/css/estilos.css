@@ -165,10 +165,19 @@ p { margin: 0 0 1em; }
 }
 
 /* Inicio */
-.portada { background: linear-gradient(180deg, #fff, var(--fondo)); border-bottom: 1px solid var(--borde); }
-.portada__interior { padding-block: 40px 36px; }
+.portada { position: relative; isolation: isolate; overflow: hidden; background: #172322; color: #fff; }
+.portada__fondo { position: absolute; inset: 0; z-index: -1; }
+.portada__fondo picture, .portada__fondo img { width: 100%; height: 100%; max-width: none; object-fit: cover; object-position: 60% 60%; }
+/* Oscurece la foto (más a la izquierda, donde va el texto) para que el texto blanco se lea bien. */
+.portada__fondo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgb(12 28 27 / .88), rgb(12 28 27 / .62) 50%, rgb(12 28 27 / .18)); }
+@media (max-width: 760px) {
+  .portada__fondo::after { background: linear-gradient(180deg, rgb(12 28 27 / .78), rgb(12 28 27 / .84)); }
+}
+.portada__interior { padding-block: 48px 44px; }
+.portada__logo { margin-bottom: 22px; color: #fff; }
+.portada__logo .logo { height: clamp(64px, 4rem + 3vw, 104px); width: auto; }
 .portada h1 { max-width: 720px; font-size: clamp(1.8rem, 1.3rem + 2vw, 2.6rem); }
-.portada__bajada { max-width: 680px; color: var(--texto-2); font-size: 1.1rem; }
+.portada__bajada { max-width: 680px; color: rgb(255 255 255 / .88); font-size: 1.1rem; }
 .franja-marcas { padding-block: 28px; background: var(--superficie); border-block: 1px solid var(--borde); }
 .carrusel-marcas { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
 .carrusel-marcas__pista { display: flex; width: max-content; animation: carrusel-marcas 45s linear infinite; }
