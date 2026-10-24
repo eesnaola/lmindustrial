@@ -266,8 +266,10 @@ test("cada categoría tiene un párrafo propio debajo del título", () => {
   }
 });
 
-test("la portada nombra en texto las mismas marcas que muestra el carrusel", () => {
-  const texto = textoPlano(leer("index.html").match(/<p class="franja-marcas__texto">([\s\S]*?)<\/p>/)[1]);
-  const nombres = sitio.marcas.map((m) => m.nombre);
-  assert.equal(texto, `Comercializamos productos de ${nombres.slice(0, -1).join(", ")} y ${nombres.at(-1)}.`);
+test("el pie de todas las páginas nombra en texto las mismas marcas que muestra el carrusel", () => {
+  const esperado = `Marcas que comercializamos: ${sitio.marcas.map((m) => m.nombre).join(" · ")}`;
+  for (const rel of paginas) {
+    const parrafo = leer(rel).match(/<p class="pie__marcas">([\s\S]*?)<\/p>/)?.[1];
+    assert.equal(parrafo && textoPlano(parrafo), esperado, rel);
+  }
 });

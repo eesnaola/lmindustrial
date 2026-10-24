@@ -3,6 +3,8 @@
     <div>
       <p class="pie__marca">LM Industrial</p>
       <p>{{ sitio.descripcion }}</p>
+      {# Las marcas también en texto: los logos del carrusel solos no los lee un buscador ni una IA. #}
+      <p class="pie__marcas">Marcas que comercializamos: {% for m in sitio.marcas %}<span>{{ m.nombre }}</span>{% if not loop.last %} · {% endif %}{% endfor %}</p>
     </div>
     <div>
       <p class="pie__titulo">Contacto</p>
