@@ -8,7 +8,7 @@ canonica: "/"
 {% block contenido %}
 <section class="portada">
   {# Foto: Igor Passchier en Pexels (licencia libre de Pexels), pexels.com/photo/32399141, espejada por CSS #}
-  <div class="portada__fondo">{% foto "sitio-nuevo/fuentes-img/portada/refineria.jpg", "", 1600, false, false %}</div>
+  <div class="portada__fondo">{% fotoPortada "sitio-nuevo/fuentes-img/portada/refineria.jpg" %}</div>
   <div class="contenedor portada__interior">
     {% set idDegrade = "logo-degrade-portada" %}<div class="portada__logo">{% include "parciales/logo.njk" %}</div>
     <h1>Válvulas e insumos industriales</h1>
@@ -23,7 +23,7 @@ canonica: "/"
 <section class="contenedor seccion">
   <h2>Productos</h2>
   {% set ancho = 600 %}
-  <div class="grilla grilla--portada">{% asyncEach c in catalogo.raices() %}{% include "parciales/tarjeta-categoria.njk" %}{% endeach %}</div>
+  <div class="grilla grilla--portada">{% asyncEach c in catalogo.raices() %}{% set inmediata = loop.index <= 3 %}{% include "parciales/tarjeta-categoria.njk" %}{% endeach %}</div>
 </section>
 <section class="franja-marcas" aria-label="Marcas que comercializamos">
   <div class="contenedor">

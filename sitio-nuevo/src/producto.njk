@@ -7,6 +7,11 @@ permalink: "productos/{{ p.id }}.html"
 ---
 {% extends "base.njk" %}
 {% block head %}{% esquemaProducto sitio, p, page.url, catalogo.migasProducto(p) %}{% endblock %}
+{% block imagenCompartir %}
+  <meta property="og:image" content="{% urlImagenCompartir sitio, p.imagen %}">
+  <meta property="og:image:alt" content="{{ p.nombre }}">
+  <meta name="twitter:card" content="summary">
+{% endblock %}
 {% block contenido %}
 {% set migas = catalogo.migasProducto(p) %}
 {% include "parciales/migas.njk" %}

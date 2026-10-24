@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { slugificar, oracion, recortar } from "../../lib/texto.js";
+import { slugificar, oracion, recortar, resumir } from "../../lib/texto.js";
 
 test("slugificar quita acentos, símbolos y espacios", () => {
   assert.equal(slugificar("Genebre 2025 Válvula esférica inox 3 piezas, roscada"), "genebre-2025-valvula-esferica-inox-3-piezas-roscada");
@@ -14,6 +14,13 @@ test("oracion pasa a minúscula salvo la primera letra, siglas, números y marca
   assert.equal(oracion("Válvula Esférica Inox 2000 WOG"), "Válvula esférica inox 2000 WOG");
   assert.equal(oracion("Válvula Esférica Intor", ["Intor"]), "Válvula esférica Intor");
   assert.equal(oracion("Presostato Fantini Cosmi", ["Fantini Cosmi"]), "Presostato Fantini Cosmi");
+});
+
+test("resumir deja oraciones enteras y solo corta con «…» si la primera no entra", () => {
+  assert.equal(resumir("Corta.", 160), "Corta.");
+  assert.equal(resumir("Primera oración. Segunda oración más larga.", 20), "Primera oración.");
+  assert.equal(resumir("Acero (equiv. 316L) inox. Otra.", 26), "Acero (equiv. 316L) inox.", "«equiv. 316L» no es fin de oración");
+  assert.equal(resumir("una sola oración demasiado larga", 12), "una sola…");
 });
 
 test("recortar corta en una palabra y agrega puntos suspensivos", () => {

@@ -20,7 +20,8 @@ SITIO="$1" npm run build
 npm test
 SITIO="$1" npm run test:sitio
 
-aws s3 sync _site/ "s3://$BUCKET/" --delete --exclude "catalogos/*" --exclude "img/opt/*" --cache-control "max-age=300"
+# Navegadores: 5 minutos. CloudFront: 1 día (s-maxage); al publicar se invalida todo, así que nunca sirve una versión vieja.
+aws s3 sync _site/ "s3://$BUCKET/" --delete --exclude "catalogos/*" --exclude "img/opt/*" --cache-control "max-age=300, s-maxage=86400"
 aws s3 sync _site/img/opt/ "s3://$BUCKET/img/opt/" --delete --cache-control "max-age=86400"
 # --size-only: en GitHub Actions todos los archivos parecen recién creados; sin esto se volverían a subir los 104 MB de PDFs.
 aws s3 sync ../catalogos/ "s3://$BUCKET/catalogos/" --size-only --exclude "*Thumbs.db" --cache-control "max-age=86400"

@@ -17,8 +17,8 @@ export default function (eleventyConfig) {
     });
   }
 
-  const optimizar = (src, ancho) => Image(path.join(RAIZ, src), {
-    widths: [ancho],
+  const optimizar = (src, anchos) => Image(path.join(RAIZ, src), {
+    widths: [anchos].flat(),
     formats: ["webp", "jpeg"],
     outputDir: path.join(AQUI, "_site/img/opt/"),
     urlPath: "/img/opt/",
@@ -34,10 +34,20 @@ export default function (eleventyConfig) {
     return Image.generateHTML(meta, { alt, decoding: "async", ...carga });
   });
 
+  // Foto de fondo de la portada: es lo más grande de la primera pantalla, así que va con prioridad y en varios
+  // anchos, para que el celular no descargue la de 1600 px.
+  eleventyConfig.addAsyncShortcode("fotoPortada", async (src) => {
+    const meta = await optimizar(src, [640, 1024, 1600]);
+    return Image.generateHTML(meta, { alt: "", sizes: "100vw", fetchpriority: "high", decoding: "async" });
+  });
+
   // Datos estructurados (JSON-LD) por tipo de página; ver lib/esquema.js.
   const script = (objeto) => `<script type="application/ld+json">${jsonLd(objeto)}</script>`;
   const ESQUEMAS = { inicio: esquemaInicio, contacto: esquemaContacto, empresa: esquemaEmpresa, pagina: esquemaPagina, categoria: esquemaCategoria };
   eleventyConfig.addShortcode("esquema", (tipo, sitio, datos) => script(ESQUEMAS[tipo](sitio, datos)));
+  // Imagen para la vista previa al compartir una ficha: la foto del producto hasta 600 px (si el original es más
+  // chico, sale en su tamaño original; eleventy-img no agranda).
+  eleventyConfig.addAsyncShortcode("urlImagenCompartir", async (sitio, src) => sitio.url + (await optimizar(src, 600)).jpeg[0].url);
   // La imagen del producto es la misma JPEG optimizada que muestra la ficha.
   eleventyConfig.addAsyncShortcode("esquemaProducto", async (sitio, p, ruta, migas) => {
     const imagen = (await optimizar(p.imagen, 250)).jpeg[0].url;

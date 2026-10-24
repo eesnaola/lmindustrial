@@ -19,7 +19,7 @@ permalink: "{{ cat.slug }}.html"
   {% set claseTitulo = "titulo-seccion" if (hijos.length and lista.length) else "visualmente-oculto" %}
   {% if hijos.length %}
   <h2 class="{{ claseTitulo }}">Categorías</h2>
-  <div class="grilla grilla--categorias">{% asyncEach c in hijos %}{% include "parciales/tarjeta-categoria.njk" %}{% endeach %}</div>
+  <div class="grilla grilla--categorias">{% asyncEach c in hijos %}{% set inmediata = loop.index <= 4 %}{% include "parciales/tarjeta-categoria.njk" %}{% endeach %}</div>
   {% endif %}
 
   {% set facetas = catalogo.facetas(cat.slug) %}
@@ -36,7 +36,7 @@ permalink: "{{ cat.slug }}.html"
       {% endfor %}
     </div>
     {% endif %}
-  <div class="grilla grilla--productos" data-grilla>{% asyncEach p in lista %}{% include "parciales/tarjeta-producto.njk" %}{% endeach %}</div>
+  <div class="grilla grilla--productos" data-grilla>{% asyncEach p in lista %}{% set inmediata = (not hijos.length) and loop.index <= 4 %}{% include "parciales/tarjeta-producto.njk" %}{% endeach %}</div>
   <p class="filtros__vacio" data-vacio hidden>No hay productos con esos filtros.</p>
   {% endif %}
 

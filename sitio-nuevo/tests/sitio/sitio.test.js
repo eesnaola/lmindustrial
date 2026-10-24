@@ -305,3 +305,48 @@ test("la política de privacidad nombra al responsable e incluye la leyenda de l
   assert.match(html, /artículo 14, inciso 3 de la Ley N° 25\.326/);
   assert.match(html, /Agencia de Acceso a la Información Pública/);
 });
+
+test("títulos y descripciones de categoría con largo razonable, únicos y sin cortes a mitad de frase", () => {
+  const titulos = new Set(), descripciones = new Set();
+  for (const c of categorias) {
+    assert.ok(c.titulo_seo.length >= 30 && c.titulo_seo.length <= 70, `${c.slug}: título de ${c.titulo_seo.length}`);
+    assert.ok(c.descripcion_seo.length >= 70 && c.descripcion_seo.length <= 160, `${c.slug}: descripción de ${c.descripcion_seo.length}`);
+    assert.doesNotMatch(c.descripcion_seo, /…$/, c.slug);
+    titulos.add(c.titulo_seo); descripciones.add(c.descripcion_seo);
+  }
+  assert.equal(titulos.size, categorias.length, "títulos únicos");
+  assert.equal(descripciones.size, categorias.length, "descripciones únicas");
+});
+
+test("la descripción de cada ficha empieza por marca (y modelo) y no pasa de 160 caracteres", () => {
+  for (const p of fichas) {
+    const d = leer(`productos/${p.id}.html`).match(/<meta name="description" content="([^"]*)"/)[1];
+    assert.ok(textoPlano(d).startsWith(mensajeProducto(p).replace("Hola, quiero consultar por ", "").split(" – ")[0] + ":"), p.id);
+    assert.ok(textoPlano(d).length <= 160, `${p.id}: ${d.length}`);
+  }
+});
+
+test("vista previa al compartir en todas las páginas: título, descripción, URL canónica e imagen absoluta que existe", () => {
+  for (const rel of paginas) {
+    const html = leer(rel);
+    const meta = (prop) => html.match(new RegExp(`<meta property="${prop}" content="([^"]*)"`))?.[1];
+    assert.equal(meta("og:title"), html.match(/<title>([^<]*)<\/title>/)[1], rel);
+    assert.equal(meta("og:description"), html.match(/<meta name="description" content="([^"]*)"/)[1], rel);
+    assert.equal(meta("og:url"), html.match(/<link rel="canonical" href="([^"]*)"/)[1], rel);
+    const imagen = meta("og:image");
+    assert.match(imagen ?? "", /^https:\/\/www\.lmindustrial\.com\.ar\//, rel);
+    assert.ok(existsSync(path.join(SITE, new URL(imagen).pathname)), `${rel}: ${imagen}`);
+  }
+});
+
+test("la foto de portada viene en varios anchos y con prioridad; las primeras tarjetas de cada grilla no esperan", () => {
+  const portada = leer("index.html").match(/<div class="portada__fondo">([\s\S]*?)<\/div>/)[1];
+  assert.match(portada, /fetchpriority="high"/);
+  assert.match(portada, /srcset="[^"]*640w[^"]*1024w[^"]*1600w"/);
+  assert.doesNotMatch(portada, /loading="lazy"/);
+  for (const c of categorias) {
+    const grilla = leer(`${c.slug}.html`).match(/<div class="grilla [^"]*"[^>]*>([\s\S]*?)<\/div>\s*(?:<h2|<p class="filtros__vacio"|<\/section>|\s*\{)/)?.[1] ?? "";
+    const imgs = [...grilla.matchAll(/<img [^>]*>/g)].map(([t]) => t);
+    imgs.slice(0, 4).forEach((t) => assert.doesNotMatch(t, /loading="lazy"/, `${c.slug}: primeras tarjetas`));
+  }
+});

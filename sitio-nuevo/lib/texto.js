@@ -18,6 +18,20 @@ export function oracion(texto, marcas = []) {
   }).join(" ");
 }
 
+// Para meta descriptions: tantas oraciones enteras como entren en n caracteres. Solo si la primera ya no entra,
+// corta en una palabra con puntos suspensivos. Fin de oración = punto seguido de espacio y mayúscula.
+export function resumir(texto, n = 160) {
+  if (texto.length <= n) return texto;
+  const oraciones = texto.split(/(?<=\.)\s+(?=[A-ZÁÉÍÓÚÑ¿¡])/);
+  let resumen = "";
+  for (const o of oraciones) {
+    const siguiente = resumen ? `${resumen} ${o}` : o;
+    if (siguiente.length > n) break;
+    resumen = siguiente;
+  }
+  return resumen || recortar(texto, n);
+}
+
 export function recortar(texto, n = 155) {
   if (texto.length <= n) return texto;
   const corte = texto.lastIndexOf(" ", n - 1);
