@@ -6,6 +6,7 @@ pagination:
 permalink: "{{ cat.slug }}.html"
 ---
 {% extends "base.njk" %}
+{% block head %}{% esquema "categoria", sitio, { cat: cat, descripcion: descripcion, ruta: page.url, migas: catalogo.migas(cat.slug), hijos: catalogo.hijos(cat.slug), productos: catalogo.productos(cat.slug) } %}{% endblock %}
 {% block contenido %}
 {% set migas = catalogo.migas(cat.slug) %}
 {% include "parciales/migas.njk" %}

@@ -4,6 +4,7 @@ descripcion: "Válvulas industriales, vapor, control de quemadores, automatizaci
 canonica: "/"
 ---
 {% extends "base.njk" %}
+{% block head %}{% esquema "inicio", sitio, { titulo: titulo, descripcion: descripcion } %}{% endblock %}
 {% block contenido %}
 <section class="portada">
   {# Foto: Igor Passchier en Pexels (licencia libre de Pexels), pexels.com/photo/32399141, espejada por CSS #}

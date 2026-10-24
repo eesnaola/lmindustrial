@@ -202,3 +202,59 @@ test("Google Analytics solo en producción", () => {
   if (process.env.SITIO === "produccion") assert.match(html, /googletagmanager\.com\/gtag\/js\?id=G-VMTZYT8BEQ/);
   else assert.doesNotMatch(html, /googletagmanager/);
 });
+
+// Datos estructurados (JSON-LD): uno por página indexable, y siempre igual a lo que se ve.
+const grafo = (rel) => {
+  const bloques = [...leer(rel).matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];
+  assert.equal(bloques.length, 1, `${rel}: bloques JSON-LD`);
+  return JSON.parse(bloques[0][1])["@graph"];
+};
+const nodo = (g, tipo) => g.find((n) => n["@type"] === tipo);
+const textoPlano = (html) => html.replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#39;/g, "'").trim();
+const migasVisibles = (rel) => {
+  const nav = leer(rel).match(/<nav class="contenedor migas"[\s\S]*?<\/nav>/)?.[0] ?? "";
+  return [...nav.matchAll(/<li>([\s\S]*?)<\/li>/g)].map(([, li]) => textoPlano(li));
+};
+
+test("cada página indexable declara la empresa y el sitio, y buscar y 404 no declaran nada", () => {
+  const indexables = ["index.html", "contacto.html", ...categorias.map((c) => `${c.slug}.html`), ...fichas.map((p) => `productos/${p.id}.html`)];
+  for (const rel of indexables) {
+    const g = grafo(rel);
+    assert.equal(nodo(g, "Organization")?.telephone, sitio.telefono_tel, rel);
+    assert.equal(nodo(g, "WebSite")?.url, `${sitio.url}/`, rel);
+  }
+  for (const rel of ["buscar.html", "404.html"]) assert.doesNotMatch(leer(rel), /application\/ld\+json/, rel);
+});
+
+test("el Product de cada ficha repite el título, la marca, el modelo y las especificaciones visibles, sin precio", () => {
+  for (const p of fichas) {
+    const rel = `productos/${p.id}.html`;
+    const prod = nodo(grafo(rel), "Product");
+    assert.equal(prod.name, textoPlano(leer(rel).match(/<h1>([\s\S]*?)<\/h1>/)[1]), rel);
+    assert.equal(prod.brand?.name, p.marca === "Genérica" ? undefined : p.marca, rel);
+    assert.equal(prod.model, p.modelo, rel);
+    assert.equal(prod.additionalProperty?.length ?? 0, p.specs.length, rel);
+    assert.equal(prod.offers, undefined, `${rel}: sin precio no va Offer`);
+    assert.match(prod.image[0], /^https:\/\/www\.lmindustrial\.com\.ar\/img\/opt\/.+\.jpeg$/, rel);
+    assert.ok(existsSync(path.join(SITE, new URL(prod.image[0]).pathname)), `${rel}: la imagen declarada existe`);
+  }
+});
+
+test("las migas declaradas son las mismas que se ven", () => {
+  const conMigas = ["contacto.html", ...categorias.map((c) => `${c.slug}.html`), ...fichas.map((p) => `productos/${p.id}.html`)];
+  for (const rel of conMigas) {
+    const lista = nodo(grafo(rel), "BreadcrumbList").itemListElement;
+    assert.deepEqual(lista.map((m) => m.name), migasVisibles(rel), rel);
+    assert.equal(lista.at(-1).item, undefined, `${rel}: la página actual va sin URL`);
+  }
+});
+
+test("cada categoría lista en sus datos estructurados lo mismo que muestra su grilla", () => {
+  for (const c of categorias) {
+    const rel = `${c.slug}.html`;
+    const html = leer(rel);
+    const tarjetas = (html.match(/class="tarjeta(?:-categoria)?"/g) ?? []).length;
+    const esperadas = c.productos.length ? (html.match(/class="tarjeta"/g) ?? []).length : tarjetas;
+    assert.equal(nodo(grafo(rel), "CollectionPage").mainEntity.numberOfItems, esperadas, rel);
+  }
+});

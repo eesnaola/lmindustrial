@@ -3,6 +3,7 @@ import { fileURLToPath } from "node:url";
 import Image from "@11ty/eleventy-img";
 import { recortar } from "./lib/texto.js";
 import { urlProducto, urlWhatsapp, mensajeProducto, marcaVisible, destacados } from "./lib/catalogo.js";
+import { esquemaInicio, esquemaContacto, esquemaCategoria, esquemaProducto, jsonLd } from "./lib/esquema.js";
 
 const AQUI = path.dirname(fileURLToPath(import.meta.url));
 const RAIZ = path.resolve(AQUI, "..");
@@ -16,19 +17,31 @@ export default function (eleventyConfig) {
     });
   }
 
+  const optimizar = (src, ancho) => Image(path.join(RAIZ, src), {
+    widths: [ancho],
+    formats: ["webp", "jpeg"],
+    outputDir: path.join(AQUI, "_site/img/opt/"),
+    urlPath: "/img/opt/",
+    // Nombre del original en vez de un hash: el buscador indexa el nombre de la imagen de cada página.
+    filenameFormat: (id, origen, ancho, formato) => `${path.parse(origen).name}-${ancho}.${formato}`,
+  });
+
   eleventyConfig.addAsyncShortcode("foto", async (src, alt, ancho = 250, prioritaria = false, diferida = !prioritaria) => {
-    const meta = await Image(path.join(RAIZ, src), {
-      widths: [ancho],
-      formats: ["webp", "jpeg"],
-      outputDir: path.join(AQUI, "_site/img/opt/"),
-      urlPath: "/img/opt/",
-      // Nombre del original en vez de un hash: el buscador indexa el nombre de la imagen de cada página.
-      filenameFormat: (id, origen, ancho, formato) => `${path.parse(origen).name}-${ancho}.${formato}`,
-    });
+    const meta = await optimizar(src, ancho);
     // La foto prioritaria es la principal de la página: se la indica al buscador como imagen del resultado.
     // Las no diferidas se cargan al abrir la página (los logos del carrusel: si no, entran en pantalla en blanco).
     const carga = prioritaria ? { fetchpriority: "high", "data-pagefind-meta": "image[src], image_alt[alt]" } : diferida ? { loading: "lazy" } : {};
     return Image.generateHTML(meta, { alt, decoding: "async", ...carga });
+  });
+
+  // Datos estructurados (JSON-LD) por tipo de página; ver lib/esquema.js.
+  const script = (objeto) => `<script type="application/ld+json">${jsonLd(objeto)}</script>`;
+  const ESQUEMAS = { inicio: esquemaInicio, contacto: esquemaContacto, categoria: esquemaCategoria };
+  eleventyConfig.addShortcode("esquema", (tipo, sitio, datos) => script(ESQUEMAS[tipo](sitio, datos)));
+  // La imagen del producto es la misma JPEG optimizada que muestra la ficha.
+  eleventyConfig.addAsyncShortcode("esquemaProducto", async (sitio, p, ruta, migas) => {
+    const imagen = (await optimizar(p.imagen, 250)).jpeg[0].url;
+    return script(esquemaProducto(sitio, { p, ruta, migas, imagen }));
   });
 
   eleventyConfig.addFilter("recortar", recortar);

@@ -6,6 +6,7 @@ pagination:
 permalink: "productos/{{ p.id }}.html"
 ---
 {% extends "base.njk" %}
+{% block head %}{% esquemaProducto sitio, p, page.url, catalogo.migasProducto(p) %}{% endblock %}
 {% block contenido %}
 {% set migas = catalogo.migasProducto(p) %}
 {% include "parciales/migas.njk" %}
