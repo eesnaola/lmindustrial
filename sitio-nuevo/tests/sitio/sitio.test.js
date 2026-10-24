@@ -273,3 +273,35 @@ test("el pie de todas las páginas nombra en texto las mismas marcas que muestra
     assert.equal(parrafo && textoPlano(parrafo), esperado, rel);
   }
 });
+
+test("Empresa y Privacidad existen, están en el sitemap y se enlazan desde el pie de todas las páginas", () => {
+  const mapa = leer("sitemap.xml");
+  for (const rel of ["empresa.html", "privacidad.html"]) {
+    assert.ok(existsSync(path.join(SITE, rel)), rel);
+    assert.match(mapa, new RegExp(`<loc>${sitio.url}/${rel}</loc>`), `${rel} en el sitemap`);
+  }
+  for (const rel of paginas) {
+    const pie = leer(rel).match(/<footer class="pie">[\s\S]*<\/footer>/)?.[0] ?? "";
+    assert.match(pie, /href="\/empresa\.html"/, rel);
+    assert.match(pie, /href="\/privacidad\.html"/, rel);
+    assert.match(pie, new RegExp(`href="${sitio.instagram}"`), rel);
+  }
+});
+
+test("Empresa muestra los datos que declara la Organization (razón social, CUIT, localidad, Instagram), sin dirección", () => {
+  const html = leer("empresa.html");
+  for (const dato of [sitio.razon_social, sitio.cuit, sitio.localidad, `@${sitio.instagram_usuario}`]) assert.ok(html.includes(dato), dato);
+  const org = nodo(grafo("empresa.html"), "Organization");
+  assert.equal(org.legalName, sitio.razon_social);
+  assert.equal(org.taxID, sitio.cuit);
+  assert.deepEqual(org.sameAs, [sitio.instagram]);
+  assert.deepEqual(Object.keys(org.address).sort(), ["@type", "addressCountry", "addressLocality", "addressRegion"], "sin calle ni código postal");
+  assert.equal(nodo(grafo("empresa.html"), "AboutPage")?.about["@id"], org["@id"]);
+});
+
+test("la política de privacidad nombra al responsable e incluye la leyenda de la Ley 25.326", () => {
+  const html = leer("privacidad.html");
+  assert.ok(html.includes(sitio.razon_social) && html.includes(sitio.cuit));
+  assert.match(html, /artículo 14, inciso 3 de la Ley N° 25\.326/);
+  assert.match(html, /Agencia de Acceso a la Información Pública/);
+});

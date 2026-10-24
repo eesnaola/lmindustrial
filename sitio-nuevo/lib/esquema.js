@@ -15,11 +15,18 @@ function comunes(sitio) {
       "@type": "Organization",
       "@id": id.organizacion,
       name: sitio.nombre,
+      ...(sitio.razon_social ? { legalName: sitio.razon_social } : {}),
+      ...(sitio.cuit ? { taxID: sitio.cuit } : {}),
       url: `${sitio.url}/`,
       logo: absoluta(sitio, "/assets/img/apple-touch-icon.png"),
       description: sitio.descripcion,
       email: sitio.email,
       telephone: sitio.telefono_tel,
+      // Solo localidad: la dirección no se publica.
+      ...(sitio.localidad
+        ? { address: { "@type": "PostalAddress", addressLocality: sitio.localidad, addressRegion: sitio.provincia, addressCountry: "AR" } }
+        : {}),
+      ...(sitio.instagram ? { sameAs: [sitio.instagram] } : {}),
       areaServed: { "@type": "Country", name: "Argentina" },
       contactPoint: {
         "@type": "ContactPoint",
@@ -78,6 +85,20 @@ export function esquemaContacto(sitio, { titulo, descripcion, ruta, migas }) {
     pagina(sitio, "ContactPage", url, titulo, { description: descripcion, about: { "@id": ids(sitio).organizacion } }),
     migasEsquema(sitio, migas),
   ]);
+}
+
+export function esquemaEmpresa(sitio, { titulo, descripcion, ruta, migas }) {
+  const url = absoluta(sitio, ruta);
+  return grafo(sitio, [
+    pagina(sitio, "AboutPage", url, titulo, { description: descripcion, about: { "@id": ids(sitio).organizacion } }),
+    migasEsquema(sitio, migas),
+  ]);
+}
+
+// Página de texto común (por ejemplo, la política de privacidad).
+export function esquemaPagina(sitio, { titulo, descripcion, ruta, migas }) {
+  const url = absoluta(sitio, ruta);
+  return grafo(sitio, [pagina(sitio, "WebPage", url, titulo, { description: descripcion }), migasEsquema(sitio, migas)]);
 }
 
 // Categoría: la lista de lo que se ve en la grilla (productos o, si no hay, subcategorías), en el mismo orden.

@@ -1,0 +1,36 @@
+---
+titulo: "Empresa | LM Industrial, válvulas e insumos industriales en Quilmes"
+descripcion: "LM Industrial es una empresa de Quilmes, Buenos Aires, que comercializa válvulas e insumos industriales para todo tipo de industria, con envíos a todo el país."
+permalink: "empresa.html"
+indexar: true
+---
+{% extends "base.njk" %}
+{% set migas = [{ nombre: "Inicio", url: "/" }, { nombre: "Empresa", url: "/empresa.html" }] %}
+{% block head %}{% esquema "empresa", sitio, { titulo: titulo, descripcion: descripcion, ruta: page.url, migas: migas } %}{% endblock %}
+{% block contenido %}
+{% include "parciales/migas.njk" %}
+<section class="contenedor seccion texto-largo">
+  <h1>Empresa</h1>
+  <p class="intro">LM Industrial es una empresa de {{ sitio.localidad }}, provincia de {{ sitio.provincia }}, que comercializa válvulas e insumos industriales. {{ sitio.envios }}.</p>
+
+  <h2>Industrias que atendemos</h2>
+  <p>Trabajamos con todo tipo de industria: {{ sitio.industrias | join(", ") }}, entre muchas otras.</p>
+
+  <h2>Qué ofrecemos</h2>
+  <ul>{% for raiz in catalogo.raices() %}<li><a href="/{{ raiz.slug }}.html">{{ raiz.nombre }}</a></li>{% endfor %}</ul>
+  <p>Comercializamos productos de {% for m in sitio.marcas %}{{ m.nombre }}{% if loop.revindex == 2 %} y {% elif not loop.last %}, {% endif %}{% endfor %}.</p>
+
+  <h2>Cómo trabajamos</h2>
+  <p>Atendemos consultas por WhatsApp, teléfono y mail, y cotizamos cada pedido a medida. Cada producto del catálogo tiene su ficha con las especificaciones y la ficha técnica del fabricante para descargar. Mirá <a href="/contacto.html">cómo comprar</a>.</p>
+
+  <h2>Datos de la empresa</h2>
+  <dl class="datos-empresa">
+    <div><dt>Razón social</dt><dd>{{ sitio.razon_social }}</dd></div>
+    <div><dt>CUIT</dt><dd>{{ sitio.cuit }}</dd></div>
+    <div><dt>Localidad</dt><dd>{{ sitio.localidad }}, {{ sitio.provincia }}</dd></div>
+    <div><dt>WhatsApp / Teléfono</dt><dd><a href="{{ sitio.whatsapp | urlWhatsapp('Hola, quiero hacer una consulta.') }}" target="_blank" rel="noopener">{{ sitio.telefono_visible }}</a></dd></div>
+    <div><dt>Mail</dt><dd><a href="mailto:{{ sitio.email }}">{{ sitio.email }}</a></dd></div>
+    <div><dt>Instagram</dt><dd><a href="{{ sitio.instagram }}" target="_blank" rel="noopener">@{{ sitio.instagram_usuario }}</a></dd></div>
+  </dl>
+</section>
+{% endblock %}

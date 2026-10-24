@@ -6,6 +6,8 @@ eleventyExcludeFromCollections: true
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>{{ sitio.url }}/</loc></url>
 <url><loc>{{ sitio.url }}/contacto.html</loc></url>
+<url><loc>{{ sitio.url }}/empresa.html</loc></url>
+<url><loc>{{ sitio.url }}/privacidad.html</loc></url>
 {%- for c in categorias %}
 <url><loc>{{ sitio.url }}/{{ c.slug }}.html</loc></url>
 {%- endfor %}

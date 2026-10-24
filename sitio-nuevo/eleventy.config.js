@@ -3,7 +3,7 @@ import { fileURLToPath } from "node:url";
 import Image from "@11ty/eleventy-img";
 import { recortar } from "./lib/texto.js";
 import { urlProducto, urlWhatsapp, mensajeProducto, marcaVisible, destacados } from "./lib/catalogo.js";
-import { esquemaInicio, esquemaContacto, esquemaCategoria, esquemaProducto, jsonLd } from "./lib/esquema.js";
+import { esquemaInicio, esquemaContacto, esquemaEmpresa, esquemaPagina, esquemaCategoria, esquemaProducto, jsonLd } from "./lib/esquema.js";
 
 const AQUI = path.dirname(fileURLToPath(import.meta.url));
 const RAIZ = path.resolve(AQUI, "..");
@@ -36,7 +36,7 @@ export default function (eleventyConfig) {
 
   // Datos estructurados (JSON-LD) por tipo de página; ver lib/esquema.js.
   const script = (objeto) => `<script type="application/ld+json">${jsonLd(objeto)}</script>`;
-  const ESQUEMAS = { inicio: esquemaInicio, contacto: esquemaContacto, categoria: esquemaCategoria };
+  const ESQUEMAS = { inicio: esquemaInicio, contacto: esquemaContacto, empresa: esquemaEmpresa, pagina: esquemaPagina, categoria: esquemaCategoria };
   eleventyConfig.addShortcode("esquema", (tipo, sitio, datos) => script(ESQUEMAS[tipo](sitio, datos)));
   // La imagen del producto es la misma JPEG optimizada que muestra la ficha.
   eleventyConfig.addAsyncShortcode("esquemaProducto", async (sitio, p, ruta, migas) => {

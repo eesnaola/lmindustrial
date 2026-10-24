@@ -220,6 +220,17 @@ p { margin: 0 0 1em; }
 .pie__marca { margin-bottom: 6px; color: #fff; font-size: 1.1rem; font-weight: 700; }
 .pie__titulo { margin-bottom: 8px; color: #fff; font-weight: 700; }
 .pie__lista { list-style: none; display: grid; gap: 6px; margin: 0; padding: 0; }
+.texto-largo > * { max-width: 800px; }
+.texto-largo h2 { margin-top: 28px; }
+.texto-largo ul { padding-left: 1.2em; }
+.texto-largo li { margin-bottom: 6px; }
+.datos-empresa { display: grid; gap: 0; margin: 0; background: var(--superficie); border: 1px solid var(--borde); border-radius: var(--radio); }
+.datos-empresa > div { display: grid; grid-template-columns: 12em minmax(0, 1fr); gap: 12px; padding: 10px 14px; border-bottom: 1px solid var(--borde); }
+.datos-empresa > div:last-child { border-bottom: 0; }
+.datos-empresa dt { font-weight: 600; }
+.datos-empresa dd { margin: 0; overflow-wrap: anywhere; }
+@media (max-width: 560px) { .datos-empresa > div { grid-template-columns: minmax(0, 1fr); gap: 2px; } }
+.nota-legal { color: var(--texto-2); font-size: .9rem; }
 .pie__marcas { margin-top: 14px; color: #9aa6a6; font-size: .85rem; line-height: 1.6; }
 .pie__marcas span { white-space: nowrap; }
 @media (max-width: 760px) { .pie__grilla { grid-template-columns: minmax(0, 1fr); } }

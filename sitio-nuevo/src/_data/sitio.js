@@ -14,6 +14,14 @@ export default {
   email: "info@lmindustrial.com.ar",
   envios: "Envíos a todo el país",
   ga4: "G-VMTZYT8BEQ",
+  // Datos de la empresa (página Empresa, privacidad, pie y datos estructurados). La dirección no se publica.
+  razon_social: "Molachino Lautaro",
+  cuit: "20-30040055-9",
+  localidad: "Quilmes",
+  provincia: "Buenos Aires",
+  instagram: "https://www.instagram.com/lm_industrial/",
+  instagram_usuario: "lm_industrial",
+  industrias: ["petroquímica", "farmacéutica", "alimenticia", "agrícola", "plástica", "cementera", "automotriz", "siderúrgica", "naviera", "textil", "papelera", "cosmética"],
   // Marcas con logo propio y productos en el catálogo, ordenadas por cantidad de productos.
   // Logos recortados por scripts/preparar-logos.sh; el ancho se calcula para igualar la superficie visual.
   marcas: [
