@@ -26,7 +26,7 @@
     "imagen": "img/iconos/ValInd.jpg",
     "titulo_seo": "Válvulas industriales | LM Industrial",
     "descripcion_seo": "Valvulas Industriales: Valvulas a Solenoide, Valvulas Esfericas, Valvulas Mariposa, Valvulas Esclusa, Valvulas de Retencion, Valvulas de Asiento Inclinado, Valvulas de Control, Valvulas Globo, Valvulas Aguja, Valvulas de Alivio, Valvulas Reductoras de Presion, Actuadores Rotantes.",
-    "intro": "",
+    "intro": "Válvulas para la conducción y el control de fluidos en la industria: a solenoide, esféricas, mariposa, de retención, esclusa, globo, aguja, de control, reductoras de presión, de alivio y de equilibrado, más actuadores rotantes y accesorios. Marcas Genebre, Intor, Thermoval, ODE, ITAP y Danfoss, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -44,7 +44,7 @@
     "imagen": "img/iconos/ValSol.jpg",
     "titulo_seo": "Válvulas a solenoide | LM Industrial",
     "descripcion_seo": "Válvulas a Solenoide Genebre-Ode, Intor y Thermoval.",
-    "intro": "",
+    "intro": "Válvulas a solenoide (electroválvulas) que abren o cierran el paso del fluido por medio de una bobina eléctrica. Hay versiones de latón, de acero inoxidable y para vapor, normalmente cerradas (NC) y normalmente abiertas (NA). Marcas Genebre, Intor, Thermoval y ODE, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -63,7 +63,7 @@
     "imagen": "img/iconos/VSLat.jpg",
     "titulo_seo": "Válvulas a solenoide de latón | LM Industrial",
     "descripcion_seo": "Válvulas a Solenoide de Latón Genebre-Ode, Intor y Thermoval.",
-    "intro": "",
+    "intro": "Válvulas a solenoide con cuerpo de latón para aire, agua y otros fluidos compatibles. Hay versiones normalmente cerradas (NC) y normalmente abiertas (NA), de acción directa, indirecta y mixta, y de 2/2 y 3/2 vías. Marcas Genebre, Intor, Thermoval y ODE, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -80,7 +80,7 @@
     "imagen": "img/iconos/VSLNCAD.jpg",
     "titulo_seo": "Válvulas a solenoide de latón NC de acción directa | LM Industrial",
     "descripcion_seo": "Válvulas a Solenoide de Latón NC Acción Directa Genebre-Ode, Intor y Thermoval.",
-    "intro": "",
+    "intro": "Válvulas a solenoide de latón normalmente cerradas (NC): el paso se abre al energizar la bobina. Incluye modelos de acción directa y de acción mixta, para aire, agua y petróleo, y versiones para alta presión. Marcas Genebre, Intor y Thermoval, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -95,7 +95,7 @@
     "imagen": "img/iconos/VSLNCAI.jpg",
     "titulo_seo": "Válvulas a solenoide de latón NC de acción indirecta | LM Industrial",
     "descripcion_seo": "Válvulas a Solenoide de Latón NC Acción Indirecta Genebre-Ode e Intor.",
-    "intro": "",
+    "intro": "Válvulas a solenoide de latón normalmente cerradas (NC) de acción indirecta o servo pilotada, en las que la presión del propio fluido ayuda a abrir la válvula. Marcas Genebre e Intor, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -111,7 +111,7 @@
     "imagen": "img/iconos/VSLNAAD.jpg",
     "titulo_seo": "Válvulas a solenoide de latón NA de acción directa | LM Industrial",
     "descripcion_seo": "Válvulas a Solenoide de Latón NA Acción Directa Genebre-Ode, Intor y Thermoval.",
-    "intro": "",
+    "intro": "Válvulas a solenoide de latón normalmente abiertas (NA): el paso se cierra al energizar la bobina. Modelos de acción directa con bobinas de 8 W y 14 W y versiones de acción mixta. Marcas Genebre e Intor, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -126,7 +126,7 @@
     "imagen": "img/iconos/VSLNAAI.jpg",
     "titulo_seo": "Válvulas a solenoide de latón NA de acción indirecta | LM Industrial",
     "descripcion_seo": "Válvulas a Solenoide de Latón NA Acción Indirecta Genebre-Ode e Intor.",
-    "intro": "",
+    "intro": "Válvulas a solenoide de latón normalmente abiertas (NA) de acción indirecta, con pilotaje a pistón o a membrana, en las que la presión del fluido asiste el cierre. Marcas Genebre y ODE, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -145,7 +145,7 @@
     "imagen": "img/iconos/VSInox.jpg",
     "titulo_seo": "Válvulas a solenoide de acero inoxidable | LM Industrial",
     "descripcion_seo": "Válvulas a Solenoide Inoxidables Genebre-Ode, Intor y Thermoval.",
-    "intro": "",
+    "intro": "Válvulas a solenoide con cuerpo de acero inoxidable, con versiones para alta temperatura y para la industria química y alimenticia. Hay modelos normalmente cerrados (NC) y normalmente abiertos (NA), de 2/2 y 3/2 vías. Marcas Genebre, ODE e Intor, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -161,7 +161,7 @@
     "imagen": "img/iconos/VSINCAD.jpg",
     "titulo_seo": "Válvulas a solenoide inox NC de acción directa | LM Industrial",
     "descripcion_seo": "Válvulas a Solenoide Inoxidable NC Acción Directa Genebre-Ode, Intor y Thermoval.",
-    "intro": "",
+    "intro": "Válvulas a solenoide de acero inoxidable normalmente cerradas (NC), de acción directa y mixta, con versiones para alta temperatura y para la industria química y alimenticia. Marcas Genebre, ODE e Intor, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -176,7 +176,7 @@
     "imagen": "img/iconos/VSINCAD.jpg",
     "titulo_seo": "Válvulas a solenoide inox NA de acción directa | LM Industrial",
     "descripcion_seo": "Válvulas a Solenoide Inoxidable NA Acción Directa Genebre-Ode, Intor y Thermoval.",
-    "intro": "",
+    "intro": "Válvulas a solenoide de acero inoxidable normalmente abiertas (NA) de acción directa: el paso se cierra al energizar la bobina. Aptas para la industria química y alimenticia. Marcas ODE e Intor, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -192,7 +192,7 @@
     "imagen": "img/iconos/VSVap.jpg",
     "titulo_seo": "Válvulas a solenoide para vapor | LM Industrial",
     "descripcion_seo": "Válvulas a Solenoide para Vapor Genebre-Ode y Thermoval.",
-    "intro": "",
+    "intro": "Válvulas a solenoide normalmente cerradas para vapor y agua caliente, servo operadas a pistón o para alta temperatura, y versiones que también trabajan con aire comprimido. Marcas Thermoval, Genebre e Intor, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -256,7 +256,7 @@
     "imagen": "img/iconos/ValMar.jpg",
     "titulo_seo": "Válvulas mariposa | LM Industrial",
     "descripcion_seo": "Válvulas Mariposa Wafer y Lug. Marca Genebre.",
-    "intro": "",
+    "intro": "Válvulas mariposa tipo wafer y tipo lug, con asientos de EPDM o de PTFE y cuerpo de hierro dúctil o de acero inoxidable, y reductores manuales a volante para su accionamiento. Marca Genebre, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -275,7 +275,7 @@
     "imagen": "img/iconos/ActRot.jpg",
     "titulo_seo": "Actuadores rotantes | LM Industrial",
     "descripcion_seo": "Actuadores rotantes neumaticos y electricos Genebre e Intor.",
-    "intro": "",
+    "intro": "Actuadores para automatizar válvulas de cuarto de vuelta, como esféricas y mariposa: neumáticos de piñón y cremallera o de doble cremallera, y eléctricos multivoltaje y trifásicos. Incluye sus accesorios de control. Marcas Genebre e Intor, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -296,7 +296,7 @@
     "imagen": "img/iconos/AccAR.jpg",
     "titulo_seo": "Accesorios para actuador rotante | LM Industrial",
     "descripcion_seo": "Actuadores rotantes neumaticos y electricos Genebre e Intor.",
-    "intro": "",
+    "intro": "Accesorios para actuadores rotativos: cajas de final de carrera, electroválvulas 5/2 vías Namur, posicionadores neumáticos y electroneumáticos, reductores manuales de emergencia y controladores de velocidad. Marca Genebre, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -312,7 +312,7 @@
     "imagen": "img/iconos/ValAng.jpg",
     "titulo_seo": "Válvulas de asiento inclinado | LM Industrial",
     "descripcion_seo": "Válvulas de Asiento Inclinado. Marca Genebre.",
-    "intro": "",
+    "intro": "Válvulas de asiento inclinado con actuador neumático, de simple efecto o rotable 360°, y cajas de final de carrera con microswitches para indicar su posición. Marcas Genebre e Intor, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -341,7 +341,7 @@
     "imagen": "img/iconos/ValRet.jpg",
     "titulo_seo": "Válvulas de retención | LM Industrial",
     "descripcion_seo": "Válvulas de Retención Roscadas, Socket Weld SW, Wafer. Marca Genebre e Itap.",
-    "intro": "",
+    "intro": "Válvulas de retención que dejan pasar el fluido en un solo sentido e impiden el retroceso: wafer de simple y doble disco, roscadas de clapeta, de disco guiado y a pistón, bridadas de disco y a bola, en inox, fundición, acero y latón. Marcas Genebre e ITAP, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -360,7 +360,7 @@
     "imagen": "img/iconos/ValEsc.jpg",
     "titulo_seo": "Válvulas esclusa | LM Industrial",
     "descripcion_seo": "Válvulas Esclusa Bridadas S-150, Roscadas, SW. Marca Genebre.",
-    "intro": "",
+    "intro": "Válvulas esclusa para cierre total o apertura total del paso, en acero fundido, acero forjado, acero inoxidable y hierro dúctil, con extremos bridados ANSI 150, roscados, roscados NPT y socket weld. Marca Genebre, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -378,7 +378,7 @@
     "imagen": "img/iconos/Glo2231.jpg",
     "titulo_seo": "Válvulas globo | LM Industrial",
     "descripcion_seo": "Válvulas Globo Bridadas S-150, Roscadas, SW. Marca Genebre.",
-    "intro": "",
+    "intro": "Válvulas globo para regulación de caudal y cierre, en acero inoxidable y acero forjado, con extremos roscados, roscados NPT, socket weld y bridados ANSI 150, y una versión con fuelle bridada. Marca Genebre, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -393,7 +393,7 @@
     "imagen": "img/iconos/ValCtr.jpg",
     "titulo_seo": "Válvulas de control | LM Industrial",
     "descripcion_seo": "Válvulas de Control Modulantes. Marca Genebre.",
-    "intro": "",
+    "intro": "Válvulas de control neumáticas de 2 vías para regulación modulante de procesos, y posicionadores electroneumáticos para actuadores neumáticos lineales. Marca Genebre, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -410,7 +410,7 @@
     "imagen": "img/iconos/VA2223.jpg",
     "titulo_seo": "Válvulas aguja | LM Industrial",
     "descripcion_seo": "Válvulas Aguja Roscadas, 3000psi, 6000psi. Marca Genebre.",
-    "intro": "",
+    "intro": "Válvulas aguja para regulación fina de caudal y para instrumentación, en acero al carbono y acero inoxidable, para 3000 y 6000 PSI y con versión con venteo. Marca Genebre, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -429,7 +429,7 @@
     "imagen": "img/iconos/VRP.jpg",
     "titulo_seo": "Válvulas reductoras de presión | LM Industrial",
     "descripcion_seo": "Válvulas Reductoras de Presión, Bridadas S-150, Roscadas, Pilotadas. Marca Genebre.",
-    "intro": "",
+    "intro": "Válvulas reductoras de presión que mantienen una presión de salida estable aguas abajo: a pistón, a membrana y pilotadas, en latón niquelado y acero inoxidable, roscadas y bridadas, con una versión para vapor. Marca Genebre, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -448,7 +448,7 @@
     "imagen": "img/iconos/VAliv.jpg",
     "titulo_seo": "Válvulas de alivio | LM Industrial",
     "descripcion_seo": "Válvulas de Alivio de Bronce e Inox, Roscadas y Bridadas. Marca Genebre.",
-    "intro": "",
+    "intro": "Válvulas de seguridad y de alivio de presión, que descargan el exceso de presión de una instalación: roscadas y bridadas, en acero inoxidable, con y sin palanca, y con escape conducido. Marca Genebre, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -465,7 +465,7 @@
     "imagen": "img/iconos/VEqMSV.jpg",
     "titulo_seo": "Válvulas de equilibrado | LM Industrial",
     "descripcion_seo": "Válvulas de Equilibrado Danfoss y Genebre.",
-    "intro": "",
+    "intro": "Válvulas de equilibrado para balancear el caudal de los circuitos hidráulicos: estáticas PN16 y PN20, con juntas de EPDM o de Vitón, y bridadas de doble regulación. Marcas Danfoss y Genebre, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -486,7 +486,7 @@
     "imagen": "img/iconos/AccVal.jpg",
     "titulo_seo": "Accesorios para válvulas | LM Industrial",
     "descripcion_seo": "Filtros tipo Y, Roscados y Bridados, Inox y Acero Fundido. Juntas de Expansión, Roscadas y Bridadas. Marca Genebre.",
-    "intro": "",
+    "intro": "Accesorios para líneas con válvulas: filtros tipo Y en latón, acero inoxidable y hierro dúctil, roscados y bridados, y juntas de expansión de EPDM y metálicas, roscadas y bridadas. Marca Genebre, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -517,7 +517,7 @@
     "imagen": "img/iconos/Vapor.jpg",
     "titulo_seo": "Vapor | LM Industrial",
     "descripcion_seo": "Vapor: Valvulas a Solenoide, Valvulas Esfericas, Valvulas Mariposa, Valvulas Esclusa, Valvulas de Retencion, Valvulas de Asiento Inclinado, Valvulas de Control, Valvulas Globo, Valvulas Aguja, Valvulas de Alivio, Valvulas Reductoras de Presion, Actuadores Rotantes.",
-    "intro": "",
+    "intro": "Válvulas y accesorios para líneas de vapor: esféricas, a solenoide, mariposa, de retención, esclusa, globo, aguja, de control, reductoras de presión y de alivio, además de purgadores, filtros Y, juntas de expansión y mirillas. Marcas Genebre, Thermoval e Intor, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -537,7 +537,7 @@
     "imagen": "img/iconos/VEVap.jpg",
     "titulo_seo": "Válvulas esféricas para vapor | LM Industrial",
     "descripcion_seo": "Válvulas Esféricas para Vapor Roscadas, Bridadas, Socket Weld, ISO 5211. Marca Genebre, Intor.",
-    "intro": "",
+    "intro": "Válvulas esféricas aptas para vapor, en acero inoxidable y acero al carbono, de 3 piezas roscadas, bridadas ANSI 150 y roscadas NPT para alta presión, con sus comandos manuales y accesorios. Marca Genebre, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -552,7 +552,7 @@
     "imagen": "img/iconos/VMVap.jpg",
     "titulo_seo": "Válvulas mariposa para vapor | LM Industrial",
     "descripcion_seo": "Válvulas Mariposa Wafer y Lug. Marca Genebre.",
-    "intro": "",
+    "intro": "Válvulas mariposa tipo wafer con asiento de PTFE, aptas para vapor, con cuerpo de hierro dúctil o de acero inoxidable. Marca Genebre, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -569,7 +569,7 @@
     "imagen": "img/iconos/VRVap.jpg",
     "titulo_seo": "Válvulas de retención para vapor | LM Industrial",
     "descripcion_seo": "Válvulas de Retención Roscadas, Socket Weld SW, Wafer. Marca Genebre e Itap.",
-    "intro": "",
+    "intro": "Válvulas de retención aptas para vapor: wafer de acero inoxidable de dimensiones reducidas, roscadas inox de cierre metal-metal y a pistón clase 800 roscadas NPT y socket weld. Marca Genebre, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -586,7 +586,7 @@
     "imagen": "img/iconos/Esc2232A.jpg",
     "titulo_seo": "Válvulas esclusa para vapor | LM Industrial",
     "descripcion_seo": "Válvulas Esclusa Bridadas S-150, Roscadas, SW. Marca Genebre.",
-    "intro": "",
+    "intro": "Válvulas esclusa aptas para vapor, en acero fundido y acero forjado, con extremos bridados ANSI 150, roscados NPT y socket weld. Marca Genebre, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -603,7 +603,7 @@
     "imagen": "img/iconos/Glo2231.jpg",
     "titulo_seo": "Válvulas globo para vapor | LM Industrial",
     "descripcion_seo": "Válvulas Globo Bridadas S-150, Roscadas, SW. Marca Genebre.",
-    "intro": "",
+    "intro": "Válvulas globo aptas para vapor, en acero forjado con extremos bridados ANSI 150, roscados NPT y socket weld, y una versión con fuelle bridada. Marca Genebre, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -622,7 +622,7 @@
     "imagen": "img/iconos/PurVap.jpg",
     "titulo_seo": "Purgadores para vapor | LM Industrial",
     "descripcion_seo": "Purgador de Boya Cerrada, Purgador Termostatico, Trampa Termodinamica, Bridada, Roscada. Marca Genebre.",
-    "intro": "",
+    "intro": "Purgadores que descargan el condensado y el aire de las líneas de vapor: trampas termodinámicas con y sin filtro, de boya cerrada roscados y bridados, y termostáticos de aire en latón e inoxidable. Marca Genebre, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -638,7 +638,7 @@
     "imagen": "img/iconos/VRP.jpg",
     "titulo_seo": "Válvulas reductoras de presión para vapor | LM Industrial",
     "descripcion_seo": "Válvulas Reductoras de Presión para Vapor, Bridadas S-150, Roscadas, Pilotadas. Marca Genebre.",
-    "intro": "",
+    "intro": "Válvulas reductoras de presión para vapor, que mantienen estable la presión de salida, incluidas versiones pilotadas roscadas y bridadas. Marca Genebre, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -659,7 +659,7 @@
     "imagen": "img/iconos/CtrQuem.jpg",
     "titulo_seo": "Control de quemadores | LM Industrial",
     "descripcion_seo": "Control de Quemadores: Valvulas a Solenoide para Gas, Controles de Llama, Detectores de Llama, Transformadores, Presostatos para Gas y Aire y Vapor, Actuadores Electricos Damper, Filtros para Gas.",
-    "intro": "",
+    "intro": "Componentes para el control y la seguridad de quemadores: controles y detectores de llama, válvulas a solenoide para gas, presostatos, termostatos, actuadores para dampers y transformadores de encendido. Marcas Resideo, Honeywell, Siemens, Satronic, Brahma, Madas, Dungs, Danfoss, Novus y otras, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -680,7 +680,7 @@
     "imagen": "img/iconos/ValGas.jpg",
     "titulo_seo": "Válvulas a solenoide para gas | LM Industrial",
     "descripcion_seo": "Válvulas a solenoide para Gas Thermoval, Brahma, Eurocontrol, Madas.",
-    "intro": "",
+    "intro": "Válvulas a solenoide normalmente cerradas para gas combustible: de apertura rápida, de apertura lenta regulable, con filtro incorporado y de rearme manual, además de pilotos solenoide para quemadores a gas y a gasoil. Marcas Madas, Brahma y Thermoval, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -715,7 +715,7 @@
     "imagen": "img/iconos/CtrLla.jpg",
     "titulo_seo": "Controles de llama | LM Industrial",
     "descripcion_seo": "Controles de Llama Honeywell, Satronic, Resideo, Brahma, Siemens, Landis & Gyr.",
-    "intro": "",
+    "intro": "Controles de llama (programadores) que supervisan el encendido y el funcionamiento seguro de quemadores de gas, aceite y mixtos, atmosféricos y de tiro forzado, electromecánicos y digitales. Marcas Resideo (ex Honeywell), Honeywell, Siemens (ex Landis & Gyr) y Brahma, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -740,7 +740,7 @@
     "imagen": "img/iconos/DetLla.jpg",
     "titulo_seo": "Detectores de llama | LM Industrial",
     "descripcion_seo": "Detectores de Llama Honeywell, Satronic, Resideo, Brahma, Siemens, Landis & Gyr.",
-    "intro": "",
+    "intro": "Detectores de llama para quemadores de gas, gasóleo y biomasa: sensores ultravioleta e infrarrojos, fotorresistencias, fotocélulas, fototransistores y electrodos de ignición y detección. Marcas Siemens (ex Landis & Gyr), Honeywell, Satronic y Brahma, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -766,7 +766,7 @@
     "imagen": "img/iconos/Pres.jpg",
     "titulo_seo": "Presostatos y transmisores de presión | LM Industrial",
     "descripcion_seo": "Presostatos y Transmisores de Presión",
-    "intro": "",
+    "intro": "Presostatos y transmisores de presión para gas, aire, vapor, líquidos y refrigeración: ajustables, diferenciales, de seguridad, modulantes y digitales, y transmisores con salida analógica. Marcas Danfoss, Honeywell, Dungs, Fantini Cosmi e Intor, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -793,7 +793,7 @@
     "imagen": "img/iconos/Term.jpg",
     "titulo_seo": "Termostatos y controladores de temperatura | LM Industrial",
     "descripcion_seo": "Termostatos Danfoss y Controlador Digital de Temperatura STC.",
-    "intro": "",
+    "intro": "Termostatos electromecánicos y controladores e indicadores digitales de temperatura, con salidas a relé o analógicas y control PID, para procesos industriales y equipos de frío y calor. Marcas Danfoss y Novus, y controladores STC, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -810,7 +810,7 @@
     "imagen": "img/iconos/DamS8081.jpg",
     "titulo_seo": "Actuadores eléctricos para dampers | LM Industrial",
     "descripcion_seo": "Actuadores Eléctricos Dampers, On/Off y Modulantes, Alre (tipo Belimo), Honeywell, Industrie Technik.",
-    "intro": "",
+    "intro": "Actuadores eléctricos para dampers y compuertas de aire, todo/nada, modulantes y flotantes, de 2 a 40 Nm, con versiones con realimentación de posición. Marca ALRE, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -836,7 +836,7 @@
     "imagen": "img/iconos/AutNeu.jpg",
     "titulo_seo": "Automatización neumática | LM Industrial",
     "descripcion_seo": "Automatizacion Neumatica: Valvulas Neumaticas, Actuadores/Cilindros Neumaticos, Tratamiento de Aire, Conectores, Actuadores Rotantes, Valvulas de Asiento Inclinado, Vibradores Neumaticos, Vacio, Reguladores Proporcionales, Sensores, Presostatos, Valvulas Axiales.",
-    "intro": "",
+    "intro": "Componentes para automatización con aire comprimido: válvulas y cilindros neumáticos, conectores y mangueras, vibradores, componentes para vacío, sensores de proximidad, presostatos, actuadores rotantes y equipos de tratamiento de aire. Marcas Intor y Genebre, entre otras, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -853,7 +853,7 @@
     "imagen": "img/iconos/ValNeu.jpg",
     "titulo_seo": "Válvulas neumáticas | LM Industrial",
     "descripcion_seo": "Electroválvulas neumáticas, Válvulas de mando neumático, Válvulas de mando manual, Válvulas de mando mecánico",
-    "intro": "",
+    "intro": "Válvulas para circuitos neumáticos: electroválvulas con accionamiento manual de emergencia, válvulas de accionamiento por piloto de aire, de accionamiento manual y mecánico, y manifolds para electroválvulas. Marca Intor, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -876,7 +876,7 @@
     "imagen": "img/iconos/ActNeu.jpg",
     "titulo_seo": "Actuadores neumáticos | LM Industrial",
     "descripcion_seo": "Cilindros Neumaticos, Mesas Giratorias, Pinzas Angulares.",
-    "intro": "",
+    "intro": "Cilindros y actuadores neumáticos: normalizados ISO 15552, compactos ISO 21287, mini cilindros ISO 6432, roscados, de vástagos paralelos, tipo cartucho y sin vástago, además de mesas giratorias, pinzas y accesorios de montaje. Marca Intor, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -898,7 +898,7 @@
     "imagen": "img/iconos/ConNeu.jpg",
     "titulo_seo": "Conectores y accesorios neumáticos | LM Industrial",
     "descripcion_seo": "Conectores Rápidos, Conectores Universales, Conectores Flared, Conectores de Latón, Conectores de Inoxidable.",
-    "intro": "",
+    "intro": "Conectores y accesorios para instalaciones de aire comprimido: conectores rápidos de inserción y metálicos, reguladores de caudal, accesorios roscados de latón, mangueras de poliuretano y conectores de compresión y abocardados. Marca Intor, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -914,7 +914,7 @@
     "imagen": "img/iconos/VibNeu.jpg",
     "titulo_seo": "Vibradores neumáticos | LM Industrial",
     "descripcion_seo": "Vibradores neumáticos lineales series FP y NTP, Vibradores neumáticos de bola serie K, Vibradores neumáticos de turbina serie GT",
-    "intro": "",
+    "intro": "Vibradores neumáticos lineales de pistón, de bola y de turbina, accionados con aire comprimido. Marca Intor, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -932,7 +932,7 @@
     "imagen": "img/iconos/Vac.jpg",
     "titulo_seo": "Componentes para vacío | LM Industrial",
     "descripcion_seo": "Vacío: Eyectores de vacío V-ZH, Eyectores de vacío de línea V-ZU, Filtro para vacío ZFC, Ventosas ZPT.",
-    "intro": "",
+    "intro": "Componentes para sistemas de vacío: eyectores compactos y en línea, filtros de aire para líneas de vacío y ventosas con y sin adaptador amortiguador. Marca Intor, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -949,7 +949,7 @@
     "imagen": "img/iconos/Sensor.jpg",
     "titulo_seo": "Sensores de proximidad | LM Industrial",
     "descripcion_seo": "Sensores de Proximidad Magnéticos, Inductivos, Capacitivos y Fotoeléctricos. Marca Intor.",
-    "intro": "",
+    "intro": "Sensores de proximidad para automatización: magnéticos para cilindros, inductivos, capacitivos y fotoeléctricos. Marca Intor, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -966,7 +966,7 @@
     "imagen": "img/iconos/InsMed.jpg",
     "titulo_seo": "Instrumentos de medición | LM Industrial",
     "descripcion_seo": "Instrumentos de Medicion: Manometros, Transmisores de Presion, Sensores de Nivel, Termometros, Caudalimetros.",
-    "intro": "",
+    "intro": "Instrumentos para medir presión, nivel, caudal y temperatura en procesos industriales: manómetros, transmisores, sensores de nivel, caudalímetros, medidores de gas y termómetros. Marcas Genebre, Instrubit, Trafag, ALRE y RMG, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -985,7 +985,7 @@
     "imagen": "img/iconos/Presion.jpg",
     "titulo_seo": "Medición de presión | LM Industrial",
     "descripcion_seo": "Medición de Presión: Manómetros, Transmisores de Presión. Marcas: Genebre, Instrubit, Trafag, Alre.",
-    "intro": "",
+    "intro": "Instrumentos de medición de presión: manómetros con glicerina y manómetros mecánicos y digitales, y transmisores de presión con salida 4-20 mA, HART y salida analógica configurable. Marcas Genebre, Instrubit, Trafag y ALRE, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -1001,7 +1001,7 @@
     "imagen": "img/iconos/SenRadIns.jpg",
     "titulo_seo": "Medición de nivel | LM Industrial",
     "descripcion_seo": "Medición de Nivel: Sensores de Nivel por Radar, de Alta Frecuencia y Vibrantes. Marcas: Instrubit, Trafag.",
-    "intro": "",
+    "intro": "Sensores para medir y detectar nivel de líquidos y sólidos: radar de 80 GHz, vibrantes y de alta frecuencia resistentes a la adherencia. Marcas Instrubit y Trafag, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -1017,7 +1017,7 @@
     "imagen": "img/iconos/CauEleIns.jpg",
     "titulo_seo": "Medición de caudal | LM Industrial",
     "descripcion_seo": "Medición de Caudal: Caudalímetros Electromagnéticos, másicos y de gas. Marcas: Instrubit, RMG.",
-    "intro": "",
+    "intro": "Instrumentos para medir caudal: caudalímetros electromagnéticos para grandes diámetros, caudalímetros másicos y medidores de gas ultrasónicos y de turbina. Marcas Instrubit y RMG, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -1031,7 +1031,7 @@
     "imagen": "img/iconos/TerIns.jpg",
     "titulo_seo": "Medición de temperatura | LM Industrial",
     "descripcion_seo": "Medición de Temperatura: Termómetros Bimetálicos. Marcas: Instrubit.",
-    "intro": "",
+    "intro": "Instrumentos para medir temperatura en procesos industriales: termómetros bimetálicos con conexión roscada NPT. Marca Instrubit, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -1050,7 +1050,7 @@
     "imagen": "img/iconos/Incen.jpg",
     "titulo_seo": "Anti incendio | LM Industrial",
     "descripcion_seo": "Anti Incendio: Valvulas Mariposa Ranuradas y Wafer ULFM, Valvulas Esclusa Ranuradas y Bridadas ULFM, Valvulas de Retencion Bridadas ULFM.",
-    "intro": "",
+    "intro": "Válvulas para redes de incendio con certificación UL/FM: mariposa con extremos ranurados o tipo wafer, de compuerta con cierre elástico bridadas o ranuradas, y de retención de disco oscilante bridadas. Marca Genebre, con envíos a todo el país.",
     "faqs": []
   },
   {
@@ -1067,7 +1067,7 @@
     "imagen": "img/iconos/ValSan.jpg",
     "titulo_seo": "Válvulas sanitarias | LM Industrial",
     "descripcion_seo": "Válvulas sanitarias de acero inoxidable: a diafragma clamp, mariposa clamp, esférica para soldar y de retención para soldar.",
-    "intro": "",
+    "intro": "Válvulas sanitarias de acero inoxidable para la industria alimentaria, láctea, de bebidas y farmacéutica: a diafragma y mariposa con conexión clamp, y esféricas y de retención con extremos para soldar. Marca Famiq, con envíos a todo el país.",
     "faqs": []
   }
 ]

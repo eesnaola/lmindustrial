@@ -28,6 +28,8 @@ canonica: "/"
 <section class="franja-marcas">
   <div class="contenedor">
     <h2>Marcas que comercializamos</h2>
+    {# Las marcas también en texto: los logos solos no los lee un buscador ni una IA. #}
+    <p class="franja-marcas__texto">Comercializamos productos de {% for m in sitio.marcas %}{{ m.nombre }}{% if loop.revindex == 2 %} y {% elif not loop.last %}, {% endif %}{% endfor %}.</p>
     <div class="carrusel-marcas">
       <div class="carrusel-marcas__pista">
         <ul class="marcas">{% asyncEach m in sitio.marcas %}<li style="--ancho: {{ m.ancho }}px">{% foto m.logo, m.nombre, 400, false, false %}</li>{% endeach %}</ul>

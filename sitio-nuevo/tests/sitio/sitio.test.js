@@ -258,3 +258,16 @@ test("cada categoría lista en sus datos estructurados lo mismo que muestra su g
     assert.equal(nodo(grafo(rel), "CollectionPage").mainEntity.numberOfItems, esperadas, rel);
   }
 });
+
+test("cada categoría tiene un párrafo propio debajo del título", () => {
+  for (const c of categorias) {
+    assert.ok(c.intro?.length >= 80, `${c.slug}: intro`);
+    assert.match(leer(`${c.slug}.html`), /<h1>[^<]+<\/h1>\s*<p class="intro">/, `${c.slug}: el párrafo va debajo del h1`);
+  }
+});
+
+test("la portada nombra en texto las mismas marcas que muestra el carrusel", () => {
+  const texto = textoPlano(leer("index.html").match(/<p class="franja-marcas__texto">([\s\S]*?)<\/p>/)[1]);
+  const nombres = sitio.marcas.map((m) => m.nombre);
+  assert.equal(texto, `Comercializamos productos de ${nombres.slice(0, -1).join(", ")} y ${nombres.at(-1)}.`);
+});
