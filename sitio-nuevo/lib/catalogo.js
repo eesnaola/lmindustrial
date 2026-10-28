@@ -69,3 +69,11 @@ export function crearCatalogo(categorias, productos) {
     },
   };
 }
+
+// Título de la ficha: marca y modelo primero, así si Google lo corta queda a la vista lo que más se busca
+// ("Genebre 4030"). "| LM Industrial" solo cuando entra en 65 caracteres; Google ya muestra el sitio en el resultado.
+export function tituloFicha(p) {
+  const base = `${marcaYModelo(p)}: ${p.nombre}`;
+  const completo = `${base} | LM Industrial`;
+  return completo.length <= 65 ? completo : base;
+}

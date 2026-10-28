@@ -17,7 +17,8 @@ export default function (eleventyConfig) {
     });
   }
 
-  const optimizar = (src, anchos) => Image(path.join(RAIZ, src), {
+  const optimizar = (src, anchos, extra = {}) => Image(path.join(RAIZ, src), {
+    ...extra,
     widths: [anchos].flat(),
     formats: ["webp", "jpeg"],
     outputDir: path.join(AQUI, "_site/img/opt/"),
@@ -35,10 +36,11 @@ export default function (eleventyConfig) {
   });
 
   // Foto de fondo de la portada: es lo más grande de la primera pantalla, así que va con prioridad y en varios
-  // anchos, para que el celular no descargue la de 1600 px.
+  // anchos. Como va oscurecida detrás del texto, en el celular alcanza con una más chica y de menos calidad
+  // (sizes de 300px: en un celular de densidad 2,6 elige la de 768 px en vez de la de 1600).
   eleventyConfig.addAsyncShortcode("fotoPortada", async (src) => {
-    const meta = await optimizar(src, [640, 1024, 1600]);
-    return Image.generateHTML(meta, { alt: "", sizes: "100vw", fetchpriority: "high", decoding: "async" });
+    const meta = await optimizar(src, [480, 768, 1024, 1600], { sharpWebpOptions: { quality: 55 }, sharpJpegOptions: { quality: 60, mozjpeg: true } });
+    return Image.generateHTML(meta, { alt: "", sizes: "(max-width: 760px) 300px, 100vw", fetchpriority: "high", decoding: "async" });
   });
 
   // Datos estructurados (JSON-LD) por tipo de página; ver lib/esquema.js.

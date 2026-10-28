@@ -23,7 +23,7 @@ canonica: "/"
 <section class="contenedor seccion">
   <h2>Productos</h2>
   {% set ancho = 600 %}
-  <div class="grilla grilla--portada">{% asyncEach c in catalogo.raices() %}{% set inmediata = loop.index <= 3 %}{% include "parciales/tarjeta-categoria.njk" %}{% endeach %}</div>
+  <div class="grilla grilla--portada">{% asyncEach c in catalogo.raices() %}{% set inmediata = loop.index == 1 %}{% include "parciales/tarjeta-categoria.njk" %}{% endeach %}</div>
 </section>
 <section class="franja-marcas" aria-label="Marcas que comercializamos">
   <div class="contenedor">

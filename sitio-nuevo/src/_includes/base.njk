@@ -28,8 +28,10 @@
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <meta name="theme-color" content="#135a56">
   {% if sitio.entorno == "produccion" %}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ sitio.ga4 }}"></script>
-  <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag("js", new Date()); gtag("config", "{{ sitio.ga4 }}");</script>
+  {# El script de Analytics (≈190 KB) se pide recién con la página cargada, para no competir en el celular con la
+     foto y el texto principales; lo que se registre antes queda en dataLayer y se envía igual. #}
+  <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag("js", new Date()); gtag("config", "{{ sitio.ga4 }}");
+  window.addEventListener("load", function () { var s = document.createElement("script"); s.async = true; s.src = "https://www.googletagmanager.com/gtag/js?id={{ sitio.ga4 }}"; document.head.appendChild(s); });</script>
   {% endif %}
   {% block head %}{% endblock %}
 </head>

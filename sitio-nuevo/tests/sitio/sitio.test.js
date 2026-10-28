@@ -339,14 +339,29 @@ test("vista previa al compartir en todas las páginas: título, descripción, UR
   }
 });
 
-test("la foto de portada viene en varios anchos y con prioridad; las primeras tarjetas de cada grilla no esperan", () => {
+test("la foto de portada viene en varios anchos y con prioridad; solo la primera tarjeta de cada grilla no espera", () => {
   const portada = leer("index.html").match(/<div class="portada__fondo">([\s\S]*?)<\/div>/)[1];
   assert.match(portada, /fetchpriority="high"/);
-  assert.match(portada, /srcset="[^"]*640w[^"]*1024w[^"]*1600w"/);
+  assert.match(portada, /srcset="[^"]*480w[^"]*768w[^"]*1024w[^"]*1600w"/);
   assert.doesNotMatch(portada, /loading="lazy"/);
   for (const c of categorias) {
     const grilla = leer(`${c.slug}.html`).match(/<div class="grilla [^"]*"[^>]*>([\s\S]*?)<\/div>\s*(?:<h2|<p class="filtros__vacio"|<\/section>|\s*\{)/)?.[1] ?? "";
     const imgs = [...grilla.matchAll(/<img [^>]*>/g)].map(([t]) => t);
-    imgs.slice(0, 4).forEach((t) => assert.doesNotMatch(t, /loading="lazy"/, `${c.slug}: primeras tarjetas`));
+    imgs.slice(0, 1).forEach((t) => assert.doesNotMatch(t, /loading="lazy"/, `${c.slug}: primera tarjeta`));
+    imgs.slice(1).forEach((t) => assert.match(t, /loading="lazy"/, `${c.slug}: las demás esperan a entrar en pantalla`));
   }
+});
+
+test("el título de cada ficha empieza por marca y modelo, y suma el sitio solo si entra en 65 caracteres", () => {
+  for (const p of fichas) {
+    const titulo = textoPlano(leer(`productos/${p.id}.html`).match(/<title>([^<]*)<\/title>/)[1]);
+    const marcaModelo = mensajeProducto(p).replace("Hola, quiero consultar por ", "").split(" – ")[0];
+    assert.ok(titulo.startsWith(`${marcaModelo}: ${p.nombre}`), `${p.id}: ${titulo}`);
+    if (titulo.endsWith("| LM Industrial")) assert.ok(titulo.length <= 65, `${p.id}: ${titulo.length}`);
+  }
+});
+
+test("Google Analytics se pide recién con la página cargada", () => {
+  const html = leer("index.html");
+  assert.doesNotMatch(html, /<script async src="https:\/\/www\.googletagmanager\.com/);
 });
