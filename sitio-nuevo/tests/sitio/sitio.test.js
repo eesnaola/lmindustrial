@@ -285,6 +285,7 @@ test("Empresa y Privacidad existen, están en el sitemap y se enlazan desde el p
     assert.match(pie, /href="\/empresa\.html"/, rel);
     assert.match(pie, /href="\/privacidad\.html"/, rel);
     assert.match(pie, new RegExp(`href="${sitio.instagram}"`), rel);
+    assert.ok(pie.includes(`href="${sitio.google_maps}"`), `${rel}: Google Maps en el pie`);
   }
 });
 
@@ -294,7 +295,7 @@ test("Empresa muestra los datos que declara la Organization (razón social, CUIT
   const org = nodo(grafo("empresa.html"), "Organization");
   assert.equal(org.legalName, sitio.razon_social);
   assert.equal(org.taxID, sitio.cuit);
-  assert.deepEqual(org.sameAs, [sitio.instagram]);
+  assert.deepEqual(org.sameAs, [sitio.instagram, sitio.google_maps]);
   assert.deepEqual(Object.keys(org.address).sort(), ["@type", "addressCountry", "addressLocality", "addressRegion"], "sin calle ni código postal");
   assert.equal(nodo(grafo("empresa.html"), "AboutPage")?.about["@id"], org["@id"]);
 });

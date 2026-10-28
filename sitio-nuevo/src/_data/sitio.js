@@ -21,6 +21,8 @@ export default {
   provincia: "Buenos Aires",
   instagram: "https://www.instagram.com/lm_industrial/",
   instagram_usuario: "lm_industrial",
+  // Perfil de Google Business (enlace fijo por CID; no depende de una búsqueda).
+  google_maps: "https://maps.google.com/?cid=17419866816704139695",
   industrias: ["petroquímica", "farmacéutica", "alimenticia", "agrícola", "plástica", "cementera", "automotriz", "siderúrgica", "naviera", "textil", "papelera", "cosmética"],
   // Marcas con logo propio y productos en el catálogo, ordenadas por cantidad de productos.
   // Logos recortados por scripts/preparar-logos.sh; el ancho se calcula para igualar la superficie visual.

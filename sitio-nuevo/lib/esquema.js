@@ -26,7 +26,7 @@ function comunes(sitio) {
       ...(sitio.localidad
         ? { address: { "@type": "PostalAddress", addressLocality: sitio.localidad, addressRegion: sitio.provincia, addressCountry: "AR" } }
         : {}),
-      ...(sitio.instagram ? { sameAs: [sitio.instagram] } : {}),
+      ...(sitio.instagram || sitio.google_maps ? { sameAs: [sitio.instagram, sitio.google_maps].filter(Boolean) } : {}),
       areaServed: { "@type": "Country", name: "Argentina" },
       contactPoint: {
         "@type": "ContactPoint",
