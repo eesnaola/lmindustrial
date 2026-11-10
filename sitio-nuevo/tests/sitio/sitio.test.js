@@ -226,17 +226,17 @@ test("cada página indexable declara la empresa y el sitio, y buscar y 404 no de
   for (const rel of ["buscar.html", "404.html"]) assert.doesNotMatch(leer(rel), /application\/ld\+json/, rel);
 });
 
-test("el Product de cada ficha repite el título, la marca, el modelo y las especificaciones visibles, sin precio", () => {
+test("ninguna ficha declara Product (sin precio, Google lo marca como error crítico) y su ItemPage repite título, descripción y foto visibles", () => {
   for (const p of fichas) {
     const rel = `productos/${p.id}.html`;
-    const prod = nodo(grafo(rel), "Product");
-    assert.equal(prod.name, textoPlano(leer(rel).match(/<h1>([\s\S]*?)<\/h1>/)[1]), rel);
-    assert.equal(prod.brand?.name, p.marca === "Genérica" ? undefined : p.marca, rel);
-    assert.equal(prod.model, p.modelo, rel);
-    assert.equal(prod.additionalProperty?.length ?? 0, p.specs.length, rel);
-    assert.equal(prod.offers, undefined, `${rel}: sin precio no va Offer`);
-    assert.match(prod.image[0], /^https:\/\/www\.lmindustrial\.com\.ar\/img\/opt\/.+\.jpeg$/, rel);
-    assert.ok(existsSync(path.join(SITE, new URL(prod.image[0]).pathname)), `${rel}: la imagen declarada existe`);
+    const g = grafo(rel);
+    const texto = JSON.stringify(g);
+    assert.ok(!/"@type":"(Product|Offer)"/.test(texto) && !texto.includes('"offers"'), `${rel}: sin Product ni Offer`);
+    const pag = nodo(g, "ItemPage");
+    assert.equal(pag.name, textoPlano(leer(rel).match(/<h1>([\s\S]*?)<\/h1>/)[1]), rel);
+    assert.equal(pag.description, p.descripcion, rel);
+    assert.match(pag.primaryImageOfPage.url, /^https:\/\/www\.lmindustrial\.com\.ar\/img\/opt\/.+\.jpeg$/, rel);
+    assert.ok(existsSync(path.join(SITE, new URL(pag.primaryImageOfPage.url).pathname)), `${rel}: la imagen declarada existe`);
   }
 });
 

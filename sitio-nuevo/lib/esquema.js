@@ -120,26 +120,23 @@ export function esquemaCategoria(sitio, { cat, descripcion, ruta, migas, hijos, 
   ]);
 }
 
+// Ficha: sin precio publicado NO se declara "Product". Google exige en Product offers con precio, review o
+// aggregateRating, y si faltan lo marca como error crítico en Search Console. La página queda como ItemPage
+// con lo que se ve: descripción, foto y ficha técnica en PDF.
 export function esquemaProducto(sitio, { p, ruta, migas, imagen }) {
   const url = absoluta(sitio, ruta);
-  const producto = {
-    "@type": "Product",
-    "@id": `${url}#producto`,
-    name: p.nombre,
-    url,
-    description: p.descripcion,
-    ...(imagen ? { image: [absoluta(sitio, imagen)] } : {}),
-    // "Genérica" no es una marca: se omite.
-    ...(p.marca && p.marca !== "Genérica" ? { brand: { "@type": "Brand", name: p.marca } } : {}),
-    ...(p.modelo ? { model: p.modelo } : {}),
-    ...((p.specs ?? []).length
-      ? { additionalProperty: p.specs.map((s) => ({ "@type": "PropertyValue", name: s.clave, value: s.valor })) }
-      : {}),
-    subjectOf: { "@type": "DigitalDocument", name: `Ficha técnica: ${p.nombre}`, encodingFormat: "application/pdf", url: absoluta(sitio, `/${p.pdf}`) },
-  };
   return grafo(sitio, [
-    pagina(sitio, "ItemPage", url, p.nombre, { mainEntity: { "@id": producto["@id"] } }),
-    producto,
+    pagina(sitio, "ItemPage", url, p.nombre, {
+      description: p.descripcion,
+      ...(imagen ? { primaryImageOfPage: { "@type": "ImageObject", url: absoluta(sitio, imagen) } } : {}),
+      associatedMedia: {
+        "@type": "MediaObject",
+        name: `Ficha técnica: ${p.nombre}`,
+        encodingFormat: "application/pdf",
+        contentUrl: absoluta(sitio, `/${p.pdf}`),
+      },
+      publisher: { "@id": ids(sitio).organizacion },
+    }),
     migasEsquema(sitio, migas),
   ]);
 }
